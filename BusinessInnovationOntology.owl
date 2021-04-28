@@ -1,0 +1,2232 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#"
+     xml:base="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Advertising -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Advertising">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Smart_city_key_activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Agents_and_brokers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Agents_and_brokers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Indirect_distribution"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Air_taxi -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Air_taxi">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Charter"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Airboat -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Airboat">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Ferry"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Short_Sea_Shipping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Ambulatory_van -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Ambulatory_van">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Paratransit"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Public_transportation_road_service"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Automated_guideway_transit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Automated_guideway_transit">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Podcar"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Train"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Underground"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Big_data_processing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Big_data_processing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Smart_city_key_activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Bike -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Bike">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#For_hire_or_dial_a_ride_transport"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Public_transportation_road_service"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Bikesharing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Bikesharing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Bike"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Biomass -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Biomass">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Energy_value_proposition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Boat_sharing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Boat_sharing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Demand_Responsive_Transport"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Short_Sea_Shipping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Booked_passengers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Booked_passengers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Smart_city_customer_segment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Booking -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Booking">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Cultural_key_activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Booking_examination -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Booking_examination">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Sporting_key_activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Booking_personal_training -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Booking_personal_training">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Sporting_key_activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Bus -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Bus">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#For_hire_or_dial_a_ride_transport"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Public_transportation_mountain_service"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Public_transportation_road_service"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Transit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Bush_plan -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Bush_plan">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Charter"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Business_data_processing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Business_data_processing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Smart_city_key_activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Business_intelligence_channel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Business_intelligence_channel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Channel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Business_intelligence_customer_segment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Business_intelligence_customer_segment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Customer_segment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Business_intelligence_key_activity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Business_intelligence_key_activity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Key_activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Business_intelligence_key_partner -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Business_intelligence_key_partner">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Key_partner"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Business_intelligence_value_proposition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Business_intelligence_value_proposition">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Value_proposition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Cable_car -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Cable_car">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Hanging_ropeways"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Cable_ferry -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Cable_ferry">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Ferry"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Short_Sea_Shipping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Car -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Car">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#For_hire_or_dial_a_ride_transport"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Public_transportation_road_service"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Car_sharing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Car_sharing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Private_transportation_value_proposition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Carpooling -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Carpooling">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Car_sharing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Carsharing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Carsharing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Car"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Cartbike -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Cartbike">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Motorbike"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Casual_passengers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Casual_passengers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Smart_city_customer_segment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Chairlift -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Chairlift">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Hanging_ropeways"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Channel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Channel"/>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Charging_batteries -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Charging_batteries">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Transportation_key_activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Charity_organization -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Charity_organization">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Business_intelligence_customer_segment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Charter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Charter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Public_transportation_air_service"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Cohousing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Cohousing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Residential_value_proposition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Commuter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Commuter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Ground_service"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Train"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Comparative_advertising -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Comparative_advertising">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Smart_city_key_activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Content_aggregation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Content_aggregation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Smart_city_key_activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Content_creation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Content_creation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Smart_city_key_activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Content_distribution -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Content_distribution">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Smart_city_key_activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Controlling -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Controlling">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Health_key_activity"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Residential_key_activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Coordination_activities -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Coordination_activities">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Residential_key_activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Coworking -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Coworking">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Work"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Craft_production -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Craft_production">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Smart_city_key_activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Crisis_management_value_proposition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Crisis_management_value_proposition">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Value_proposition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Cruise -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Cruise">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Deep-sea_shipping"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Ferry"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Short_Sea_Shipping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Cultural_and_touristic_service -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Cultural_and_touristic_service">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Culture"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Education"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Residential_value_proposition"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Work"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Cultural_key_activity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Cultural_key_activity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Living_key_activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Culture -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Culture">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Living_value_proposition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Customer_segment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Customer_segment"/>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Cybersecurity_service_provider -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Cybersecurity_service_provider">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Public_transportation_key_partner"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Telecommunications_key_partner"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Data_processing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Data_processing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Business_intelligence_key_activity"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Smart_city_key_activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Data_provider -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Data_provider">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Business_intelligence_key_partner"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Living_key_partner"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Telecommunications_key_partner"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Deep-sea_shipping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Deep-sea_shipping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Public_transportation_surface_service"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Transit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Demand_Responsive_Transport -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Demand_Responsive_Transport">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Public_transportation_value_proposition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Detention -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Detention">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Living_value_proposition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Digital_channel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Digital_channel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Smart_city_channel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Direct_distribution -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Direct_distribution">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Channel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Disease_management -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Disease_management">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Education"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Health"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Residential_value_proposition"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Work"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Disease_prevention -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Disease_prevention">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Education"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Health"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Work"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Distributors -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Distributors">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Indirect_distribution"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Education -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Education">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Living_value_proposition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Educational_facilities -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Educational_facilities">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Education"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Educational_key_activity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Educational_key_activity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Smart_city_key_activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Elderly_people -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Elderly_people">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Smart_city_customer_segment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Elevated_train_service -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Elevated_train_service">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Railways_service"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Transit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Energy_distribution_network_operator -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Energy_distribution_network_operator">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Energy_key_partner"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Living_key_partner"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Public_transportation_key_partner"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Energy_key_partner -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Energy_key_partner">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Smart_city_key_partner"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Energy_provider -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Energy_provider">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Energy_key_partner"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Living_key_partner"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Public_transportation_key_partner"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Energy_value_proposition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Energy_value_proposition">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Education"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Residential_value_proposition"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Smart_city_value_proposition"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Work"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Engined_mountain_service -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Engined_mountain_service">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Demand_Responsive_Transport"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Public_transportation_mountain_service"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Enterpreneur -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Enterpreneur">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Smart_city_customer_segment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Enterprise -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Enterprise">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Smart_city_customer_segment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Environmental_risk_prevention -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Environmental_risk_prevention">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Crisis_management_value_proposition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Face_recognition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Face_recognition">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Smart_city_key_activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Fake_news_moderation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Fake_news_moderation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Smart_city_key_activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Family_farming -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Family_farming">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Living_key_activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Ferry -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Ferry">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Transit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Financial_risk_management -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Financial_risk_management">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Crisis_management_value_proposition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Fixed-wing_aircraft -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Fixed-wing_aircraft">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Schedule_air_service"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Flu_prediction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Flu_prediction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Business_intelligence_value_proposition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Food_and_bevarage_company -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Food_and_bevarage_company">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Business_intelligence_customer_segment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#For_hire_or_dial_a_ride_transport -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#For_hire_or_dial_a_ride_transport">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Demand_Responsive_Transport"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Public_transportation_value_proposition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Foreign_enterprise -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Foreign_enterprise">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Smart_city_customer_segment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Free_time -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Free_time">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Living_value_proposition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Funicolar_railway -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Funicolar_railway">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Ground_ropeways"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Gamification -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Gamification">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Cultural_key_activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Garden_allotments -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Garden_allotments">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Residential_value_proposition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Geothermal_energy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Geothermal_energy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Energy_value_proposition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Greywater_management -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Greywater_management">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Residential_key_activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Ground_ropeways -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Ground_ropeways">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Public_transportation_ropeways_service"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Transit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Ground_service -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Ground_service">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Elevated_train_service"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Railways_service"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Transit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Gym -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Gym">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Wellness_service"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Hack -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Hack">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Car"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Hanging_ropeways -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Hanging_ropeways">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Public_transportation_ropeways_service"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Transit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Health -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Health">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Living_value_proposition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Health_key_activity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Health_key_activity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Living_key_activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#High_speed_rail -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#High_speed_rail">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Ground_service"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Train"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Home_automation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Home_automation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Education"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Residential_value_proposition"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Work"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Horse_drawn_carriage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Horse_drawn_carriage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#For_hire_or_dial_a_ride_transport"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Public_transportation_road_service"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Hovercraft -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Hovercraft">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Deep-sea_shipping"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Ferry"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Short_Sea_Shipping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Humanitarian_aid -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Humanitarian_aid">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Crisis_management_value_proposition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Hydroelectric_power -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Hydroelectric_power">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Energy_value_proposition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Hydrofoil -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Hydrofoil">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Deep-sea_shipping"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Ferry"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Short_Sea_Shipping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Identification_of_social_network_influencers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Identification_of_social_network_influencers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Business_intelligence_key_activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Inclined_elevator -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Inclined_elevator">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Ground_ropeways"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Indirect_distribution -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Indirect_distribution">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Channel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Info_point -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Info_point">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Smart_city_channel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Intercity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Intercity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Ground_service"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Train"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Internet -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Internet">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Telecommunications_value_proposition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Internet_provider -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Internet_provider">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Living_key_partner"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Public_transportation_key_partner"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Telecommunications_key_partner"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Jitney -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Jitney">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Car"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Key_activity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Key_activity"/>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Key_partner -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Key_partner"/>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Knowledge_management -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Knowledge_management">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Smart_city_key_activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Library -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Library">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Educational_facilities"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Light_metro -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Light_metro">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Public_transportation_road_service"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Train"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Transit"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Underground"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Light_rail_transit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Light_rail_transit">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Ground_service"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Train"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Living_key_activity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Living_key_activity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Smart_city_key_activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Living_key_partner -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Living_key_partner">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Smart_city_key_partner"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Living_value_proposition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Living_value_proposition">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Smart_city_value_proposition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Magnetic_levitation_train -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Magnetic_levitation_train">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Ground_service"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Train"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Underground"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Managing_health_visitor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Managing_health_visitor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Health_key_activity"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Residential_key_activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Managing_personal_health_records -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Managing_personal_health_records">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Health_key_activity"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Residential_key_activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Managing_personalised_health_record -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Managing_personalised_health_record">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Health_key_activity"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Residential_key_activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Managing_virtual_healthcare_teams -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Managing_virtual_healthcare_teams">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Health_key_activity"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Residential_key_activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Medical_service -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Medical_service">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Living_key_partner"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Micro_jet -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Micro_jet">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Charter"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Millenials -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Millenials">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Smart_city_customer_segment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Minibus -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Minibus">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Bus"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Paratransit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Minimetro -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Minimetro">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Ground_ropeways"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Mobile_payments_and_tickets -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Mobile_payments_and_tickets">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Cultural_key_activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Mobile_phone_network -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Mobile_phone_network">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Telecommunications_value_proposition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Mono_rail -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Mono_rail">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Elevated_train_service"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Ground_service"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Train"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Motorbike -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Motorbike">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#For_hire_or_dial_a_ride_transport"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Public_transportation_road_service"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Motorboat -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Motorboat">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Boat_sharing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Motorless_mountain_service -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Motorless_mountain_service">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Demand_Responsive_Transport"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Public_transportation_mountain_service"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Museum_and_art_galleries_services -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Museum_and_art_galleries_services">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Culture"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Ocean_liner -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Ocean_liner">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Deep-sea_shipping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Oceanic_energy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Oceanic_energy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Energy_value_proposition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Online_ticket_office -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Online_ticket_office">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Smart_city_channel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Paratransit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Paratransit">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Demand_Responsive_Transport"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Public_transportation_value_proposition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Passengers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Passengers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Smart_city_customer_segment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Peer_to_peer_car_sharing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Peer_to_peer_car_sharing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Car_sharing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Personal_rapid_transit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Personal_rapid_transit">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Public_transportation_value_proposition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Personal_selling -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Personal_selling">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Direct_distribution"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Pharmaceutical_company -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Pharmaceutical_company">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Business_intelligence_customer_segment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Podcar -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Podcar">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Personal_rapid_transit"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Public_transportation_road_service"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Railways_service"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Political_party -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Political_party">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Business_intelligence_customer_segment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Private_transportation_key_partner -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Private_transportation_key_partner">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Smart_city_key_partner"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Private_transportation_value_proposition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Private_transportation_value_proposition">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Smart_city_value_proposition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Product_development -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Product_development">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Smart_city_key_activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Providing_contextual_exhibitions_information -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Providing_contextual_exhibitions_information">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Cultural_key_activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Providing_health_training_information -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Providing_health_training_information">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Sporting_key_activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Providing_news_about_cultural_events -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Providing_news_about_cultural_events">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Cultural_key_activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Providing_personalised_wellness_program -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Providing_personalised_wellness_program">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Health_key_activity"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Residential_key_activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Providing_practitioners_with_info -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Providing_practitioners_with_info">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Educational_key_activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Providing_services_related_to_buying_selling_and_renting_properties -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Providing_services_related_to_buying_selling_and_renting_properties">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Real_estate_business"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Residential_value_proposition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Providing_tailored_news_and_information_content -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Providing_tailored_news_and_information_content">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Smart_city_key_activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Public_transportation_air_service -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Public_transportation_air_service">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Public_transportation_value_proposition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Public_transportation_key_partner -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Public_transportation_key_partner">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Smart_city_key_partner"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Public_transportation_land_service -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Public_transportation_land_service">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Public_transportation_value_proposition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Public_transportation_mountain_service -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Public_transportation_mountain_service">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Public_transportation_land_service"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Public_transportation_road_service -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Public_transportation_road_service">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Public_transportation_land_service"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Public_transportation_ropeways_service -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Public_transportation_ropeways_service">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Public_transportation_land_service"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Public_transportation_surface_service -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Public_transportation_surface_service">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Public_transportation_water_service"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Public_transportation_underwater_service -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Public_transportation_underwater_service">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Public_transportation_water_service"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Public_transportation_value_proposition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Public_transportation_value_proposition">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Smart_city_value_proposition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Public_transportation_water_service -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Public_transportation_water_service">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Public_transportation_value_proposition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Radio_network -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Radio_network">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Telecommunications_value_proposition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Railways_service -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Railways_service">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Public_transportation_land_service"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Rapid_rail_transit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Rapid_rail_transit">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Train"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Underground"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Real_estate_business -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Real_estate_business">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Residential_value_proposition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Real_time_analyzer_of_wellness_and_poverty -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Real_time_analyzer_of_wellness_and_poverty">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Business_intelligence_value_proposition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Refueling -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Refueling">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Transportation_key_activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Regional_rail -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Regional_rail">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Ground_service"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Train"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Regular_bus -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Regular_bus">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Bus"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Religion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Religion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Living_value_proposition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Remote_control-booking -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Remote_control-booking">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Residential_key_activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Remote_control-performance_monitoring -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Remote_control-performance_monitoring">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Health_key_activity"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Residential_key_activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Remote_control-service_monitoring -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Remote_control-service_monitoring">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Health_key_activity"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Residential_key_activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Remote_control-telemedicine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Remote_control-telemedicine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Health_key_activity"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Residential_key_activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Residential_key_activity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Residential_key_activity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Smart_city_key_activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Residential_value_proposition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Residential_value_proposition">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Living_value_proposition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Retailer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Retailer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Indirect_distribution"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Rickshaw -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Rickshaw">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#For_hire_or_dial_a_ride_transport"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Public_transportation_road_service"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Riverboat -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Riverboat">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Ferry"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Short_Sea_Shipping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Ro-Pax -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Ro-Pax">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Deep-sea_shipping"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Ferry"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Short_Sea_Shipping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Rowboat -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Rowboat">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Boat_sharing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Rubber_tyred_metro -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Rubber_tyred_metro">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Public_transportation_road_service"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Transit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Sailboat -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Sailboat">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Boat_sharing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Sales_force -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Sales_force">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Business_intelligence_channel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Satellite_phone_network -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Satellite_phone_network">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Telecommunications_value_proposition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Schedule_air_service -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Schedule_air_service">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Public_transportation_air_service"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#School_bus -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#School_bus">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Bus"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Secured_web_service -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Secured_web_service">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Business_intelligence_channel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Services_for_travellers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Services_for_travellers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Vacation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Sharing_free_discussion_spaces -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Sharing_free_discussion_spaces">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Educational_facilities"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Sharing_services_and_building -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Sharing_services_and_building">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Residential_key_activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Sharing_urban_gardens -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Sharing_urban_gardens">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Residential_key_activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Sharing_urban_green_and_spaces -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Sharing_urban_green_and_spaces">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Residential_key_activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Sharing_vegetable_gardens -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Sharing_vegetable_gardens">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Residential_key_activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Short_Sea_Shipping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Short_Sea_Shipping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Public_transportation_surface_service"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Transit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Shuttle_bus -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Shuttle_bus">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Bus"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Skilift -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Skilift">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Hanging_ropeways"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Skipass_office -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Skipass_office">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Smart_city_channel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Sky -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Sky">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Motorless_mountain_service"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Skyers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Skyers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Smart_city_customer_segment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Sled -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Sled">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Motorless_mountain_service"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Slugging_-_kiss_and_ride -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Slugging_-_kiss_and_ride">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Car_sharing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Smart_and_personalised_inclusion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Smart_and_personalised_inclusion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Education"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Residential_value_proposition"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Work"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Smart_city_channel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Smart_city_channel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Channel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Smart_city_customer_segment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Smart_city_customer_segment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Customer_segment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Smart_city_key_activity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Smart_city_key_activity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Key_activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Smart_city_key_partner -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Smart_city_key_partner">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Key_partner"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Smart_city_value_proposition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Smart_city_value_proposition">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Value_proposition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Snow_truck -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Snow_truck">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Engined_mountain_service"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Snowmobile -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Snowmobile">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Engined_mountain_service"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Solar_power -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Solar_power">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Energy_value_proposition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Sport -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Sport">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Living_value_proposition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Sporting_key_activity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Sporting_key_activity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Living_key_activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Start_up -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Start_up">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Smart_city_customer_segment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Street_car_rail -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Street_car_rail">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Ground_service"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Tram"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Support_to_ageing_and_independent_living -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Support_to_ageing_and_independent_living">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Residential_value_proposition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Targeted_political_campaign -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Targeted_political_campaign">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Business_intelligence_value_proposition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Taxi -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Taxi">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Car"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Teaching_lessons -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Teaching_lessons">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Educational_key_activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Telecommunications_key_partner -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Telecommunications_key_partner">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Smart_city_key_partner"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Telecommunications_value_proposition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Telecommunications_value_proposition">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Smart_city_value_proposition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Telephone -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Telephone">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Direct_distribution"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Television -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Television">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Telecommunications_value_proposition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Telework -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Telework">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Work"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#The_internet -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#The_internet">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Direct_distribution"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Ticket_office -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Ticket_office">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Smart_city_channel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Tour_bus -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Tour_bus">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Bus"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Tourists -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Tourists">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Smart_city_customer_segment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Train -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Train">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Public_transportation_road_service"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Transit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Tram -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Tram">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Public_transportation_road_service"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Transit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Tram_bus -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Tram_bus">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Ground_service"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Tram"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Tram_train -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Tram_train">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Ground_service"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Tram"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Transit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Transit">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Public_transportation_value_proposition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Transportation_key_activity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Transportation_key_activity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Smart_city_key_activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Trolley_bus -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Trolley_bus">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Public_transportation_road_service"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Transit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Underground -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Underground">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Railways_service"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Transit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Using_machine_learning_techniques -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Using_machine_learning_techniques">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Smart_city_key_activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Vacation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Vacation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Living_value_proposition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Value_proposition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Value_proposition"/>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Vanpooling -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Vanpooling">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Car_sharing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Velotaxi -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Velotaxi">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Bike"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Virtual_tours -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Virtual_tours">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Vacation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Visiting_art_museums_and_galleries -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Visiting_art_museums_and_galleries">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Cultural_key_activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Water_conservation_and_reuse -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Water_conservation_and_reuse">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Education"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Residential_value_proposition"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Work"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Water_taxi -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Water_taxi">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Demand_Responsive_Transport"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Short_Sea_Shipping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Waterbus -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Waterbus">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Demand_Responsive_Transport"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Ferry"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Short_Sea_Shipping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Wellness_service -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Wellness_service">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Education"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Residential_value_proposition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Wheelchair_van -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Wheelchair_van">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Paratransit"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Public_transportation_road_service"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Wind_power -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Wind_power">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Energy_value_proposition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Work -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Work">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Living_value_proposition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#eHealth -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#eHealth">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Health"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Residential_value_proposition"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Work"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#eInclusion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#eInclusion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Residential_value_proposition"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Work"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#eLearning -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#eLearning">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Residential_value_proposition"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Work"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#email -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#email">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antoniodenicola/ontologies/2018/2/untitled-ontology-89#Direct_distribution"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
