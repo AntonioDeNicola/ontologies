@@ -1,0 +1,2024 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://jerico.casaccia.enea.it/cn-hpc/TERMINUS_upper_ontology_v1.0"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://jerico.casaccia.enea.it/cn-hpc/TERMINUS_upper_ontology_v1.0">
+    <Prefix name="" IRI="http://jerico.casaccia.enea.it/cn-hpc/TERMINUS_upper_ontology_v1.0"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Import>http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl</Import>
+    <Declaration>
+        <Class IRI="#actor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Action"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Actual_event"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Adaptability"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Agility"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Anthropic_hazard"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Artistic_value"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Asset"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Blunt-end_operator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Commons"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Critical_event_of_system"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Critical_infrastructure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cultural_constraint"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cultural_value"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Damage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Decision"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Decision_consequence"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Decision_constraint"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Decision_influencer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Decision_opportunity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Decision_threat"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Disaster"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Disaster_impact"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Durability"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Economic_contraint"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Economic_influencer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Economic_value"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ecosystem"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ecosystem_pressure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ecosystem_risk"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ecosystem_service"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ecosystem_status"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Engineering_system_risk"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Environmental_constraint"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Environmental_influencer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Envisaged_consequence"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Event"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Evolvability"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Extensibility"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Flexibility"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Functional_vulnerability"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Geographical_constraint"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Harm"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hazard"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hazard_threat"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Historical_value"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Human_resource"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Human_service"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ility"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Impact"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Incident"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Information"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Infrastructure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Institutional_framework"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Institutional_service"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Internal_system_conditions"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Interoperability"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Legal_constraint"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Logical_infrastructure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Maintainability"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Managed_object"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Manager"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Manufacturability"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mitigation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Modularity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Natural_hazard"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Need"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Operational_system_context"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Operator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Opportunity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Organizational_infrastructure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Phenomenon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Physical_infrastructure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Physical_resource"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Physical_service"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Potential_event"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Private_service"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Public_service"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Quality"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Recovery_Decision"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Regulator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Reliability"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Religious_constraint"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Religious_value"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Repairability"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Resilience"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Resource"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Robustness"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Safety"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Scalability"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Service_request"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Shareholder"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sharp-end_operator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Societal_constraint"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Societal_influencer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Societal_value"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Spatial_region"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Stakeholder"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Structural_vulnerability"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sustainability"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#System"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#System_aspect"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#System_event"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#System_external_service"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#System_internal_operation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#System_property"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#System_risk"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Target"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Target_group"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Testability"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Threat"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Time_horizon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Usability"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#User"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Value"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Virtual_resource"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Virtual_service"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Volunteer_service"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Vulnerability"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#accountsFor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#aimsAt"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#causes"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#concerns"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#considers"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#findsASystemInAStatus"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasImpact"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasImpactOn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasInput"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasInternalStatus"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasNeed"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasRisk"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSystemAspect"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasUser"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasValue"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasVulnerability"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#influences"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#involves"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isImplementedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isInterdependentWith"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isInterestedIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isLimitedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isSubsystemOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#is_lack_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#issues"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#leveragesOn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#manages"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#managesHumanResource"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#measuresHazard"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#operatesIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#performs"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#poses"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#providesAViewOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#recovers"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#takesCareOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#takesDecision"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Hazard_duration"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Hazard_intensity"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Hazard_location"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Hazard_time"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Severity_of_hazard"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000006"/>
+        <Class IRI="#Spatial_region"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Damage"/>
+        <Class IRI="#Impact"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Harm"/>
+        <Class IRI="#Impact"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Managed_object"/>
+        <Class IRI="#Resource"/>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#actor"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000023"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Action"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000015"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Action"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isLimitedBy"/>
+            <Class IRI="#Decision_constraint"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Actual_event"/>
+        <Class IRI="#System_event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Adaptability"/>
+        <Class IRI="#Ility"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Agility"/>
+        <Class IRI="#Ility"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Anthropic_hazard"/>
+        <Class IRI="#Hazard"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Artistic_value"/>
+        <Class IRI="#Value"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Asset"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000019"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Asset"/>
+        <Class IRI="#System_aspect"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Blunt-end_operator"/>
+        <Class IRI="#Operator"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Commons"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000019"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Commons"/>
+        <Class IRI="#System_aspect"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Critical_event_of_system"/>
+        <Class IRI="#Actual_event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Critical_event_of_system"/>
+        <Class IRI="#Potential_event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Critical_infrastructure"/>
+        <Class IRI="#System"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cultural_constraint"/>
+        <Class IRI="#Decision_constraint"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cultural_value"/>
+        <Class IRI="#Value"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Damage"/>
+        <Class IRI="#Critical_event_of_system"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Decision"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000034"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Decision"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#aimsAt"/>
+            <Class IRI="#Target"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Decision"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#considers"/>
+            <Class IRI="#Decision_constraint"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Decision"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasImpact"/>
+            <Class IRI="#Decision_consequence"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Decision"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isImplementedBy"/>
+            <Class IRI="#Action"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Decision_consequence"/>
+        <Class IRI="#Envisaged_consequence"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Decision_constraint"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000011"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Decision_influencer"/>
+        <Class IRI="#actor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Decision_influencer"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#influences"/>
+            <Class IRI="#Decision"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Decision_opportunity"/>
+        <Class IRI="#Decision_consequence"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Decision_threat"/>
+        <Class IRI="#Decision_consequence"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Decision_threat"/>
+        <Class IRI="#Threat"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Disaster"/>
+        <Class IRI="#Critical_event_of_system"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Disaster"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#causes"/>
+            <Class IRI="#Disaster_impact"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Disaster_impact"/>
+        <Class IRI="#Impact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Durability"/>
+        <Class IRI="#Ility"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Economic_contraint"/>
+        <Class IRI="#Decision_constraint"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Economic_influencer"/>
+        <Class IRI="#Decision_influencer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Economic_value"/>
+        <Class IRI="#Value"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ecosystem"/>
+        <Class IRI="#System"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ecosystem"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasInternalStatus"/>
+            <Class IRI="#Ecosystem_status"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ecosystem_pressure"/>
+        <Class IRI="#Hazard_threat"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ecosystem_risk"/>
+        <Class IRI="#System_risk"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ecosystem_service"/>
+        <Class IRI="#System_external_service"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ecosystem_service"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasRisk"/>
+            <Class IRI="#Ecosystem_risk"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ecosystem_status"/>
+        <Class IRI="#Internal_system_conditions"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Engineering_system_risk"/>
+        <Class IRI="#System_risk"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Environmental_constraint"/>
+        <Class IRI="#Decision_constraint"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Environmental_influencer"/>
+        <Class IRI="#Decision_influencer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Envisaged_consequence"/>
+        <Class IRI="#Potential_event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Envisaged_consequence"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#involves"/>
+            <Class IRI="#Decision_influencer"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Event"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000015"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Event"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#findsASystemInAStatus"/>
+            <Class IRI="#System_property"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Evolvability"/>
+        <Class IRI="#Ility"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Extensibility"/>
+        <Class IRI="#Ility"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Flexibility"/>
+        <Class IRI="#Ility"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Functional_vulnerability"/>
+        <Class IRI="#Vulnerability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Geographical_constraint"/>
+        <Class IRI="#Decision_constraint"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Harm"/>
+        <Class IRI="#Critical_event_of_system"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hazard"/>
+        <Class IRI="#Potential_event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hazard"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasImpact"/>
+            <Class IRI="#System_event"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hazard"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#poses"/>
+            <Class IRI="#Hazard_threat"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hazard_threat"/>
+        <Class IRI="#Threat"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Historical_value"/>
+        <Class IRI="#Value"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Human_resource"/>
+        <Class IRI="#Resource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Human_resource"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#recovers"/>
+            <Class IRI="#Human_service"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Human_resource"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#recovers"/>
+            <Class IRI="#System_external_service"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Human_resource"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#recovers"/>
+            <Class IRI="#User"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Human_service"/>
+        <Class IRI="#System_external_service"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Human_service"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasInput"/>
+            <Class IRI="#Resource"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Human_service"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#issues"/>
+            <Class IRI="#Human_resource"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Human_service"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#issues"/>
+            <Class IRI="#Information"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Human_service"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#managesHumanResource"/>
+            <Class IRI="#Human_resource"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ility"/>
+        <Class IRI="#Internal_system_conditions"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Impact"/>
+        <Class IRI="#Critical_event_of_system"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Incident"/>
+        <Class IRI="#Critical_event_of_system"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Information"/>
+        <Class IRI="#Resource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Infrastructure"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000040"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Infrastructure"/>
+        <Class IRI="#System_aspect"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Institutional_framework"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000023"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Institutional_framework"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#takesDecision"/>
+            <Class IRI="#Decision"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Institutional_service"/>
+        <Class IRI="#Public_service"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Internal_system_conditions"/>
+        <Class IRI="#System_property"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Interoperability"/>
+        <Class IRI="#Ility"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Legal_constraint"/>
+        <Class IRI="#Decision_constraint"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Logical_infrastructure"/>
+        <Class IRI="#Infrastructure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Maintainability"/>
+        <Class IRI="#Ility"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Managed_object"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000040"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Managed_object"/>
+        <Class IRI="#System_aspect"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Manager"/>
+        <Class IRI="#Blunt-end_operator"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Manufacturability"/>
+        <Class IRI="#Ility"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mitigation"/>
+        <Class IRI="#System_internal_operation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Modularity"/>
+        <Class IRI="#Ility"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Natural_hazard"/>
+        <Class IRI="#Hazard"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Need"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000016"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Operational_system_context"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000011"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Operator"/>
+        <Class IRI="#actor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Operator"/>
+        <Class IRI="#System_aspect"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Operator"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#performs"/>
+            <Class IRI="#System_internal_operation"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Opportunity"/>
+        <Class IRI="#Potential_event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Organizational_infrastructure"/>
+        <Class IRI="#Infrastructure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Phenomenon"/>
+        <Class IRI="#Actual_event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Phenomenon"/>
+        <Class IRI="#Potential_event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Physical_infrastructure"/>
+        <Class IRI="#Infrastructure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Physical_resource"/>
+        <Class IRI="#Resource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Physical_service"/>
+        <Class IRI="#System_external_service"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Potential_event"/>
+        <Class IRI="#System_event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Private_service"/>
+        <Class IRI="#Human_service"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Public_service"/>
+        <Class IRI="#Human_service"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Quality"/>
+        <Class IRI="#Ility"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Recovery_Decision"/>
+        <Class IRI="#Decision"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Recovery_Decision"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#concerns"/>
+            <Class IRI="#Disaster_impact"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Regulator"/>
+        <Class IRI="#Stakeholder"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Reliability"/>
+        <Class IRI="#Ility"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Religious_constraint"/>
+        <Class IRI="#Decision_constraint"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Religious_value"/>
+        <Class IRI="#Value"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Repairability"/>
+        <Class IRI="#Ility"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Resilience"/>
+        <Class IRI="#Ility"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Resource"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000030"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Robustness"/>
+        <Class IRI="#Ility"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Safety"/>
+        <Class IRI="#Ility"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Scalability"/>
+        <Class IRI="#Ility"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Service_request"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000015"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Service_request"/>
+        <Class IRI="#System_aspect"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Shareholder"/>
+        <Class IRI="#Stakeholder"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sharp-end_operator"/>
+        <Class IRI="#Operator"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Societal_constraint"/>
+        <Class IRI="#Decision_constraint"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Societal_influencer"/>
+        <Class IRI="#Decision_influencer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Societal_value"/>
+        <Class IRI="#Value"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Spatial_region"/>
+        <Class IRI="#System_aspect"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Stakeholder"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000023"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Stakeholder"/>
+        <Class IRI="#System_aspect"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Stakeholder"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isInterestedIn"/>
+            <Class IRI="#System_aspect"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Stakeholder"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#providesAViewOf"/>
+            <Class IRI="#System_risk"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Stakeholder"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#takesCareOf"/>
+            <Class IRI="#Critical_event_of_system"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Structural_vulnerability"/>
+        <Class IRI="#Vulnerability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sustainability"/>
+        <Class IRI="#Ility"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#System"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000027"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#System"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSystemAspect"/>
+            <Class IRI="#System_aspect"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#System"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isSubsystemOf"/>
+            <Class IRI="#System"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#System"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#operatesIn"/>
+            <Class IRI="#Operational_system_context"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#System_aspect"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000001"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#System_aspect"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000002"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#System_aspect"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasInternalStatus"/>
+            <Class IRI="#Internal_system_conditions"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#System_aspect"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasRisk"/>
+            <Class IRI="#System_risk"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#System_aspect"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasValue"/>
+            <Class IRI="#Value"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#System_aspect"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasVulnerability"/>
+            <Class IRI="#Vulnerability"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#System_aspect"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isInterdependentWith"/>
+            <Class IRI="#System_aspect"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#System_event"/>
+        <Class IRI="#Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#System_event"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasImpact"/>
+            <Class IRI="#System_event"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#System_event"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasImpactOn"/>
+            <Class IRI="#System_aspect"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#System_external_service"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000015"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#System_external_service"/>
+        <Class IRI="#System_aspect"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#System_external_service"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasInput"/>
+            <Class IRI="#Resource"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#System_external_service"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasUser"/>
+            <Class IRI="#User"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#System_external_service"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#issues"/>
+            <Class IRI="#Resource"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#System_external_service"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#leveragesOn"/>
+            <Class IRI="#System_internal_operation"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#System_external_service"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#managesHumanResource"/>
+            <Class IRI="#Human_resource"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#System_external_service"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#recovers"/>
+            <Class IRI="#System_external_service"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#System_internal_operation"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000015"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#System_internal_operation"/>
+        <Class IRI="#System_aspect"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#System_internal_operation"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasInput"/>
+            <Class IRI="#Resource"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#System_internal_operation"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#issues"/>
+            <Class IRI="#Resource"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#System_internal_operation"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#managesHumanResource"/>
+            <Class IRI="#Human_resource"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#System_property"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000019"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#System_risk"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000015"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#System_risk"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#accountsFor"/>
+            <Class IRI="#Impact"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#System_risk"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#accountsFor"/>
+            <Class IRI="#Threat"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Target"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000019"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Target_group"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000027"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Target_group"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasNeed"/>
+            <Class IRI="#Need"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Target_group"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isInterestedIn"/>
+            <Class IRI="#Target"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Testability"/>
+        <Class IRI="#Ility"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Threat"/>
+        <Class IRI="#Potential_event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Time_horizon"/>
+        <Class IRI="#Decision_constraint"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Usability"/>
+        <Class IRI="#Ility"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#User"/>
+        <Class IRI="#Stakeholder"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#User"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasInput"/>
+            <Class IRI="#Resource"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#User"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#issues"/>
+            <Class IRI="#Information"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Value"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000019"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Virtual_resource"/>
+        <Class IRI="#Resource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Virtual_service"/>
+        <Class IRI="#System_external_service"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Volunteer_service"/>
+        <Class IRI="#Human_service"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Vulnerability"/>
+        <Class IRI="#Internal_system_conditions"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Vulnerability"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#is_lack_of"/>
+            <Class IRI="#Ility"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#managesHumanResource"/>
+        <ObjectProperty IRI="#manages"/>
+    </SubObjectPropertyOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasVulnerability"/>
+        <Class IRI="#System_aspect"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isSubsystemOf"/>
+        <Class IRI="#System"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#managesHumanResource"/>
+        <Class IRI="#System_aspect"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#measuresHazard"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#Severity_of_hazard"/>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+        </DataSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#providesAViewOf"/>
+        <Class IRI="#Stakeholder"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasVulnerability"/>
+        <Class IRI="#Vulnerability"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isSubsystemOf"/>
+        <Class IRI="#System"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#managesHumanResource"/>
+        <Class IRI="#Human_resource"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#measuresHazard"/>
+        <Class IRI="#Hazard"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#providesAViewOf"/>
+        <Class IRI="#System_risk"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Hazard_duration"/>
+        <DataProperty IRI="#Severity_of_hazard"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Hazard_intensity"/>
+        <DataProperty IRI="#Severity_of_hazard"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Hazard_location"/>
+        <DataProperty IRI="#Severity_of_hazard"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Hazard_time"/>
+        <DataProperty IRI="#Severity_of_hazard"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Severity_of_hazard"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Action</IRI>
+        <Literal xml:lang="en">An activity that should be done to implement a decision.
+
+REFERENCE:
+- A. De Nicola, S. Giovinazzi, M. Guarascio, and M. L. Villani. Gamified Decision Making for a Participatory Post-Crisis Recovery: a Model Based Process. In Proceedings of the 30th European Safety and Reliability Conference - ESREL 2020 - Venice, Italy, 1st-6th November 2020, 2020.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Asset</IRI>
+        <Literal>An asset is an item of value owned by the system.
+
+REFERENCE:
+A. Coletti, A. De Nicola, G. Vicoli, and M. L. Villani. Semantic Modeling of Cascading Risks in Interoperable Socio-technical Systems. In K. Popplewell, K.-D. Thoben, T. Knothe, and R. Poler, editors, Enterprise Interoperability VIII, Smart Services and Business Impact of Enterprise Interoperability, Proceedings of the I-ESA Conferences, pages 119–129, Cham, 2019. Springer International Publishing.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Blunt-end_operator</IRI>
+        <Literal xml:lang="en">The operator that has a stake in the system but does not operate directly on it (e.g., the production manager responsible for the production process).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Commons</IRI>
+        <Literal>Cultural and natural resources accessible to all members of a society, including natural materials such as air, water, and a habitable earth. Examples of commons are lake, water spring, river, and glacier.
+
+REFERENCE:
+A. Coletti, A. De Nicola, G. Vicoli, and M. L. Villani. Semantic Modeling of Cascading Risks in Interoperable Socio-technical Systems. In K. Popplewell, K.-D. Thoben, T. Knothe, and R. Poler, editors, Enterprise Interoperability VIII, Smart Services and Business Impact of Enterprise Interoperability, Proceedings of the I-ESA Conferences, pages 119–129, Cham, 2019. Springer International Publishing.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Critical_event_of_system</IRI>
+        <Literal>Event representing one or more effects on systems from exposure to a hazard; effects are mediated by the strength of the hazard and the vulnerability of the exposed system.
+
+REFERENCES:
+- Description adapted from Hazard concept as described by Mora et al. 2018: Mora, C., et al. (2018). Broad threat to humanity from cumulative climate hazards intensified by greenhouse gas emissions. Nature Climate Change, 1.
+- A. Coletti, A. De Nicola, A. Di Pietro, L. La Porta, M. Pollino, V. Rosato, G. Vicoli, and M. L. Villani. A Comprehensive System for Semantic Spatiotemporal Assessment of Risk in Urban Areas. Special Issue on &quot;Knowledge, Semantics and AI for Risk and Crisis Management&quot; of the Journal of Contingencies and Crisis Management - Wiley, 2020</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Critical_infrastructure</IRI>
+        <Literal>The concept of critical infrastructure refers to the physical and virtual systems, networks, and assets that are essential for the functioning of a society and its economy. Critical infrastructure provides vital services and supports various sectors, including energy, transportation, communication, water and sewage, healthcare, finance, and government operations. Disruption or damage to critical infrastructure can have severe consequences on public safety, national security, economic stability, and societal well-being.
+
+Key characteristics of critical infrastructure include:
+
+Vital Services: Critical infrastructure systems provide essential services that are necessary for the functioning of society and the economy. These services include the generation and distribution of electricity, transportation of goods and people, communication networks, provision of clean water, healthcare facilities, financial transactions, and government operations.
+Interdependencies: Critical infrastructure systems are interconnected and interdependent. They rely on each other to function effectively and efficiently. For example, the electricity grid depends on telecommunications for monitoring and control, while transportation systems require fuel and energy supply. Disruptions in one infrastructure sector can cascade and affect other sectors, leading to widespread consequences.
+High Consequence of Failure: The failure or disruption of critical infrastructure can have severe consequences on public safety, economic stability, and societal functioning. It can result in significant financial losses, disruption of essential services, loss of life, environmental damage, and social unrest.
+Security and Resilience: Due to their importance, critical infrastructure systems are often potential targets for malicious attacks, natural disasters, accidents, or system failures. Ensuring the security and resilience of critical infrastructure is crucial to prevent or mitigate the impact of such events and to facilitate prompt recovery.
+Examples of critical infrastructure include power plants, electrical grids, oil and gas pipelines, transportation networks (roads, railways, airports, ports), communication networks (telecommunications, internet), water supply and treatment systems, healthcare facilities, financial institutions, emergency services, and government buildings.
+
+Governments, organizations, and stakeholders responsible for critical infrastructure must prioritize risk assessment, security measures, emergency preparedness, and resilience planning to safeguard these essential systems and minimize the potential impact of disruptions or failures.
+
+Source: https://chat.openai.com</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Decision</IRI>
+        <Literal xml:lang="en">A determination arrived at after consideration.
+
+- Merriam-Webster (2020). Merriam-webster online dictionary. https://www.merriam-webster.com. Accessed: 2023-02-21.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Decision_consequence</IRI>
+        <Literal>An estimated threat or opportunity of a decision.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Decision_constraint</IRI>
+        <Literal xml:lang="en">Any kind of limitation, restriction or legal rule a decision must  be compliant with.
+
+REFERENCE:
+- A. De Nicola, S. Giovinazzi, M. Guarascio, and M. L. Villani. Gamified Decision Making for a Participatory Post-Crisis Recovery: a Model Based Process. In Proceedings of the 30th European Safety and Reliability Conference - ESREL 2020 - Venice, Italy, 1st-6th November 2020, 2020.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Decision_influencer</IRI>
+        <Literal xml:lang="en">A person, group or organization that has an interest or a concern in a decision.
+
+REFERENCE:
+- A. De Nicola, S. Giovinazzi, M. Guarascio, and M. L. Villani. Gamified Decision Making for a Participatory Post-Crisis Recovery: a Model Based Process. In Proceedings of the 30th European Safety and Reliability Conference - ESREL 2020 - Venice, Italy, 1st-6th November 2020, 2020.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Decision_opportunity</IRI>
+        <Literal>Any benefit that can be achieved from a decision.
+
+REFERENCE:
+- A. De Nicola, S. Giovinazzi, M. Guarascio, and M. L. Villani. Gamified Decision Making for a Participatory Post-Crisis Recovery: a Model Based Process. In Proceedings of the 30th European Safety and Reliability Conference - ESREL 2020 - Venice, Italy, 1st-6th November 2020, 2020.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Decision_threat</IRI>
+        <Literal>Anything or anyone threatening the success of a decision.
+
+REFERENCE:
+- A. De Nicola, S. Giovinazzi, M. Guarascio, and M. L. Villani. Gamified Decision Making for a Participatory Post-Crisis Recovery: a Model Based Process. In Proceedings of the 30th European Safety and Reliability Conference - ESREL 2020 - Venice, Italy, 1st-6th November 2020, 2020.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Disaster</IRI>
+        <Literal>A sudden calamitous event bringing great damage, loss, or destruction.
+ 
+REFERENCES:
+- Merriam-Webster (2020).
+- A. De Nicola, S. Giovinazzi, M. Guarascio, and M. L. Villani. Gamified Decision Making for a Participatory Post-Crisis Recovery: a Model Based Process. In Proceedings of the 30th European Safety and Reliability Conference - ESREL 2020 - Venice, Italy, 1st-6th November 2020, 2020.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Disaster_impact</IRI>
+        <Literal>The effect of a disaster.
+
+REFERENCE:
+- A. De Nicola, S. Giovinazzi, M. Guarascio, and M. L. Villani. Gamified Decision Making for a Participatory Post-Crisis Recovery: a Model Based Process. In Proceedings of the 30th European Safety and Reliability Conference - ESREL 2020 - Venice, Italy, 1st-6th November 2020, 2020.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Ecosystem</IRI>
+        <Literal>The ecosystem concept refers to a community of living organisms, such as plants, animals, and microorganisms, interacting with each other and their physical environment. It describes the complex network of relationships, dependencies, and interactions that exist within a specific ecological community.
+
+Key characteristics of an ecosystem include:
+
+Biotic Components: Ecosystems consist of living organisms, including plants, animals, and microorganisms. These organisms interact with each other through various ecological relationships, such as predation, competition, symbiosis, and mutualism. The biotic components contribute to the diversity, structure, and functioning of the ecosystem.
+Abiotic Components: Ecosystems also include non-living, physical factors and resources that influence the organisms and their interactions. These abiotic components can include sunlight, temperature, precipitation, soil composition, air quality, water availability, and topography. The abiotic factors shape the distribution, adaptation, and ecological processes within the ecosystem.
+Energy Flow: Ecosystems are characterized by the flow of energy through food webs or food chains. Producers, such as plants, utilize sunlight and convert it into chemical energy through photosynthesis. This energy is then transferred to consumers (herbivores, carnivores, omnivores) as they feed on other organisms. Decomposers break down dead organic matter and return nutrients to the ecosystem.
+Nutrient Cycling: Ecosystems exhibit nutrient cycling, where essential elements and compounds, such as carbon, nitrogen, phosphorus, and water, are recycled and reused. Nutrients are absorbed by plants from the soil, transferred to consumers through the food chain, and eventually returned to the ecosystem through decomposition and nutrient release.
+Adaptation and Succession: Organisms within an ecosystem adapt to their environment over time. Ecosystems also undergo succession, which is the gradual change in species composition and structure over time, influenced by disturbances like fires, floods, or human activities. Succession can lead to the development of different stages or communities within an ecosystem.
+Ecosystems exist in various scales and types, ranging from small microcosms like a pond or a forest to large-scale ecosystems like a coral reef or a rainforest. They provide essential services to human societies, including the provision of food, clean air and water, climate regulation, soil formation, and biodiversity conservation.
+
+Understanding ecosystems and their dynamics is crucial for environmental management, conservation efforts, and sustainable development. It helps in assessing the impacts of human activities, promoting biodiversity conservation, managing natural resources, and mitigating environmental challenges such as climate change and habitat degradation.
+
+Source: https://chat.openai.com</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Ecosystem_service</IRI>
+        <Literal>The benefits that people obtain from ecosystems, and the direct and indirect contributions of ecosystems to human well-being.
+
+REFERENCES:
+- Millennium ecosystem assessment. Ecosystems and Human Well- Being: Synthesis. Island Press, Washington, DC.
+- The Economics of Ecosystems and Biodiversity: Ecological and Economic Foundation. Earthscan, London and Washington.
+- B. Grizzetti, D. Lanzanova, C. Liquete, A. Reynaud, A.C. Cardoso. Assessing water ecosystem services for water resource management. Environmental Science &amp; Policy, Volume 61, 2016, Pages 194-203, ISSN 1462-9011, https://doi.org/10.1016/j.envsci.2016.04.008.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Ecosystem_status</IRI>
+        <Literal>The concept of ecosystem status refers to the current condition, health, and state of an ecosystem. It provides an assessment of the overall well-being and functioning of the ecosystem, taking into account various ecological parameters, indicators, and measurements. The ecosystem status is determined by evaluating the status of its components, relationships, and ecological processes.
+
+Here are key aspects of the ecosystem status concept:
+
+Biodiversity: Biodiversity is a fundamental component of ecosystem status. It refers to the variety and abundance of different species, including plants, animals, and microorganisms, within the ecosystem. The diversity of species, their genetic variations, and the interactions between them contribute to the resilience, stability, and functionality of the ecosystem.
+Species Populations: The status of species populations within an ecosystem is an important indicator of ecosystem health. It involves monitoring population sizes, distribution patterns, reproductive rates, and survival rates of different species. Declining or endangered populations may indicate ecosystem degradation or imbalances.
+Habitat Quality: The quality and condition of habitats within the ecosystem significantly influence its status. Habitat quality refers to the availability of suitable and intact habitats that provide necessary resources, such as food, shelter, and breeding sites, for the species within the ecosystem. Assessing habitat fragmentation, degradation, loss, or restoration efforts is important for understanding ecosystem status.
+Ecological Processes: The functioning of ecological processes is indicative of ecosystem status. Processes like nutrient cycling, energy flow, pollination, predation, and decomposition contribute to the ecosystem&apos;s stability and productivity. Monitoring the rates and efficiency of these processes helps assess ecosystem functioning and any disruptions or imbalances.
+Environmental Indicators: Various environmental indicators can be used to evaluate ecosystem status. These indicators include water quality, air quality, soil health, temperature, pH levels, nutrient levels, toxin levels, and the presence of pollutants or contaminants. Deviations from desired or natural conditions can provide insights into the ecosystem&apos;s status and potential threats.
+Resilience and Adaptability: The ability of an ecosystem to withstand disturbances, adapt to changes, and recover from impacts is an important aspect of ecosystem status. Resilient ecosystems can maintain their structure, functions, and services even in the face of challenges like natural disasters, climate change, or human activities.
+Assessing the ecosystem status is essential for effective ecosystem management, conservation efforts, and sustainable development. It helps in identifying potential threats, understanding the impacts of human activities, setting conservation priorities, and implementing appropriate conservation and restoration measures. Regular monitoring of ecosystem status allows for early detection of changes and facilitates adaptive management strategies to ensure the long-term health and viability of the ecosystem.
+
+Source: https://chat.openai.com</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Envisaged_consequence</IRI>
+        <Literal>An estimated threat or opportunity.
+
+REFERENCE:
+- A. De Nicola, S. Giovinazzi, M. Guarascio, and M. L. Villani. Gamified Decision Making for a Participatory Post-Crisis Recovery: a Model Based Process. In Proceedings of the 30th European Safety and Reliability Conference - ESREL 2020 - Venice, Italy, 1st-6th November 2020, 2020.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Event</IRI>
+        <Literal xml:lang="en">An event is an occurrence of a particular set of circumstances (refers to ISO/IEC Guide 73).
+
+See:
+- CIPedia [https://websites.fraunhofer.de/CIPedia/index.php/Event] 
+-ENISA glossary [https://www.enisa.europa.eu/topics/risk-management/current-risk/risk-management-inventory/glossary]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Functional_vulnerability</IRI>
+        <Literal>The propensity of a system function to be adversely affected. This results from the balance between sensitivity and adaptive capacity. 
+
+REFERENCES:
+- Description adapted from Hazard concept as described by Mora et al. 2018: Mora, C., et al. (2018). Broad threat to humanity from cumulative climate hazards intensified by greenhouse gas emissions. Nature Climate Change, 1.
+- A. Coletti, A. De Nicola, A. Di Pietro, L. La Porta, M. Pollino, V. Rosato, G. Vicoli, and M. L. Villani. A Comprehensive System for Semantic Spatiotemporal Assessment of Risk in Urban Areas. Special Issue on &quot;Knowledge, Semantics and AI for Risk and Crisis Management&quot; of the Journal of Contingencies and Crisis Management - Wiley, 2020</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Hazard</IRI>
+        <Literal>Event or trend or their impacts (e.g., floods, droughts and sea level rise) with likely detrimental consequences to human systems.
+
+REFERENCES:
+- Description adapted from Hazard concept as described by Mora et al. 2018: Mora, C., et al. (2018). Broad threat to humanity from cumulative climate hazards intensified by greenhouse gas emissions. Nature Climate Change, 1.
+- A. Coletti, A. De Nicola, A. Di Pietro, L. La Porta, M. Pollino, V. Rosato, G. Vicoli, and M. L. Villani. A Comprehensive System for Semantic Spatiotemporal Assessment of Risk in Urban Areas. Special Issue on &quot;Knowledge, Semantics and AI for Risk and Crisis Management&quot; of the Journal of Contingencies and Crisis Management - Wiley, 2020</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Hazard_duration</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Hazard_intensity</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Hazard_location</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Hazard_time</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTimeStamp"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Human_service</IRI>
+        <Literal>An active entity providing a given resource in the form of human activities (e.g., fire brigades).
+
+REFERENCE:
+- A. De Nicola, A. Tofani, G. Vicoli, and M. L. Villani. An MDA-based Approach to Crisis and Emergency Management Modeling. International Journal On Advances in Intelligent Systems, 5(1 and 2):89–100, 2012.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Ility</IRI>
+        <Literal>The ilities are desired properties of systems, such as flexibility or maintainability (usually but not always ending in “ility”), that often manifest themselves after a system has been put to its initial use. These properties are not the primary functional requirements of a system’s performance, but typically concern wider system impacts with respect to time and stakeholders than are embodied in those primary functional requirements. The ilities do not include factors that are always present, including size and weight (even if these are described using a word that ends in “ility”).
+
+REFERENCE:
+de Weck, O. L., Roos, D., Magee, C. L., &amp; Vest, C. M. (2011). Life-cycle properties of engineering systems: the ilities.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Impact</IRI>
+        <Literal>The actual or potential effect of an hazard on a system.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Infrastructure</IRI>
+        <Literal>Physical, technological, and organizational structure a system.
+
+REFERENCE:
+A. Coletti, A. De Nicola, G. Vicoli, and M. L. Villani. Semantic Modeling of Cascading Risks in Interoperable Socio-technical Systems. In K. Popplewell, K.-D. Thoben, T. Knothe, and R. Poler, editors, Enterprise Interoperability VIII, Smart Services and Business Impact of Enterprise Interoperability, Proceedings of the I-ESA Conferences, pages 119–129, Cham, 2019. Springer International Publishing.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Institutional_framework</IRI>
+        <Literal>Institutional subjects responsible for a decision.
+
+REFERENCE:
+- A. De Nicola, S. Giovinazzi, M. Guarascio, and M. L. Villani. Gamified Decision Making for a Participatory Post-Crisis Recovery: a Model Based Process. In Proceedings of the 30th European Safety and Reliability Conference - ESREL 2020 - Venice, Italy, 1st-6th November 2020, 2020.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Internal_system_conditions</IRI>
+        <Literal>The concept of internal system conditions refers to the state, characteristics, and attributes of a system that exist within its boundaries or internal components. These conditions are specific to the system itself and are not influenced by external factors or interactions. Understanding the internal system conditions is essential for analyzing and managing the system&apos;s behavior, performance, and overall functioning.
+
+Here are some key aspects of internal system conditions:
+
+System Architecture: The internal system conditions include the architecture, structure, and organization of the system&apos;s components and their relationships. This encompasses the arrangement of modules, subsystems, layers, interfaces, and dependencies within the system. The architecture influences factors such as system scalability, modifiability, and maintainability.
+Data and Information: Internal system conditions involve the management and processing of data and information within the system. This includes the storage, retrieval, transformation, and manipulation of data to support system functions and operations. It encompasses considerations like data structures, databases, algorithms, data integrity, data flow, and data access mechanisms.
+Control and Logic: Internal system conditions encompass the control mechanisms, algorithms, decision-making processes, and logic that govern the system&apos;s behavior and operation. This includes how the system responds to inputs, executes tasks, and produces outputs. Control and logic determine the system&apos;s functionality, sequencing, error handling, and overall operational flow.
+Resources and Constraints: Internal system conditions involve the availability and management of system resources, such as memory, processing power, storage, and network bandwidth. It also considers any constraints or limitations imposed on the system&apos;s resources, such as maximum capacity, utilization thresholds, or performance boundaries. These factors impact the system&apos;s efficiency, responsiveness, and resource allocation strategies.
+Error Handling and Exception Handling: Internal system conditions encompass mechanisms and strategies for error detection, error recovery, exception handling, and fault tolerance. This includes error codes, error logging, error reporting, exception handling routines, redundancy mechanisms, and recovery procedures. Effective error handling ensures system reliability, robustness, and resilience.
+Performance Metrics: Internal system conditions involve the measurement and monitoring of system performance metrics within the system itself. These metrics can include response time, throughput, latency, resource utilization, queue length, or error rates. By monitoring and analyzing these metrics, system designers and operators can assess the system&apos;s efficiency, bottlenecks, and performance improvements.
+Understanding the internal system conditions is crucial for system design, development, testing, and maintenance. It helps in ensuring that the system operates as intended, meets performance expectations, and can be effectively managed and optimized. Internal system conditions are typically considered alongside external factors and interactions to get a comprehensive understanding of the system&apos;s behavior and performance.
+
+Source: https://chat.openai.com</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Logical_infrastructure</IRI>
+        <Literal>Logical infrastructure (e.g., software) of a system.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Managed_object</IRI>
+        <Literal>Any entity that is handled by a system, as water in case of water system or fuel in case of oil system.
+
+REFERENCE:
+A. Coletti, A. De Nicola, G. Vicoli, and M. L. Villani. Semantic Modeling of Cascading Risks in Interoperable Socio-technical Systems. In K. Popplewell, K.-D. Thoben, T. Knothe, and R. Poler, editors, Enterprise Interoperability VIII, Smart Services and Business Impact of Enterprise Interoperability, Proceedings of the I-ESA Conferences, pages 119–129, Cham, 2019. Springer International Publishing.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Mitigation</IRI>
+        <Literal xml:lang="en">Mitigation is the action to reduce any negative consequence of a particular event (refers to ISO/IEC Guide 73) by implementing security controls, taking assurance measures, avoiding the risk, or transferring the risk to another party.
+
+See: 
+- CIPedia [https://websites.fraunhofer.de/CIPedia/index.php/Mitigation]
+- EU EURAM project</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Need</IRI>
+        <Literal>A condition requiring supply or relief.
+
+REFERENCE:
+- Merriam-Webster (2020). Merriam-webster online dictionary. https://www.merriam-webster.com. Accessed: 2020-01-11.
+- A. De Nicola, S. Giovinazzi, M. Guarascio, and M. L. Villani. Gamified Decision Making for a Participatory Post-Crisis Recovery: a Model Based Process. In Proceedings of the 30th European Safety and Reliability Conference - ESREL 2020 - Venice, Italy, 1st-6th November 2020, 2020.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Operational_system_context</IRI>
+        <Literal>The concept of operational system context refers to the environment in which a particular operational system operates. It encompasses the various factors and conditions that surround and influence the system&apos;s functioning, performance, and interactions with other elements.
+
+In an operational system context, several aspects are taken into consideration, including:
+
+Stakeholders: The individuals, groups, or organizations that have an interest or involvement in the operational system. These stakeholders can include users, operators, managers, customers, suppliers, and regulatory bodies.
+External Interfaces: The interfaces through which the operational system interacts with external entities, such as other systems, networks, databases, or external devices. These interfaces allow data exchange, control, and communication between the operational system and its external environment.
+Constraints and Requirements: The constraints and requirements imposed on the operational system by its context. These can include technical, functional, performance, security, safety, legal, and regulatory constraints and requirements that the system must adhere to.
+Physical Environment: The physical surroundings in which the operational system operates. This includes considerations such as temperature, humidity, lighting, noise levels, vibration, and other environmental factors that may impact the system&apos;s performance or reliability.
+Organizational Context: The organizational structure, culture, policies, and processes that influence the operational system&apos;s development, deployment, operation, and maintenance. This includes factors such as decision-making processes, resource allocation, governance, and quality management practices.
+Operational Scenarios: The specific scenarios or situations in which the operational system is expected to function. This includes considering different operating conditions, usage patterns, workload variations, and potential disturbances or failures that may occur during the system&apos;s operation.
+By understanding the operational system context, stakeholders and system designers can identify and address the various factors that may impact the system&apos;s effectiveness, efficiency, and overall performance. This understanding helps in making informed decisions, designing appropriate solutions, and managing the system throughout its lifecycle.
+
+Source: https://chat.openai.com</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Operator</IRI>
+        <Literal>One that operates: such as one that operates a machine or device or one that operates a business.
+
+REFERENCE:
+- Merriam-Webster (2021). Merriam-webster online dictionary. https://www.merriam-webster.com. Accessed: 2021-10-18.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Organizational_infrastructure</IRI>
+        <Literal>Organizational structure of a system.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Physical_infrastructure</IRI>
+        <Literal>Physical structure of a system.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Recovery_Decision</IRI>
+        <Literal xml:lang="en">A determination arrived at after consideration aimed at rebuilding communities so that they can return to normal life and protect against future hazards.
+
+REFERENCES:
+- Merriam-Webster (2020). Merriam-webster online dictionary. https://www.merriam-webster.com. Accessed: 2020-01-11.
+- FEMA (2020). Phases of emergency management. https://www.hsdl.org/?view&amp;did=488295. Accessed: 2020-01-11.
+- A. De Nicola, S. Giovinazzi, M. Guarascio, and M. L. Villani. Gamified Decision Making for a Participatory Post-Crisis Recovery: a Model Based Process. In Proceedings of the 30th European Safety and Reliability Conference - ESREL 2020 - Venice, Italy, 1st-6th November 2020, 2020.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Resource</IRI>
+        <Literal>It represents the passive entity processed (i.e., produced, provided, transported) by either a service entity or a human service entity. It can be either material (e.g., water) or immaterial (e.g., fire brigades activity). It can be input to either another service entity or a communication service entity or a human service entity or a user entity. It can contribute significantly to user’s wellness level.
+
+REFERENCE:
+- A. De Nicola, A. Tofani, G. Vicoli, and M. L. Villani. An MDA-based Approach to Crisis and Emergency Management Modeling. International Journal On Advances in Intelligent Systems, 5(1 and 2):89–100, 2012.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Service_request</IRI>
+        <Literal>A service request is a formal or informal communication made by an individual or an organization to request assistance or support from a service provider. It is a way for customers or clients to communicate their needs or issues to the service provider and seek resolution or action.
+Service requests can encompass a wide range of activities, such as:
+- Maintenance or Repair: Requesting repairs or maintenance for a product, equipment, or infrastructure.
+- Technical Support: Seeking assistance with troubleshooting, resolving software or hardware issues, or getting guidance on using a product or service.
+- Information or Documentation: Requesting specific information, documents, or records from a service provider.
+- Account Management: Requesting changes or updates to an account, such as billing details, subscription modifications, or account closure.
+Installation or Setup: Seeking assistance in setting up or installing a product or service.
+- Change or Upgrade: Requesting changes to an existing service or product, such as upgrading a subscription or requesting additional features.
+- Complaints or Feedback: Communicating grievances, complaints, or feedback regarding a product, service, or experience.
+Service requests are typically made through various channels, including phone calls, emails, online forms, customer portals, or dedicated service request management systems. Service providers often have established processes and workflows to handle and track service requests efficiently, ensuring timely responses and appropriate actions to meet customer needs.
+
+[Source: https://chat.openai.com]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Severity_of_hazard</IRI>
+        <Literal>A property of an hazard characterizing it.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Sharp-end_operator</IRI>
+        <Literal xml:lang="en">The operator that is proximal to the process.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Stakeholder</IRI>
+        <Literal>A person or organization that is interested in a system or its subsystems.
+
+REFERENCE:
+- A. Coletti, A. De Nicola, A. Di Pietro, L. La Porta, M. Pollino, V. Rosato, G. Vicoli, and M. L. Villani. A Comprehensive System for Semantic Spatiotemporal Assessment of Risk in Urban Areas. Special Issue on &quot;Knowledge, Semantics and AI for Risk and Crisis Management&quot; of the Journal of Contingencies and Crisis Management - Wiley, 2020</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Structural_vulnerability</IRI>
+        <Literal>The concept of structural vulnerability refers to the susceptibility of a system or structure to damage, failure, or disruption due to inherent weaknesses in its design, construction, or composition. It relates to the potential for a system to be compromised or unable to perform its intended functions when subjected to stress, external forces, or adverse conditions.
+
+Here are key aspects of the structural vulnerability concept:
+
+Design Weaknesses: Structural vulnerability can arise from design flaws or weaknesses in the system. These weaknesses may include inadequate structural integrity, poor load-bearing capacity, insufficient reinforcement, or lack of redundancy. Design flaws increase the risk of failure and compromise the system&apos;s ability to withstand stress or external pressures.
+Material Limitations: The choice of materials used in constructing a structure or system can significantly impact its vulnerability. If materials lack durability, strength, or resistance to environmental factors such as corrosion, erosion, or extreme temperatures, they can weaken the structure and make it more susceptible to damage or failure.
+Aging and Deterioration: Over time, structures can experience wear and tear, aging, and deterioration. This can be due to factors such as fatigue, degradation of materials, exposure to harsh conditions, or inadequate maintenance. As a structure ages or deteriorates, its vulnerability increases, and it becomes more prone to failure or reduced performance.
+Environmental Factors: The vulnerability of a structure can be influenced by environmental factors, such as seismic activity, extreme weather events (storms, floods), high winds, or temperature fluctuations. Structures located in areas prone to these hazards need to be designed and built to withstand and mitigate the associated risks.
+Operational Conditions: Structural vulnerability can also be influenced by the operational conditions and stresses imposed on the system during its normal functioning. Overloading, improper use, excessive vibrations, or frequent operational cycles beyond design specifications can weaken the structure and increase its vulnerability.
+Interdependencies: Structural vulnerability can extend beyond the individual system to the interdependencies it has with other systems or infrastructure. If a structure is dependent on other systems or relies on external resources, the failure or disruption of those systems can affect its overall functioning and compromise its resilience.
+Understanding and addressing structural vulnerability is essential for ensuring the safety, reliability, and resilience of systems and structures. It involves conducting risk assessments, implementing appropriate design standards and practices, conducting regular inspections and maintenance, and considering factors like load capacities, material properties, and environmental conditions during the design and construction phases. By identifying and mitigating vulnerabilities, the integrity and performance of structures can be enhanced, reducing the risk of damage, failures, and their potential consequences.
+
+Source: https://chat.openai.com</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#System</IRI>
+        <Literal>A regularly interacting or interdependent group of items forming a unified whole, such as a group of devices or artificial objects or an organization forming a network especially for distributing something or serving a common purpose.
+
+Reference:
+https://www.merriam-webster.com/dictionary/system</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#System_aspect</IRI>
+        <Literal>A perspective that can be used to view a system.
+System aspects are: system service, system operation, asset, commons, infrastructure, managed object, and ecosystem service.
+
+REFERENCE:
+- A. Coletti, A. De Nicola, G. Vicoli, and M. L. Villani. Semantic Modeling of Cascading Risks in Interoperable Socio-technical Systems. In K. Popplewell, K.-D. Thoben, T. Knothe, and R. Poler, editors, Enterprise Interoperability VIII, Smart Services and Business Impact of Enterprise Interoperability, Proceedings of the I-ESA Conferences, pages 119–129, Cham, 2019. Springer International Publishing.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#System_external_service</IRI>
+        <Literal>Service provided by a system.
+
+REFERENCE:
+- A. Coletti, A. De Nicola, A. Di Pietro, L. La Porta, M. Pollino, V. Rosato, G. Vicoli, and M. L. Villani. A Comprehensive System for Semantic Spatiotemporal Assessment of Risk in Urban Areas. Special Issue on &quot;Knowledge, Semantics and AI for Risk and Crisis Management&quot; of the Journal of Contingencies and Crisis Management - Wiley, 2020</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#System_internal_operation</IRI>
+        <Literal>Internal activities performed in system and that are required preconditions to deliver services.
+
+REFERENCE:
+A. Coletti, A. De Nicola, G. Vicoli, and M. L. Villani. Semantic Modeling of Cascading Risks in Interoperable Socio-technical Systems. In K. Popplewell, K.-D. Thoben, T. Knothe, and R. Poler, editors, Enterprise Interoperability VIII, Smart Services and Business Impact of Enterprise Interoperability, Proceedings of the I-ESA Conferences, pages 119–129, Cham, 2019. Springer International Publishing.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#System_property</IRI>
+        <Literal>The system property concept refers to the fundamental characteristics or attributes that describe and define a system. These properties help in understanding the behavior, functionality, and performance of a system and play a crucial role in its design, analysis, and evaluation. System properties provide valuable insights into how the system operates and interacts with its environment.
+
+Here are some commonly considered system properties:
+
+Functionality: Functionality refers to the intended purpose or the set of tasks and operations that a system is designed to perform. It describes the system&apos;s capabilities, features, and the expected outcomes or outputs. The functionality of a system is typically defined based on user requirements and can range from simple tasks to complex operations.
+Reliability: Reliability relates to the system&apos;s ability to consistently perform its intended functions over a specified period and under specific conditions. It indicates the system&apos;s dependability, trustworthiness, and the likelihood of failure. Reliability is often expressed in terms of metrics like Mean Time Between Failures (MTBF) or Probability of Failure (PoF).
+Availability: Availability refers to the system&apos;s readiness for operation and its ability to be accessed and used when needed. It measures the amount of time a system is available and functioning correctly, considering factors like scheduled maintenance, downtime due to failures, and recovery time.
+Performance: Performance describes how well a system executes its functions, typically measured in terms of speed, efficiency, throughput, response time, or resource utilization. Performance metrics are used to evaluate and optimize the system&apos;s efficiency, effectiveness, and user experience.
+Scalability: Scalability refers to the system&apos;s ability to handle increasing workload or accommodate changes in demand or system size. A scalable system can adapt and expand its resources, capacity, or processing capabilities to meet growing requirements without significant degradation in performance or functionality.
+Security: Security focuses on protecting the system and its resources from unauthorized access, misuse, threats, and vulnerabilities. It includes measures to ensure data confidentiality, integrity, availability, authentication, and authorization. Security is crucial for maintaining the system&apos;s reliability, privacy, and protection against cyber-attacks.
+Maintainability: Maintainability relates to the ease with which a system can be maintained, repaired, updated, or modified throughout its lifecycle. It considers factors such as modularity, documentation, error detection and recovery mechanisms, code readability, and the availability of tools or resources for maintenance.
+Interoperability: Interoperability refers to the system&apos;s ability to interact, exchange information, and work seamlessly with other systems or components, regardless of differences in platforms, technologies, or protocols. Interoperability enables system integration, data sharing, and collaboration within a larger ecosystem.
+System properties provide a basis for assessing and comparing different systems, understanding trade-offs, and guiding design decisions. They help in setting system requirements, validating system performance, and ensuring that the system meets the desired objectives and expectations of its users and stakeholders.
+
+Source: https://chat.openai.com</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#System_risk</IRI>
+        <Literal>Given one or more system vulnerabilities, a system risk is a situation due to one or more threats posed by one or more hazards that could cause an impact to a system for some stakeholders.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Target</IRI>
+        <Literal>The desired state of the affairs to be achieved by means of a decision.
+
+REFERENCE:
+- A. De Nicola, S. Giovinazzi, M. Guarascio, and M. L. Villani. Gamified Decision Making for a Participatory Post-Crisis Recovery: a Model Based Process. In Proceedings of the 30th European Safety and Reliability Conference - ESREL 2020 - Venice, Italy, 1st-6th November 2020, 2020.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Target_group</IRI>
+        <Literal>- A person, group or organization that derives advantage from a decision.
+
+REFERENCE:
+- A. De Nicola, S. Giovinazzi, M. Guarascio, and M. L. Villani. Gamified Decision Making for a Participatory Post-Crisis Recovery: a Model Based Process. In Proceedings of the 30th European Safety and Reliability Conference - ESREL 2020 - Venice, Italy, 1st-6th November 2020, 2020.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Threat</IRI>
+        <Literal>Something dangerous for a system.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#User</IRI>
+        <Literal>It represents the entity using or consuming a resource entity (e.g., hospital). It is characterized by a wellness level.
+
+REFERENCE:
+- A. De Nicola, A. Tofani, G. Vicoli, and M. L. Villani. An MDA-based Approach to Crisis and Emergency Management Modeling. International Journal On Advances in Intelligent Systems, 5(1 and 2):89–100, 2012.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Value</IRI>
+        <Literal>The concept of value refers to the worth, significance, or importance that is attributed to something, whether tangible or intangible. Value can be subjective and can vary from person to person, as it is influenced by individual preferences, needs, perceptions, and cultural factors. Value is often associated with the benefits, usefulness, or satisfaction that a person derives from possessing or experiencing something.
+
+Here are key aspects of the concept of value:
+
+Utility: Value is often tied to the utility or usefulness of something in fulfilling a particular purpose or meeting a need. For example, a tool that helps accomplish a task more efficiently or a product that satisfies a specific requirement is considered valuable because of the utility it provides.
+Economic Value: Economic value refers to the worth or exchange value of a product, service, or resource in terms of its price or market demand. Economic value is influenced by factors such as scarcity, supply and demand dynamics, market conditions, and perceived benefits or advantages compared to alternative options.
+Emotional Value: Value can also be tied to emotional or psychological factors. Something may be valued because it evokes positive emotions, such as joy, happiness, nostalgia, or a sense of belonging. Emotional value is often associated with personal attachments, sentimental value, or experiences that bring pleasure or emotional satisfaction.
+Social Value: Value can extend beyond the individual and have social dimensions. Social value refers to the impact or contribution that something makes to society or a community. It can include factors such as environmental sustainability, social responsibility, ethical considerations, or cultural significance.
+Perceived Value: Perceived value is the subjective assessment or judgment that individuals make about the worth of something. It is based on their perceptions, expectations, beliefs, and personal preferences. Perceived value can be influenced by factors like brand reputation, quality, features, convenience, aesthetics, and the overall experience associated with a product or service.
+Exchange Value: Exchange value refers to the value assigned to something in the context of trade or exchange. It is determined by the negotiation or agreement between parties involved in a transaction. Exchange value can be influenced by factors like market conditions, bargaining power, scarcity, and the perceived value of the item in question.
+Value is a multifaceted concept that can encompass various dimensions, including economic, emotional, social, and perceived aspects. It is influenced by individual perspectives, societal norms, cultural context, and the specific circumstances in which something is evaluated. Understanding and delivering value is often a central objective in areas such as marketing, business strategy, product development, and customer satisfaction.
+
+Source: https://chat.openai.com</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Vulnerability</IRI>
+        <Literal>The propensity of a system function to be adversely affected.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#hasRisk</IRI>
+        <Literal>A relationship holding between a system aspect and a system risk.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#involves</IRI>
+        <Literal>The relationship holding between an envisaged consequence of a decision and a person, group or organization that has an interest or a concern in it.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#isInterdependentWith</IRI>
+        <Literal>Interdependencies can be cyber, geographic, logical, and physical.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#measuresHazard</IRI>
+        <Literal>A relationship holding between severity of hazard and hazard.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#poses</IRI>
+        <Literal>A relationship holding between an hazard and threat.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#providesAViewOf</IRI>
+        <Literal>A relationship holding between a stakeholder and a system risk.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#takesDecision</IRI>
+        <Literal>The relationship holding between an institutional framework and a decision.</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+
