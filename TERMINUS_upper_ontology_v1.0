@@ -1672,7 +1672,7 @@ REFERENCES:
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
         <IRI>#Hazard_intensity</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float"></Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#Literal"></Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
