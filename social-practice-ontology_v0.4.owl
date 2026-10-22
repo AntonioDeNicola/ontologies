@@ -1,0 +1,1721 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://www.enea.it/social-practice-ontology_v0.4#"
+     xml:base="https://www.enea.it/social-practice-ontology_v0.4"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:dcterms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="https://www.enea.it/social-practice-ontology_v0.4">
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/bfo/2019-08-26/bfo.owl"/>
+        <dcterms:description xml:lang="en">An OWL ontology for representing social practices through linked configurations of meanings, competences, and materials, with contextualised assertions and evidence.</dcterms:description>
+        <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-07-28</dcterms:issued>
+        <dcterms:source rdf:resource="https://doi.org/10.4135/9781446250655"/>
+        <dcterms:source rdf:resource="https://esco.ec.europa.eu/en/use-esco/download"/>
+        <dcterms:source rdf:resource="https://www.w3.org/TR/skos-reference/"/>
+        <dcterms:title xml:lang="en">Social Practice Ontology</dcterms:title>
+        <owl:versionInfo>1.0.0</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/issued -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/source -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/source"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#minCardinality -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#minCardinality"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#definition -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#definition"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#example -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#example"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://www.enea.it/social-practice-ontology_v0.4#asserts -->
+
+    <owl:ObjectProperty rdf:about="https://www.enea.it/social-practice-ontology_v0.4#asserts">
+        <rdfs:domain rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#meaning_assertion"/>
+        <rdfs:range rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#meaning"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.enea.it/social-practice-ontology_v0.4#concernsPractice -->
+
+    <owl:ObjectProperty rdf:about="https://www.enea.it/social-practice-ontology_v0.4#concernsPractice">
+        <rdfs:domain rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#social_practice_element_assertion"/>
+        <rdfs:range rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#social_practice"/>
+        <rdfs:label xml:lang="en">concerns_practice</rdfs:label>
+        <skos:definition xml:lang="en">Links a practice element assertion to the social practice it concerns.</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.enea.it/social-practice-ontology_v0.4#hasCompetenceRole -->
+
+    <owl:ObjectProperty rdf:about="https://www.enea.it/social-practice-ontology_v0.4#hasCompetenceRole">
+        <rdfs:domain rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#competence_assertion"/>
+        <rdfs:range rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#competence_role"/>
+        <rdfs:label xml:lang="en">has_competence_role</rdfs:label>
+        <skos:definition xml:lang="en">Specifies the role or importance of an ESCO competence in a practice.</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.enea.it/social-practice-ontology_v0.4#hasMaterialRole -->
+
+    <owl:ObjectProperty rdf:about="https://www.enea.it/social-practice-ontology_v0.4#hasMaterialRole">
+        <rdfs:domain rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#material_assertion"/>
+        <rdfs:range rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#material_role"/>
+        <rdfs:label xml:lang="en">has_material_role</rdfs:label>
+        <skos:definition xml:lang="en">Specifies the contextual role performed by a material in a practice.</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.enea.it/social-practice-ontology_v0.4#hasMeaningContent -->
+
+    <owl:ObjectProperty rdf:about="https://www.enea.it/social-practice-ontology_v0.4#hasMeaningContent">
+        <rdfs:domain rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#meaning"/>
+        <rdfs:range rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#meaning_content"/>
+        <rdfs:label xml:lang="en">has_meaning_content</rdfs:label>
+        <skos:definition xml:lang="en">Links a meaning to one or more thematic or experiential contents.</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.enea.it/social-practice-ontology_v0.4#hasMeaningType -->
+
+    <owl:ObjectProperty rdf:about="https://www.enea.it/social-practice-ontology_v0.4#hasMeaningType">
+        <rdfs:domain rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#meaning"/>
+        <rdfs:range rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#meaning_type"/>
+        <rdfs:label xml:lang="en">has_meaning_type</rdfs:label>
+        <skos:definition xml:lang="en">Links a meaning to one or more semantic-function categories.</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.enea.it/social-practice-ontology_v0.4#hasRequiredLevel -->
+
+    <owl:ObjectProperty rdf:about="https://www.enea.it/social-practice-ontology_v0.4#hasRequiredLevel">
+        <rdfs:domain rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#competence_assertion"/>
+        <rdfs:range rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#competence_level"/>
+        <rdfs:label xml:lang="en">has required level</rdfs:label>
+        <skos:definition xml:lang="en">Specifies the proficiency level required for the competence in the practice.</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.enea.it/social-practice-ontology_v0.4#has_necessity_level -->
+
+    <owl:ObjectProperty rdf:about="https://www.enea.it/social-practice-ontology_v0.4#has_necessity_level">
+        <rdfs:domain rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#material_assertion"/>
+        <rdfs:range rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#necessity_level"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.enea.it/social-practice-ontology_v0.4#has_social_practice_element_assertion -->
+
+    <owl:ObjectProperty rdf:about="https://www.enea.it/social-practice-ontology_v0.4#has_social_practice_element_assertion">
+        <rdfs:domain rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#social_practice"/>
+        <rdfs:range rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#social_practice_element_assertion"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.enea.it/social-practice-ontology_v0.4#isExtractedFrom -->
+
+    <owl:ObjectProperty rdf:about="https://www.enea.it/social-practice-ontology_v0.4#isExtractedFrom">
+        <rdfs:domain rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#evidence"/>
+        <rdfs:range rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#source"/>
+        <rdfs:label xml:lang="en">is_extracted_from</rdfs:label>
+        <skos:definition xml:lang="en">Links evidence to the source from which it was extracted.</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.enea.it/social-practice-ontology_v0.4#isHeldBy -->
+
+    <owl:ObjectProperty rdf:about="https://www.enea.it/social-practice-ontology_v0.4#isHeldBy">
+        <rdfs:domain rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#meaning_assertion"/>
+        <rdfs:range rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#meaning_holder"/>
+        <rdfs:label xml:lang="en">is_held_by</rdfs:label>
+        <skos:definition xml:lang="en">Links a meaning assertion to the person or collective to which it is attributed.</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.enea.it/social-practice-ontology_v0.4#isObservedAtTime -->
+
+    <owl:ObjectProperty rdf:about="https://www.enea.it/social-practice-ontology_v0.4#isObservedAtTime">
+        <rdfs:domain rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#evidence"/>
+        <rdfs:range rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#temporal_entity"/>
+        <rdfs:label xml:lang="en">is_observed_at_time</rdfs:label>
+        <skos:definition xml:lang="en">Specifies when evidence was observed or collected.</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.enea.it/social-practice-ontology_v0.4#isObservedIn -->
+
+    <owl:ObjectProperty rdf:about="https://www.enea.it/social-practice-ontology_v0.4#isObservedIn">
+        <rdfs:domain rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#evidence"/>
+        <rdfs:range rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#place"/>
+        <rdfs:label xml:lang="en">is_observed_in</rdfs:label>
+        <skos:definition xml:lang="en">Specifies the place where evidence was observed or collected.</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.enea.it/social-practice-ontology_v0.4#isValidDuring -->
+
+    <owl:ObjectProperty rdf:about="https://www.enea.it/social-practice-ontology_v0.4#isValidDuring">
+        <rdfs:domain rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#meaning_assertion"/>
+        <rdfs:range rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#time_interval"/>
+        <rdfs:label xml:lang="en">is_valid_during</rdfs:label>
+        <skos:definition xml:lang="en">Specifies the temporal interval during which a meaning assertion is valid.</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.enea.it/social-practice-ontology_v0.4#isValidInContext -->
+
+    <owl:ObjectProperty rdf:about="https://www.enea.it/social-practice-ontology_v0.4#isValidInContext">
+        <rdfs:domain rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#social_practice_element_assertion"/>
+        <rdfs:range rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#context"/>
+        <rdfs:label xml:lang="en">is_valid_in_context</rdfs:label>
+        <skos:definition xml:lang="en">Specifies the context in which a practice element assertion is valid or relevant.</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.enea.it/social-practice-ontology_v0.4#isValidInPlace -->
+
+    <owl:ObjectProperty rdf:about="https://www.enea.it/social-practice-ontology_v0.4#isValidInPlace">
+        <rdfs:domain rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#meaning_assertion"/>
+        <rdfs:range rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#place"/>
+        <rdfs:label xml:lang="en">is_valid_in_place</rdfs:label>
+        <skos:definition xml:lang="en">Specifies the spatial scope in which a meaning assertion is valid.</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.enea.it/social-practice-ontology_v0.4#is_classified_by_ESCO_concept -->
+
+    <owl:ObjectProperty rdf:about="https://www.enea.it/social-practice-ontology_v0.4#is_classified_by_ESCO_concept">
+        <rdfs:domain rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#competence"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.enea.it/social-practice-ontology_v0.4#is_supported_by_evidence -->
+
+    <owl:ObjectProperty rdf:about="https://www.enea.it/social-practice-ontology_v0.4#is_supported_by_evidence">
+        <rdfs:domain rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#social_practice_element_assertion"/>
+        <rdfs:range rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#evidence"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.enea.it/social-practice-ontology_v0.4#realizes_social_practice -->
+
+    <owl:ObjectProperty rdf:about="https://www.enea.it/social-practice-ontology_v0.4#realizes_social_practice">
+        <rdfs:domain rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#practice_performance"/>
+        <rdfs:range rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#social_practice"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.enea.it/social-practice-ontology_v0.4#refersToMaterial -->
+
+    <owl:ObjectProperty rdf:about="https://www.enea.it/social-practice-ontology_v0.4#refersToMaterial">
+        <rdfs:domain rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#material_assertion"/>
+        <rdfs:range rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#material"/>
+        <rdfs:label xml:lang="en">refers to material</rdfs:label>
+        <skos:definition xml:lang="en">Links a material assertion to the material element it concerns.</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.enea.it/social-practice-ontology_v0.4#refers_to_competence -->
+
+    <owl:ObjectProperty rdf:about="https://www.enea.it/social-practice-ontology_v0.4#refers_to_competence">
+        <rdfs:domain rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#competence_assertion"/>
+        <rdfs:range rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#competence"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://www.enea.it/social-practice-ontology_v0.4#hasCanonicalExpression -->
+
+    <owl:DatatypeProperty rdf:about="https://www.enea.it/social-practice-ontology_v0.4#hasCanonicalExpression">
+        <rdfs:domain rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#meaning"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
+        <rdfs:label xml:lang="en">has canonical expression</rdfs:label>
+        <skos:definition xml:lang="en">Provides a normalized natural-language formulation of a meaning.</skos:definition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://www.enea.it/social-practice-ontology_v0.4#hasExcerpt -->
+
+    <owl:DatatypeProperty rdf:about="https://www.enea.it/social-practice-ontology_v0.4#hasExcerpt">
+        <rdfs:domain rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#evidence"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
+        <rdfs:label xml:lang="en">has excerpt</rdfs:label>
+        <skos:definition xml:lang="en">Provides a textual excerpt constituting or illustrating evidence.</skos:definition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#Concept -->
+
+    <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
+    
+
+
+    <!-- https://www.enea.it/social-practice-ontology_v0.4#ActivationExperienceMeaning -->
+
+    <owl:Class rdf:about="https://www.enea.it/social-practice-ontology_v0.4#ActivationExperienceMeaning">
+        <rdfs:subClassOf rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#felt_experience_meaning"/>
+        <rdfs:label xml:lang="en">activation experience meaning</rdfs:label>
+        <skos:definition xml:lang="en">A felt experience meaning concerning arousal, relaxation, tension, or excitement.</skos:definition>
+        <skos:example xml:lang="en">A concert produces excitement and high activation.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://www.enea.it/social-practice-ontology_v0.4#AestheticEvaluation -->
+
+    <owl:Class rdf:about="https://www.enea.it/social-practice-ontology_v0.4#AestheticEvaluation">
+        <rdfs:subClassOf rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#evaluation_meaning"/>
+        <rdfs:label xml:lang="en">aesthetic evaluation</rdfs:label>
+        <skos:definition xml:lang="en">An evaluation concerning beauty, style, harmony, elegance, or sensory form.</skos:definition>
+        <skos:example xml:lang="en">The redesigned station is judged visually attractive.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://www.enea.it/social-practice-ontology_v0.4#BelongingMeaning -->
+
+    <owl:Class rdf:about="https://www.enea.it/social-practice-ontology_v0.4#BelongingMeaning">
+        <rdfs:subClassOf rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#IdentityRelationMeaning"/>
+        <rdfs:label xml:lang="en">belonging meaning</rdfs:label>
+        <skos:definition xml:lang="en">An identity relation meaning expressing affiliation or membership.</skos:definition>
+        <skos:example xml:lang="en">Singing club songs expresses belonging to the club.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://www.enea.it/social-practice-ontology_v0.4#CollectiveIdentityMeaning -->
+
+    <owl:Class rdf:about="https://www.enea.it/social-practice-ontology_v0.4#CollectiveIdentityMeaning">
+        <rdfs:subClassOf rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#IdentityReferenceMeaning"/>
+        <rdfs:label xml:lang="en">collective identity meaning</rdfs:label>
+        <skos:definition xml:lang="en">An identity reference meaning concerning a shared group identity.</skos:definition>
+        <skos:example xml:lang="en">A community festival expresses local collective identity.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://www.enea.it/social-practice-ontology_v0.4#DistinctionMeaning -->
+
+    <owl:Class rdf:about="https://www.enea.it/social-practice-ontology_v0.4#DistinctionMeaning">
+        <rdfs:subClassOf rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#IdentityRelationMeaning"/>
+        <rdfs:label xml:lang="en">distinction meaning</rdfs:label>
+        <skos:definition xml:lang="en">An identity relation meaning expressing differentiation from other people or groups.</skos:definition>
+        <skos:example xml:lang="en">Choosing artisanal food distinguishes a consumer from mass-market shoppers.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://www.enea.it/social-practice-ontology_v0.4#EconomicEvaluation -->
+
+    <owl:Class rdf:about="https://www.enea.it/social-practice-ontology_v0.4#EconomicEvaluation">
+        <rdfs:subClassOf rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#evaluation_meaning"/>
+        <rdfs:label xml:lang="en">economic evaluation</rdfs:label>
+        <skos:definition xml:lang="en">An evaluation concerning cost, affordability, economic viability, or use of financial resources.</skos:definition>
+        <skos:example xml:lang="en">The repair is evaluated as more economical than replacement.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://www.enea.it/social-practice-ontology_v0.4#EnvironmentalEvaluation -->
+
+    <owl:Class rdf:about="https://www.enea.it/social-practice-ontology_v0.4#EnvironmentalEvaluation">
+        <rdfs:subClassOf rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#evaluation_meaning"/>
+        <rdfs:label xml:lang="en">environmental evaluation</rdfs:label>
+        <skos:definition xml:lang="en">An evaluation concerning environmental effects, ecological responsibility, or resource impacts.</skos:definition>
+        <skos:example xml:lang="en">Cycling is evaluated as having low environmental impact.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://www.enea.it/social-practice-ontology_v0.4#ExertionExperienceMeaning -->
+
+    <owl:Class rdf:about="https://www.enea.it/social-practice-ontology_v0.4#ExertionExperienceMeaning">
+        <rdfs:subClassOf rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#felt_experience_meaning"/>
+        <rdfs:label xml:lang="en">exertion experience meaning</rdfs:label>
+        <skos:definition xml:lang="en">A felt experience meaning concerning effort, strain, or fatigue.</skos:definition>
+        <skos:example xml:lang="en">Climbing stairs produces physical effort.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://www.enea.it/social-practice-ontology_v0.4#HedonicExperienceMeaning -->
+
+    <owl:Class rdf:about="https://www.enea.it/social-practice-ontology_v0.4#HedonicExperienceMeaning">
+        <rdfs:subClassOf rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#felt_experience_meaning"/>
+        <rdfs:label xml:lang="en">hedonic experience meaning</rdfs:label>
+        <skos:definition xml:lang="en">A felt experience meaning concerning comfort, discomfort, pleasure, or displeasure.</skos:definition>
+        <skos:example xml:lang="en">A soft seat contributes to comfort during travel.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://www.enea.it/social-practice-ontology_v0.4#IdentityReferenceMeaning -->
+
+    <owl:Class rdf:about="https://www.enea.it/social-practice-ontology_v0.4#IdentityReferenceMeaning">
+        <rdfs:subClassOf rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#identity_meaning"/>
+        <rdfs:label xml:lang="en">identity reference meaning</rdfs:label>
+        <skos:definition xml:lang="en">An identity meaning referring to the kind of person, group, role, or status associated with a practice.</skos:definition>
+        <skos:example xml:lang="en">Wearing professional clothing refers to a professional identity.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://www.enea.it/social-practice-ontology_v0.4#IdentityRelationMeaning -->
+
+    <owl:Class rdf:about="https://www.enea.it/social-practice-ontology_v0.4#IdentityRelationMeaning">
+        <rdfs:subClassOf rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#identity_meaning"/>
+        <rdfs:label xml:lang="en">identity relation meaning</rdfs:label>
+        <skos:definition xml:lang="en">An identity meaning that positions a person or group in relation to others.</skos:definition>
+        <skos:example xml:lang="en">A dress code marks who belongs and who is distinct.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://www.enea.it/social-practice-ontology_v0.4#MoralEvaluation -->
+
+    <owl:Class rdf:about="https://www.enea.it/social-practice-ontology_v0.4#MoralEvaluation">
+        <rdfs:subClassOf rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#evaluation_meaning"/>
+        <rdfs:label xml:lang="en">moral evaluation</rdfs:label>
+        <skos:definition xml:lang="en">An evaluation concerning rightness, wrongness, responsibility, fairness, or harm.</skos:definition>
+        <skos:example xml:lang="en">Food waste is judged irresponsible.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://www.enea.it/social-practice-ontology_v0.4#PersonalIdentityMeaning -->
+
+    <owl:Class rdf:about="https://www.enea.it/social-practice-ontology_v0.4#PersonalIdentityMeaning">
+        <rdfs:subClassOf rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#IdentityReferenceMeaning"/>
+        <rdfs:label xml:lang="en">personal identity meaning</rdfs:label>
+        <skos:definition xml:lang="en">An identity reference meaning concerning an individual&apos;s self-understanding.</skos:definition>
+        <skos:example xml:lang="en">Running supports the self-image of being disciplined.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://www.enea.it/social-practice-ontology_v0.4#PracticalEvaluation -->
+
+    <owl:Class rdf:about="https://www.enea.it/social-practice-ontology_v0.4#PracticalEvaluation">
+        <rdfs:subClassOf rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#evaluation_meaning"/>
+        <rdfs:label xml:lang="en">practical evaluation</rdfs:label>
+        <skos:definition xml:lang="en">An evaluation concerning usefulness, feasibility, effectiveness, convenience, or functional quality.</skos:definition>
+        <skos:example xml:lang="en">The route is evaluated as convenient for commuting.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://www.enea.it/social-practice-ontology_v0.4#PrincipleMeaning -->
+
+    <owl:Class rdf:about="https://www.enea.it/social-practice-ontology_v0.4#PrincipleMeaning">
+        <rdfs:subClassOf rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#value_based_meaning"/>
+        <rdfs:label xml:lang="en">principle meaning</rdfs:label>
+        <skos:definition xml:lang="en">A value-based meaning expressing a general criterion that guides judgment or action.</skos:definition>
+        <skos:example xml:lang="en">Safety takes priority over speed.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://www.enea.it/social-practice-ontology_v0.4#RoleIdentityMeaning -->
+
+    <owl:Class rdf:about="https://www.enea.it/social-practice-ontology_v0.4#RoleIdentityMeaning">
+        <rdfs:subClassOf rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#IdentityReferenceMeaning"/>
+        <rdfs:label xml:lang="en">role identity meaning</rdfs:label>
+        <skos:definition xml:lang="en">An identity reference meaning associated with a recognized social role.</skos:definition>
+        <skos:example xml:lang="en">Preparing school lunches expresses a parental role identity.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://www.enea.it/social-practice-ontology_v0.4#SocialEvaluation -->
+
+    <owl:Class rdf:about="https://www.enea.it/social-practice-ontology_v0.4#SocialEvaluation">
+        <rdfs:subClassOf rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#evaluation_meaning"/>
+        <rdfs:label xml:lang="en">social evaluation</rdfs:label>
+        <skos:definition xml:lang="en">An evaluation concerning social acceptance, inclusion, cohesion, or relational consequences.</skos:definition>
+        <skos:example xml:lang="en">The event is evaluated as socially inclusive.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://www.enea.it/social-practice-ontology_v0.4#StatusEvaluation -->
+
+    <owl:Class rdf:about="https://www.enea.it/social-practice-ontology_v0.4#StatusEvaluation">
+        <rdfs:subClassOf rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#evaluation_meaning"/>
+        <rdfs:label xml:lang="en">status evaluation</rdfs:label>
+        <skos:definition xml:lang="en">An evaluation concerning prestige, ordinariness, stigma, or social standing.</skos:definition>
+        <skos:example xml:lang="en">A particular brand is evaluated as prestigious.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://www.enea.it/social-practice-ontology_v0.4#StatusIdentityMeaning -->
+
+    <owl:Class rdf:about="https://www.enea.it/social-practice-ontology_v0.4#StatusIdentityMeaning">
+        <rdfs:subClassOf rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#IdentityReferenceMeaning"/>
+        <rdfs:label xml:lang="en">status identity meaning</rdfs:label>
+        <skos:definition xml:lang="en">An identity reference meaning associated with social rank, prestige, or standing.</skos:definition>
+        <skos:example xml:lang="en">Driving a luxury vehicle expresses high-status identity.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://www.enea.it/social-practice-ontology_v0.4#ValueMeaning -->
+
+    <owl:Class rdf:about="https://www.enea.it/social-practice-ontology_v0.4#ValueMeaning">
+        <rdfs:subClassOf rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#value_based_meaning"/>
+        <rdfs:label xml:lang="en">value meaning</rdfs:label>
+        <skos:definition xml:lang="en">A value-based meaning identifying something regarded as desirable, important, or worthy.</skos:definition>
+        <skos:example xml:lang="en">Autonomy is valued in independent living.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://www.enea.it/social-practice-ontology_v0.4#affective_meaning -->
+
+    <owl:Class rdf:about="https://www.enea.it/social-practice-ontology_v0.4#affective_meaning">
+        <rdfs:subClassOf rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#meaning_type"/>
+        <dcterms:source rdf:resource="https://doi.org/10.4135/9781446250655"/>
+        <rdfs:label xml:lang="en">affective meaning</rdfs:label>
+        <skos:definition xml:lang="en">A meaning concerning emotions, moods, or felt bodily and experiential states associated with a practice.</skos:definition>
+        <skos:example xml:lang="en">Public speaking is associated with anxiety.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://www.enea.it/social-practice-ontology_v0.4#artifact -->
+
+    <owl:Class rdf:about="https://www.enea.it/social-practice-ontology_v0.4#artifact">
+        <rdfs:subClassOf rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#material"/>
+        <rdfs:label xml:lang="en">artifact</rdfs:label>
+        <skos:definition xml:lang="en">A human-made physical object designed, produced, or adapted for use.</skos:definition>
+        <skos:example xml:lang="en">A cooking knife is an artifact used in food preparation.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://www.enea.it/social-practice-ontology_v0.4#belief_meaning -->
+
+    <owl:Class rdf:about="https://www.enea.it/social-practice-ontology_v0.4#belief_meaning">
+        <rdfs:subClassOf rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#interpretative_meaning"/>
+        <rdfs:label xml:lang="en">belief meaning</rdfs:label>
+        <skos:definition xml:lang="en">An interpretative meaning expressing a proposition regarded as true about a practice.</skos:definition>
+        <skos:example xml:lang="en">Cycling is believed to improve health.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://www.enea.it/social-practice-ontology_v0.4#body -->
+
+    <owl:Class rdf:about="https://www.enea.it/social-practice-ontology_v0.4#body">
+        <rdfs:subClassOf rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#material"/>
+        <rdfs:label xml:lang="en">body</rdfs:label>
+        <skos:definition xml:lang="en">The human body or a bodily element considered as part of the material arrangement of a practice.</skos:definition>
+        <skos:example xml:lang="en">Hands are bodily elements in manual repair.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://www.enea.it/social-practice-ontology_v0.4#classification_meaning -->
+
+    <owl:Class rdf:about="https://www.enea.it/social-practice-ontology_v0.4#classification_meaning">
+        <rdfs:subClassOf rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#interpretative_meaning"/>
+        <rdfs:label xml:lang="en">classification meaning</rdfs:label>
+        <skos:definition xml:lang="en">An interpretative meaning that assigns a practice to a category.</skos:definition>
+        <skos:example xml:lang="en">Cycling is classified as sport rather than transport.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://www.enea.it/social-practice-ontology_v0.4#clothing -->
+
+    <owl:Class rdf:about="https://www.enea.it/social-practice-ontology_v0.4#clothing">
+        <rdfs:subClassOf rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#artifact"/>
+        <rdfs:label xml:lang="en">clothing</rdfs:label>
+        <skos:definition xml:lang="en">A wearable artifact covering, protecting, or presenting the body.</skos:definition>
+        <skos:example xml:lang="en">A uniform is clothing used in professional practice.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://www.enea.it/social-practice-ontology_v0.4#community -->
+
+    <owl:Class rdf:about="https://www.enea.it/social-practice-ontology_v0.4#community">
+        <rdfs:subClassOf rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#meaning_holder"/>
+        <rdfs:label xml:lang="en">community</rdfs:label>
+        <skos:definition xml:lang="en">A group connected by locality, practice, identity, or sustained interaction.</skos:definition>
+        <skos:example xml:lang="en">A local gardening community shares conventions about tool use.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://www.enea.it/social-practice-ontology_v0.4#competence -->
+
+    <owl:Class rdf:about="https://www.enea.it/social-practice-ontology_v0.4#competence">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+        <rdfs:subClassOf rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#social_practice_element"/>
+        <rdfs:isDefinedBy>A disposition of an individual to perform activities involved in a social practice, grounded in acquired knowledge, skills, and experience.</rdfs:isDefinedBy>
+        <rdfs:label>competence</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.enea.it/social-practice-ontology_v0.4#competence_assertion -->
+
+    <owl:Class rdf:about="https://www.enea.it/social-practice-ontology_v0.4#competence_assertion">
+        <rdfs:subClassOf rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#social_practice_element_assertion"/>
+        <dcterms:source rdf:resource="https://esco.ec.europa.eu/en/classification/skill_main"/>
+        <rdfs:isDefinedBy>A practice element assertion that associates a social practice with an ESCO skill or competence concept, optionally specifying its role within the practice and the required proficiency level.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">competence assertion</rdfs:label>
+        <skos:example xml:lang="en">Bicycle maintenance is linked to an ESCO repair skill as an essential competence at intermediate level.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://www.enea.it/social-practice-ontology_v0.4#competence_level -->
+
+    <owl:Class rdf:about="https://www.enea.it/social-practice-ontology_v0.4#competence_level">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
+        <rdfs:isDefinedBy>A conceptual specification of the degree of proficiency required for a competence within a social practice.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">competence level</rdfs:label>
+        <skos:example xml:lang="en">Intermediate is the required level for performing routine bicycle repairs.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://www.enea.it/social-practice-ontology_v0.4#competence_role -->
+
+    <owl:Class rdf:about="https://www.enea.it/social-practice-ontology_v0.4#competence_role">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
+        <rdfs:isDefinedBy>A conceptual specification of the functional contribution or importance attributed to an ESCO skill or competence within a social practice.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">competence role</rdfs:label>
+        <skos:example xml:lang="en">An essential competence role indicates that the practice cannot normally be performed without the competence.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://www.enea.it/social-practice-ontology_v0.4#constraining_role -->
+
+    <owl:Class rdf:about="https://www.enea.it/social-practice-ontology_v0.4#constraining_role">
+        <rdfs:subClassOf rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#material_role"/>
+        <rdfs:label xml:lang="en">constraining role</rdfs:label>
+        <skos:definition xml:lang="en">A role in which a material limits, obstructs, or conditions the performance of a practice.</skos:definition>
+        <skos:example xml:lang="en">A staircase has a constraining role for wheelchair access.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://www.enea.it/social-practice-ontology_v0.4#consumable -->
+
+    <owl:Class rdf:about="https://www.enea.it/social-practice-ontology_v0.4#consumable">
+        <rdfs:subClassOf rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#resource"/>
+        <rdfs:label xml:lang="en">consumable</rdfs:label>
+        <skos:definition xml:lang="en">A resource that is depleted, used up, or transformed during a practice.</skos:definition>
+        <skos:example xml:lang="en">Flour is a consumable in baking.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://www.enea.it/social-practice-ontology_v0.4#consumable_role -->
+
+    <owl:Class rdf:about="https://www.enea.it/social-practice-ontology_v0.4#consumable_role">
+        <rdfs:subClassOf rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#material_role"/>
+        <rdfs:label xml:lang="en">consumable role</rdfs:label>
+        <skos:definition xml:lang="en">A role in which a material is depleted, used up, or transformed through performance of the practice.</skos:definition>
+        <skos:example xml:lang="en">Fuel has a consumable role in driving.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://www.enea.it/social-practice-ontology_v0.4#container -->
+
+    <owl:Class rdf:about="https://www.enea.it/social-practice-ontology_v0.4#container">
+        <rdfs:subClassOf rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#artifact"/>
+        <rdfs:label xml:lang="en">container</rdfs:label>
+        <skos:definition xml:lang="en">An artifact designed to hold, protect, store, or transport contents.</skos:definition>
+        <skos:example xml:lang="en">A reusable bottle is a container in drinking practices.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://www.enea.it/social-practice-ontology_v0.4#context -->
+
+    <owl:Class rdf:about="https://www.enea.it/social-practice-ontology_v0.4#context">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+        <rdfs:isDefinedBy>A structured set of circumstances within which a practice element assertion is valid or relevant.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">context</rdfs:label>
+        <skos:example xml:lang="en">A workplace safety regime is an institutional and organizational context.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://www.enea.it/social-practice-ontology_v0.4#contextual_appropriateness_meaning -->
+
+    <owl:Class rdf:about="https://www.enea.it/social-practice-ontology_v0.4#contextual_appropriateness_meaning">
+        <rdfs:subClassOf rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#social_norm_meaning"/>
+        <rdfs:label xml:lang="en">contextual appropriateness meaning</rdfs:label>
+        <skos:definition xml:lang="en">A social norm meaning judging behaviour as fitting or unfitting in a specific situation.</skos:definition>
+        <skos:example xml:lang="en">Formal clothing is considered appropriate at the ceremony.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://www.enea.it/social-practice-ontology_v0.4#convention_meaning -->
+
+    <owl:Class rdf:about="https://www.enea.it/social-practice-ontology_v0.4#convention_meaning">
+        <rdfs:subClassOf rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#social_norm_meaning"/>
+        <rdfs:label xml:lang="en">convention meaning</rdfs:label>
+        <skos:definition xml:lang="en">A social norm meaning expressing a stabilized and shared way of coordinating conduct.</skos:definition>
+        <skos:example xml:lang="en">People conventionally queue before boarding.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://www.enea.it/social-practice-ontology_v0.4#cultural_context -->
+
+    <owl:Class rdf:about="https://www.enea.it/social-practice-ontology_v0.4#cultural_context">
+        <rdfs:subClassOf rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#context"/>
+        <rdfs:label xml:lang="en">cultural context</rdfs:label>
+        <skos:definition xml:lang="en">Shared symbols, classifications, norms, and interpretative resources relevant to a practice.</skos:definition>
+        <skos:example xml:lang="en">A national food culture forms the context of meal conventions.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://www.enea.it/social-practice-ontology_v0.4#custom_meaning -->
+
+    <owl:Class rdf:about="https://www.enea.it/social-practice-ontology_v0.4#custom_meaning">
+        <rdfs:subClassOf rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#social_norm_meaning"/>
+        <rdfs:label xml:lang="en">custom meaning</rdfs:label>
+        <skos:definition xml:lang="en">A social norm meaning grounded in a culturally established and repeatedly reproduced practice.</skos:definition>
+        <skos:example xml:lang="en">Families customarily gather for a holiday meal.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://www.enea.it/social-practice-ontology_v0.4#deontic_meaning -->
+
+    <owl:Class rdf:about="https://www.enea.it/social-practice-ontology_v0.4#deontic_meaning">
+        <rdfs:subClassOf rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#normative_meaning"/>
+        <rdfs:label xml:lang="en">deontic meaning</rdfs:label>
+        <skos:definition xml:lang="en">A normative meaning that assigns an explicit status of obligation, prohibition, permission, or recommendation.</skos:definition>
+        <skos:example xml:lang="en">Protective equipment must be worn.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://www.enea.it/social-practice-ontology_v0.4#device -->
+
+    <owl:Class rdf:about="https://www.enea.it/social-practice-ontology_v0.4#device">
+        <rdfs:subClassOf rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#artifact"/>
+        <rdfs:label xml:lang="en">device</rdfs:label>
+        <skos:definition xml:lang="en">An artifact with an organized technical function, often involving mechanical, electrical, or digital components.</skos:definition>
+        <skos:example xml:lang="en">A smartphone is a device used in mobile navigation.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://www.enea.it/social-practice-ontology_v0.4#emotion_meaning -->
+
+    <owl:Class rdf:about="https://www.enea.it/social-practice-ontology_v0.4#emotion_meaning">
+        <rdfs:subClassOf rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#affective_meaning"/>
+        <rdfs:label xml:lang="en">emotion meaning</rdfs:label>
+        <skos:definition xml:lang="en">An affective meaning involving an emotion typically directed toward an object, event, or outcome.</skos:definition>
+        <skos:example xml:lang="en">Completing the race is associated with pride.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://www.enea.it/social-practice-ontology_v0.4#enabling_role -->
+
+    <owl:Class rdf:about="https://www.enea.it/social-practice-ontology_v0.4#enabling_role">
+        <rdfs:subClassOf rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#material_role"/>
+        <rdfs:label xml:lang="en">enabling role</rdfs:label>
+        <skos:definition xml:lang="en">A role in which a material makes a practice possible or materially available.</skos:definition>
+        <skos:example xml:lang="en">The electrical grid has an enabling role in appliance use.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://www.enea.it/social-practice-ontology_v0.4#energy_resource -->
+
+    <owl:Class rdf:about="https://www.enea.it/social-practice-ontology_v0.4#energy_resource">
+        <rdfs:subClassOf rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#resource"/>
+        <rdfs:label xml:lang="en">energy resource</rdfs:label>
+        <skos:definition xml:lang="en">A resource capable of supplying usable energy.</skos:definition>
+        <skos:example xml:lang="en">Electricity is an energy resource in cooking with an electric oven.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://www.enea.it/social-practice-ontology_v0.4#equipment -->
+
+    <owl:Class rdf:about="https://www.enea.it/social-practice-ontology_v0.4#equipment">
+        <rdfs:subClassOf rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#artifact"/>
+        <rdfs:label xml:lang="en">equipment</rdfs:label>
+        <skos:definition xml:lang="en">An artifact or coordinated set of artifacts supplied for performing an activity.</skos:definition>
+        <skos:example xml:lang="en">Protective gloves are equipment used in laboratory work.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://www.enea.it/social-practice-ontology_v0.4#evaluation_meaning -->
+
+    <owl:Class rdf:about="https://www.enea.it/social-practice-ontology_v0.4#evaluation_meaning">
+        <rdfs:subClassOf rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#evaluative_meaning"/>
+        <rdfs:label xml:lang="en">evaluation meaning</rdfs:label>
+        <skos:definition xml:lang="en">An evaluative meaning that judges a practice, outcome, or element according to one or more criteria.</skos:definition>
+        <skos:example xml:lang="en">The interface is judged easy to use.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://www.enea.it/social-practice-ontology_v0.4#evaluative_meaning -->
+
+    <owl:Class rdf:about="https://www.enea.it/social-practice-ontology_v0.4#evaluative_meaning">
+        <rdfs:subClassOf rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#meaning_type"/>
+        <dcterms:source rdf:resource="https://doi.org/10.4135/9781446250655"/>
+        <rdfs:label xml:lang="en">evaluative meaning</rdfs:label>
+        <skos:definition xml:lang="en">A meaning that connects a practice to values, principles, criteria, or judgments of desirability and quality.</skos:definition>
+        <skos:example xml:lang="en">Public transport is evaluated as environmentally responsible.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://www.enea.it/social-practice-ontology_v0.4#evidence -->
+
+    <owl:Class rdf:about="https://www.enea.it/social-practice-ontology_v0.4#evidence">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
+        <rdfs:isDefinedBy>An informational record, excerpt, or documented observation that provides supporting evidence for a social practice element assertion.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">evidence</rdfs:label>
+        <skos:example xml:lang="en">An interview excerpt reporting that safety comes before speed supports a meaning assertion.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://www.enea.it/social-practice-ontology_v0.4#expectation_meaning -->
+
+    <owl:Class rdf:about="https://www.enea.it/social-practice-ontology_v0.4#expectation_meaning">
+        <rdfs:subClassOf rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#social_norm_meaning"/>
+        <rdfs:label xml:lang="en">expectation meaning</rdfs:label>
+        <skos:definition xml:lang="en">A social norm meaning expressing behaviour anticipated from a person or group.</skos:definition>
+        <skos:example xml:lang="en">A reliable colleague is expected to be punctual.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://www.enea.it/social-practice-ontology_v0.4#experiential_purpose -->
+
+    <owl:Class rdf:about="https://www.enea.it/social-practice-ontology_v0.4#experiential_purpose">
+        <rdfs:subClassOf rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#purpose_meaning"/>
+        <rdfs:label xml:lang="en">experiential purpose</rdfs:label>
+        <skos:definition xml:lang="en">A purpose directed toward producing or sustaining an experience during the practice.</skos:definition>
+        <skos:example xml:lang="en">Walking for relaxation has an experiential purpose.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://www.enea.it/social-practice-ontology_v0.4#expressive_purpose -->
+
+    <owl:Class rdf:about="https://www.enea.it/social-practice-ontology_v0.4#expressive_purpose">
+        <rdfs:subClassOf rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#purpose_meaning"/>
+        <rdfs:label xml:lang="en">expressive purpose</rdfs:label>
+        <skos:definition xml:lang="en">A purpose directed toward communicating identity, values, affiliation, or position.</skos:definition>
+        <skos:example xml:lang="en">Wearing a campaign badge has an expressive purpose.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://www.enea.it/social-practice-ontology_v0.4#felt_experience_meaning -->
+
+    <owl:Class rdf:about="https://www.enea.it/social-practice-ontology_v0.4#felt_experience_meaning">
+        <rdfs:subClassOf rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#affective_meaning"/>
+        <rdfs:label xml:lang="en">felt experience meaning</rdfs:label>
+        <skos:definition xml:lang="en">An affective meaning involving a subjectively felt bodily or experiential quality.</skos:definition>
+        <skos:example xml:lang="en">Long-distance travel is associated with fatigue.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://www.enea.it/social-practice-ontology_v0.4#furniture -->
+
+    <owl:Class rdf:about="https://www.enea.it/social-practice-ontology_v0.4#furniture">
+        <rdfs:subClassOf rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#artifact"/>
+        <rdfs:label xml:lang="en">furniture</rdfs:label>
+        <skos:definition xml:lang="en">A movable artifact furnishing a built or interior space.</skos:definition>
+        <skos:example xml:lang="en">A desk is furniture used in office work.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://www.enea.it/social-practice-ontology_v0.4#identity_meaning -->
+
+    <owl:Class rdf:about="https://www.enea.it/social-practice-ontology_v0.4#identity_meaning">
+        <rdfs:subClassOf rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#interpretative_meaning"/>
+        <rdfs:label xml:lang="en">identity meaning</rdfs:label>
+        <skos:definition xml:lang="en">An interpretative meaning through which a practice expresses, constructs, or negotiates identity.</skos:definition>
+        <skos:example xml:lang="en">Home cooking expresses the identity of a caring parent.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://www.enea.it/social-practice-ontology_v0.4#imaginary_meaning -->
+
+    <owl:Class rdf:about="https://www.enea.it/social-practice-ontology_v0.4#imaginary_meaning">
+        <rdfs:subClassOf rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#interpretative_meaning"/>
+        <rdfs:label xml:lang="en">imaginary meaning</rdfs:label>
+        <skos:definition xml:lang="en">An interpretative meaning expressing a collectively available vision of society, order, or the future.</skos:definition>
+        <skos:example xml:lang="en">A car-free city is imagined as a desirable urban future.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://www.enea.it/social-practice-ontology_v0.4#information_carrier -->
+
+    <owl:Class rdf:about="https://www.enea.it/social-practice-ontology_v0.4#information_carrier">
+        <rdfs:subClassOf rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#material"/>
+        <rdfs:label xml:lang="en">information carrier</rdfs:label>
+        <skos:definition xml:lang="en">A physical or digital bearer through which information is stored, displayed, or transmitted.</skos:definition>
+        <skos:example xml:lang="en">A printed timetable is an information carrier in travel planning.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://www.enea.it/social-practice-ontology_v0.4#infrastructural_role -->
+
+    <owl:Class rdf:about="https://www.enea.it/social-practice-ontology_v0.4#infrastructural_role">
+        <rdfs:subClassOf rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#material_role"/>
+        <rdfs:label xml:lang="en">infrastructural role</rdfs:label>
+        <skos:definition xml:lang="en">A role in which a material provides durable and distributed support for a practice.</skos:definition>
+        <skos:example xml:lang="en">The rail network has an infrastructural role in train travel.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://www.enea.it/social-practice-ontology_v0.4#infrastructure -->
+
+    <owl:Class rdf:about="https://www.enea.it/social-practice-ontology_v0.4#infrastructure">
+        <rdfs:subClassOf rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#material_system"/>
+        <rdfs:label xml:lang="en">infrastructure</rdfs:label>
+        <skos:definition xml:lang="en">A relatively durable and often distributed material system enabling multiple practices.</skos:definition>
+        <skos:example xml:lang="en">A road network is infrastructure for mobility practices.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://www.enea.it/social-practice-ontology_v0.4#institution -->
+
+    <owl:Class rdf:about="https://www.enea.it/social-practice-ontology_v0.4#institution">
+        <rdfs:subClassOf rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#meaning_holder"/>
+        <rdfs:label xml:lang="en">institution</rdfs:label>
+        <skos:definition xml:lang="en">A durable social arrangement or authoritative body that structures conduct.</skos:definition>
+        <skos:example xml:lang="en">A school institution sustains expectations about attendance.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://www.enea.it/social-practice-ontology_v0.4#institutional_context -->
+
+    <owl:Class rdf:about="https://www.enea.it/social-practice-ontology_v0.4#institutional_context">
+        <rdfs:subClassOf rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#context"/>
+        <rdfs:label xml:lang="en">institutional context</rdfs:label>
+        <skos:definition xml:lang="en">Rules, roles, and durable institutional arrangements relevant to a practice.</skos:definition>
+        <skos:example xml:lang="en">A school timetable is part of the institutional context of teaching.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://www.enea.it/social-practice-ontology_v0.4#instrumental_purpose -->
+
+    <owl:Class rdf:about="https://www.enea.it/social-practice-ontology_v0.4#instrumental_purpose">
+        <rdfs:subClassOf rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#purpose_meaning"/>
+        <rdfs:label xml:lang="en">instrumental purpose</rdfs:label>
+        <skos:definition xml:lang="en">A purpose in which the practice is a means to an outcome external to the immediate experience of performing it.</skos:definition>
+        <skos:example xml:lang="en">Using a bicycle to reach the office has an instrumental purpose.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://www.enea.it/social-practice-ontology_v0.4#instrumental_role -->
+
+    <owl:Class rdf:about="https://www.enea.it/social-practice-ontology_v0.4#instrumental_role">
+        <rdfs:subClassOf rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#material_role"/>
+        <rdfs:label xml:lang="en">instrumental role</rdfs:label>
+        <skos:definition xml:lang="en">A role in which a material is actively used as an instrument for performing an action.</skos:definition>
+        <skos:example xml:lang="en">A knife has an instrumental role in chopping vegetables.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://www.enea.it/social-practice-ontology_v0.4#interactional_context -->
+
+    <owl:Class rdf:about="https://www.enea.it/social-practice-ontology_v0.4#interactional_context">
+        <rdfs:subClassOf rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#context"/>
+        <rdfs:label xml:lang="en">interactional context</rdfs:label>
+        <skos:definition xml:lang="en">The immediate social interaction and participant configuration relevant to a practice.</skos:definition>
+        <skos:example xml:lang="en">A teacher–student exchange is the interactional context of classroom questioning.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://www.enea.it/social-practice-ontology_v0.4#interpretative_meaning -->
+
+    <owl:Class rdf:about="https://www.enea.it/social-practice-ontology_v0.4#interpretative_meaning">
+        <rdfs:subClassOf rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#meaning_type"/>
+        <dcterms:source rdf:resource="https://doi.org/10.4135/9781446250655"/>
+        <rdfs:label xml:lang="en">interpretative meaning</rdfs:label>
+        <skos:definition xml:lang="en">A meaning that frames how a practice is understood, categorized, represented, narrated, imagined, symbolized, or related to identity.</skos:definition>
+        <skos:example xml:lang="en">Cooking is understood as a form of care.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://www.enea.it/social-practice-ontology_v0.4#material -->
+
+    <owl:Class rdf:about="https://www.enea.it/social-practice-ontology_v0.4#material">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <rdfs:subClassOf rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#social_practice_element"/>
+        <rdfs:isDefinedBy>A material entity that participates in a social practice, including human bodies, artifacts, equipment, physical resources, substances, living organisms, and physical infrastructures.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">material</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.enea.it/social-practice-ontology_v0.4#material_assertion -->
+
+    <owl:Class rdf:about="https://www.enea.it/social-practice-ontology_v0.4#material_assertion">
+        <rdfs:subClassOf rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#social_practice_element_assertion"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#asserts"/>
+                <owl:someValuesFrom rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#meaning"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#has_necessity_level"/>
+                <owl:someValuesFrom rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#necessity_level"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dcterms:source rdf:resource="https://doi.org/10.4135/9781446250655"/>
+        <rdfs:isDefinedBy>A practice element assertion that links a material entity to a social practice and specifies the role attributed to that entity within the practice.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">material assertion</rdfs:label>
+        <skos:example xml:lang="en">A road network is asserted to play an infrastructural role in bicycle commuting.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://www.enea.it/social-practice-ontology_v0.4#material_role -->
+
+    <owl:Class rdf:about="https://www.enea.it/social-practice-ontology_v0.4#material_role">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
+        <rdfs:comment xml:lang="en">Material roles are contextual and non-exclusive; the same material may perform several roles in one or more practices.</rdfs:comment>
+        <rdfs:isDefinedBy>Material roles are contextual and non-exclusive; the same material may perform several roles in one or more practices.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">material role</rdfs:label>
+        <skos:example xml:lang="en">A helmet has a protective role in cycling.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://www.enea.it/social-practice-ontology_v0.4#material_system -->
+
+    <owl:Class rdf:about="https://www.enea.it/social-practice-ontology_v0.4#material_system">
+        <rdfs:subClassOf rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#material"/>
+        <rdfs:label xml:lang="en">material system</rdfs:label>
+        <skos:definition xml:lang="en">A coordinated configuration of material components that collectively performs or enables functions.</skos:definition>
+        <skos:example xml:lang="en">A domestic heating system is a material system.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://www.enea.it/social-practice-ontology_v0.4#meaning -->
+
+    <owl:Class rdf:about="https://www.enea.it/social-practice-ontology_v0.4#meaning">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
+        <rdfs:subClassOf rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#social_practice_element"/>
+        <dcterms:source rdf:resource="https://doi.org/10.4135/9781446250655"/>
+        <rdfs:isDefinedBy>A reusable semantic unit combining one or more meaning types, one or more meaning contents, and optionally a canonical expression.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">meaning</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.enea.it/social-practice-ontology_v0.4#meaning_assertion -->
+
+    <owl:Class rdf:about="https://www.enea.it/social-practice-ontology_v0.4#meaning_assertion">
+        <rdfs:subClassOf rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#social_practice_element_assertion"/>
+        <dcterms:source rdf:resource="https://doi.org/10.4135/9781446250655"/>
+        <rdfs:isDefinedBy>A practice element assertion that attributes a meaning to a social practice and may identify its holder, context, time, place, and evidence.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">meaning assertion</rdfs:label>
+        <skos:definition xml:lang="en">A practice element assertion that attributes a meaning to a social practice and may identify its holder, context, time, place, and evidence.</skos:definition>
+        <skos:example xml:lang="en">Night cycling is asserted to carry a safety-related principle for older cyclists in a specific urban context.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://www.enea.it/social-practice-ontology_v0.4#meaning_content -->
+
+    <owl:Class rdf:about="https://www.enea.it/social-practice-ontology_v0.4#meaning_content">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
+        <rdfs:comment xml:lang="en">Content groupings are organizational and non-exclusive; a content may combine with multiple meaning types.</rdfs:comment>
+        <rdfs:isDefinedBy>A concept that supplies the thematic or experiential content of a meaning independently of its semantic function.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">meaning content</rdfs:label>
+        <skos:definition xml:lang="en">A concept that supplies the thematic or experiential content of a meaning independently of its semantic function.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://www.enea.it/social-practice-ontology_v0.4#meaning_holder -->
+
+    <owl:Class rdf:about="https://www.enea.it/social-practice-ontology_v0.4#meaning_holder">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <rdfs:isDefinedBy>An individual agent or collective to which a meaning is attributed as being held, shared, recognized, or expressed through a meaning assertion.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">meaning holder</rdfs:label>
+        <skos:example xml:lang="en">Urban cyclists may be the holder of a shared safety expectation.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://www.enea.it/social-practice-ontology_v0.4#meaning_type -->
+
+    <owl:Class rdf:about="https://www.enea.it/social-practice-ontology_v0.4#meaning_type">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
+        <rdfs:isDefinedBy>A category that classifies a meaning according to its semantic role, such as interpreting, evaluating, prescribing, or expressing affect.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">meaning type</rdfs:label>
+        <skos:definition xml:lang="en">A category that classifies a meaning according to its semantic role, such as interpreting, evaluating, prescribing, or expressing affect.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://www.enea.it/social-practice-ontology_v0.4#mediating_role -->
+
+    <owl:Class rdf:about="https://www.enea.it/social-practice-ontology_v0.4#mediating_role">
+        <rdfs:subClassOf rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#material_role"/>
+        <rdfs:label xml:lang="en">mediating role</rdfs:label>
+        <skos:definition xml:lang="en">A role in which a material mediates interaction, communication, coordination, or access.</skos:definition>
+        <skos:example xml:lang="en">A video-conferencing platform has a mediating role in remote meetings.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://www.enea.it/social-practice-ontology_v0.4#mood_meaning -->
+
+    <owl:Class rdf:about="https://www.enea.it/social-practice-ontology_v0.4#mood_meaning">
+        <rdfs:subClassOf rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#affective_meaning"/>
+        <rdfs:label xml:lang="en">mood meaning</rdfs:label>
+        <skos:definition xml:lang="en">An affective meaning involving a diffuse and relatively sustained affective state.</skos:definition>
+        <skos:example xml:lang="en">Quiet reading is associated with calmness.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://www.enea.it/social-practice-ontology_v0.4#narrative_meaning -->
+
+    <owl:Class rdf:about="https://www.enea.it/social-practice-ontology_v0.4#narrative_meaning">
+        <rdfs:subClassOf rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#interpretative_meaning"/>
+        <rdfs:label xml:lang="en">narrative meaning</rdfs:label>
+        <skos:definition xml:lang="en">An interpretative meaning that situates a practice within a story involving actors, events, continuity, or change.</skos:definition>
+        <skos:example xml:lang="en">Learning to cook is narrated as becoming independent.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://www.enea.it/social-practice-ontology_v0.4#natural_resource -->
+
+    <owl:Class rdf:about="https://www.enea.it/social-practice-ontology_v0.4#natural_resource">
+        <rdfs:subClassOf rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#resource"/>
+        <rdfs:label xml:lang="en">natural resource</rdfs:label>
+        <skos:definition xml:lang="en">A resource obtained from natural systems and used in a practice.</skos:definition>
+        <skos:example xml:lang="en">Water is a natural resource used in cleaning.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://www.enea.it/social-practice-ontology_v0.4#necessity_level -->
+
+    <owl:Class rdf:about="https://www.enea.it/social-practice-ontology_v0.4#necessity_level">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
+        <rdfs:isDefinedBy>A conceptual specification of the degree to which a material element or competence is considered necessary for the performance of a social practice.</rdfs:isDefinedBy>
+        <rdfs:label>necessity level</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.enea.it/social-practice-ontology_v0.4#non_human_living_entity -->
+
+    <owl:Class rdf:about="https://www.enea.it/social-practice-ontology_v0.4#non_human_living_entity">
+        <rdfs:subClassOf rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#material"/>
+        <rdfs:label xml:lang="en">non-human living entity</rdfs:label>
+        <skos:definition xml:lang="en">An animal, plant, fungus, or microorganism participating materially in a practice.</skos:definition>
+        <skos:example xml:lang="en">A dog is a non-human living entity in dog walking.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://www.enea.it/social-practice-ontology_v0.4#normative_meaning -->
+
+    <owl:Class rdf:about="https://www.enea.it/social-practice-ontology_v0.4#normative_meaning">
+        <rdfs:subClassOf rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#meaning_type"/>
+        <dcterms:source rdf:resource="https://doi.org/10.4135/9781446250655"/>
+        <rdfs:label xml:lang="en">normative meaning</rdfs:label>
+        <skos:definition xml:lang="en">A meaning that expresses what is required, prohibited, permitted, recommended, expected, conventional, appropriate, or customary.</skos:definition>
+        <skos:example xml:lang="en">Employees are expected to arrive on time.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://www.enea.it/social-practice-ontology_v0.4#object_of_action_role -->
+
+    <owl:Class rdf:about="https://www.enea.it/social-practice-ontology_v0.4#object_of_action_role">
+        <rdfs:subClassOf rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#material_role"/>
+        <rdfs:label xml:lang="en">object-of-action role</rdfs:label>
+        <skos:definition xml:lang="en">A role in which a material is the entity upon which the practice acts.</skos:definition>
+        <skos:example xml:lang="en">A bicycle has an object-of-action role in bicycle repair.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://www.enea.it/social-practice-ontology_v0.4#obligation_meaning -->
+
+    <owl:Class rdf:about="https://www.enea.it/social-practice-ontology_v0.4#obligation_meaning">
+        <rdfs:subClassOf rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#deontic_meaning"/>
+        <rdfs:label xml:lang="en">obligation meaning</rdfs:label>
+        <skos:definition xml:lang="en">A deontic meaning stating that an action is required.</skos:definition>
+        <skos:example xml:lang="en">Cyclists must stop at a red light.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://www.enea.it/social-practice-ontology_v0.4#organization -->
+
+    <owl:Class rdf:about="https://www.enea.it/social-practice-ontology_v0.4#organization">
+        <rdfs:subClassOf rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#meaning_holder"/>
+        <rdfs:label xml:lang="en">organization</rdfs:label>
+        <skos:definition xml:lang="en">A coordinated collective with membership, roles, and goals.</skos:definition>
+        <skos:example xml:lang="en">A company holds an organizational safety principle.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://www.enea.it/social-practice-ontology_v0.4#organizational_context -->
+
+    <owl:Class rdf:about="https://www.enea.it/social-practice-ontology_v0.4#organizational_context">
+        <rdfs:subClassOf rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#context"/>
+        <rdfs:label xml:lang="en">organizational context</rdfs:label>
+        <skos:definition xml:lang="en">Structures, procedures, and routines specific to an organization.</skos:definition>
+        <skos:example xml:lang="en">A factory shift system is an organizational context for maintenance.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://www.enea.it/social-practice-ontology_v0.4#permission_meaning -->
+
+    <owl:Class rdf:about="https://www.enea.it/social-practice-ontology_v0.4#permission_meaning">
+        <rdfs:subClassOf rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#deontic_meaning"/>
+        <rdfs:label xml:lang="en">permission meaning</rdfs:label>
+        <skos:definition xml:lang="en">A deontic meaning stating that an action is allowed.</skos:definition>
+        <skos:example xml:lang="en">Employees may work from home on Fridays.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://www.enea.it/social-practice-ontology_v0.4#person -->
+
+    <owl:Class rdf:about="https://www.enea.it/social-practice-ontology_v0.4#person">
+        <rdfs:subClassOf rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#meaning_holder"/>
+        <rdfs:label xml:lang="en">person</rdfs:label>
+        <skos:definition xml:lang="en">An individual human meaning holder.</skos:definition>
+        <skos:example xml:lang="en">An interviewed cyclist is a person who may hold a safety meaning.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://www.enea.it/social-practice-ontology_v0.4#place -->
+
+    <owl:Class rdf:about="https://www.enea.it/social-practice-ontology_v0.4#place">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000029"/>
+        <rdfs:isDefinedBy>A spatial site that specifies where a social practice element assertion is considered valid or where supporting evidence was observed.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">place</rdfs:label>
+        <skos:example xml:lang="en">Milan is the place where interview evidence was collected.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://www.enea.it/social-practice-ontology_v0.4#policy_context -->
+
+    <owl:Class rdf:about="https://www.enea.it/social-practice-ontology_v0.4#policy_context">
+        <rdfs:subClassOf rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#context"/>
+        <rdfs:label xml:lang="en">policy context</rdfs:label>
+        <skos:definition xml:lang="en">Policy goals, instruments, and regulatory arrangements relevant to a practice.</skos:definition>
+        <skos:example xml:lang="en">A low-emission transport policy is the policy context of cycling promotion.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://www.enea.it/social-practice-ontology_v0.4#population -->
+
+    <owl:Class rdf:about="https://www.enea.it/social-practice-ontology_v0.4#population">
+        <rdfs:subClassOf rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#meaning_holder"/>
+        <rdfs:label xml:lang="en">population</rdfs:label>
+        <skos:definition xml:lang="en">A defined aggregate of persons considered collectively.</skos:definition>
+        <skos:example xml:lang="en">The commuting population may share expectations about peak travel.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://www.enea.it/social-practice-ontology_v0.4#practice_performance -->
+
+    <owl:Class rdf:about="https://www.enea.it/social-practice-ontology_v0.4#practice_performance">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <rdfs:isDefinedBy>A concrete, temporally extended process in which a social practice is enacted by one or more participants in a specific material, spatial, temporal, and social context.</rdfs:isDefinedBy>
+        <rdfs:label>practice performance</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.enea.it/social-practice-ontology_v0.4#prohibition_meaning -->
+
+    <owl:Class rdf:about="https://www.enea.it/social-practice-ontology_v0.4#prohibition_meaning">
+        <rdfs:subClassOf rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#deontic_meaning"/>
+        <rdfs:label xml:lang="en">prohibition meaning</rdfs:label>
+        <skos:definition xml:lang="en">A deontic meaning stating that an action is forbidden.</skos:definition>
+        <skos:example xml:lang="en">Smoking is prohibited inside the building.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://www.enea.it/social-practice-ontology_v0.4#protective_role -->
+
+    <owl:Class rdf:about="https://www.enea.it/social-practice-ontology_v0.4#protective_role">
+        <rdfs:subClassOf rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#material_role"/>
+        <rdfs:label xml:lang="en">protective role</rdfs:label>
+        <skos:definition xml:lang="en">A role in which a material reduces exposure to harm or risk.</skos:definition>
+        <skos:example xml:lang="en">A helmet has a protective role in cycling.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://www.enea.it/social-practice-ontology_v0.4#purpose_meaning -->
+
+    <owl:Class rdf:about="https://www.enea.it/social-practice-ontology_v0.4#purpose_meaning">
+        <rdfs:subClassOf rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#meaning_type"/>
+        <dcterms:source rdf:resource="https://doi.org/10.4135/9781446250655"/>
+        <rdfs:label xml:lang="en">purpose meaning</rdfs:label>
+        <skos:definition xml:lang="en">A meaning that specifies an end, outcome, or reason associated with performing a practice.</skos:definition>
+        <skos:example xml:lang="en">Commuting is performed in order to reach work.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://www.enea.it/social-practice-ontology_v0.4#recommendation_meaning -->
+
+    <owl:Class rdf:about="https://www.enea.it/social-practice-ontology_v0.4#recommendation_meaning">
+        <rdfs:subClassOf rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#deontic_meaning"/>
+        <rdfs:label xml:lang="en">recommendation meaning</rdfs:label>
+        <skos:definition xml:lang="en">A deontic meaning stating that an action is advised but not strictly required.</skos:definition>
+        <skos:example xml:lang="en">Travellers are advised to use public transport.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://www.enea.it/social-practice-ontology_v0.4#representational_meaning -->
+
+    <owl:Class rdf:about="https://www.enea.it/social-practice-ontology_v0.4#representational_meaning">
+        <rdfs:subClassOf rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#interpretative_meaning"/>
+        <rdfs:label xml:lang="en">representational meaning</rdfs:label>
+        <skos:definition xml:lang="en">An interpretative meaning concerning how a practice is depicted, described, or made intelligible.</skos:definition>
+        <skos:example xml:lang="en">Remote work is represented as modern and flexible.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://www.enea.it/social-practice-ontology_v0.4#representational_role -->
+
+    <owl:Class rdf:about="https://www.enea.it/social-practice-ontology_v0.4#representational_role">
+        <rdfs:subClassOf rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#material_role"/>
+        <rdfs:label xml:lang="en">representational role</rdfs:label>
+        <skos:definition xml:lang="en">A role in which a material carries, displays, or materially expresses information, identity, or position.</skos:definition>
+        <skos:example xml:lang="en">A uniform has a representational role in professional practice.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://www.enea.it/social-practice-ontology_v0.4#resource -->
+
+    <owl:Class rdf:about="https://www.enea.it/social-practice-ontology_v0.4#resource">
+        <rdfs:subClassOf rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#material"/>
+        <rdfs:label xml:lang="en">resource</rdfs:label>
+        <skos:definition xml:lang="en">A material or energetic input made available for use in a practice.</skos:definition>
+        <skos:example xml:lang="en">Electricity is a resource for operating appliances.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://www.enea.it/social-practice-ontology_v0.4#resource_role -->
+
+    <owl:Class rdf:about="https://www.enea.it/social-practice-ontology_v0.4#resource_role">
+        <rdfs:subClassOf rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#material_role"/>
+        <rdfs:label xml:lang="en">resource role</rdfs:label>
+        <skos:definition xml:lang="en">A role in which a material supplies an input required by the practice.</skos:definition>
+        <skos:example xml:lang="en">Water has a resource role in cleaning.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://www.enea.it/social-practice-ontology_v0.4#situational_context -->
+
+    <owl:Class rdf:about="https://www.enea.it/social-practice-ontology_v0.4#situational_context">
+        <rdfs:subClassOf rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#context"/>
+        <rdfs:label xml:lang="en">situational context</rdfs:label>
+        <skos:definition xml:lang="en">Immediate circumstances surrounding an occurrence or performance of a practice.</skos:definition>
+        <skos:example xml:lang="en">Emergency evacuation is a situational context in which safety obligations apply.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://www.enea.it/social-practice-ontology_v0.4#social_group -->
+
+    <owl:Class rdf:about="https://www.enea.it/social-practice-ontology_v0.4#social_group">
+        <rdfs:subClassOf rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#meaning_holder"/>
+        <rdfs:label xml:lang="en">social group</rdfs:label>
+        <skos:definition xml:lang="en">A set of people linked by a shared social characteristic or relation.</skos:definition>
+        <skos:example xml:lang="en">Older cyclists are a social group to which a meaning may be attributed.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://www.enea.it/social-practice-ontology_v0.4#social_norm_meaning -->
+
+    <owl:Class rdf:about="https://www.enea.it/social-practice-ontology_v0.4#social_norm_meaning">
+        <rdfs:subClassOf rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#normative_meaning"/>
+        <rdfs:label xml:lang="en">social norm meaning</rdfs:label>
+        <skos:definition xml:lang="en">A normative meaning grounded in shared conventions, expectations, appropriateness judgments, or customs.</skos:definition>
+        <skos:example xml:lang="en">Guests are expected to bring a small gift.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://www.enea.it/social-practice-ontology_v0.4#social_practice -->
+
+    <owl:Class rdf:about="https://www.enea.it/social-practice-ontology_v0.4#social_practice">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#has_social_practice_element_assertion"/>
+                <owl:someValuesFrom rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#social_practice_element_assertion"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dcterms:source rdf:resource="https://doi.org/10.4135/9781446250655"/>
+        <rdfs:isDefinedBy>A socially recognizable and recurrent pattern of activity constituted through the integration of meanings, competences, and materials.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">social practice</rdfs:label>
+        <skos:example xml:lang="en">Commuting by bicycle is a social practice when meanings, riding competences, bicycles, roads, and routines are repeatedly integrated.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://www.enea.it/social-practice-ontology_v0.4#social_practice_element -->
+
+    <owl:Class rdf:about="https://www.enea.it/social-practice-ontology_v0.4#social_practice_element">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
+        <rdfs:comment>Its subclasses may belong to different BFO categories and are grouped by their theoretical role in social practice rather than by a shared fundamental ontological nature.</rdfs:comment>
+        <rdfs:label>social practice element</rdfs:label>
+        <skos:definition>An entity constituting or contributing to a social practice through its meaning, competence, or material dimension.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://www.enea.it/social-practice-ontology_v0.4#social_practice_element_assertion -->
+
+    <owl:Class rdf:about="https://www.enea.it/social-practice-ontology_v0.4#social_practice_element_assertion">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#is_supported_by_evidence"/>
+                <owl:someValuesFrom rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#evidence"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy>A contextualized claim that a meaning, competence, or material is linked to a social practice.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">social practice element assertion</rdfs:label>
+        <skos:example xml:lang="en">A study may assert that helmet use is a protective material element of urban cycling in a particular city.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://www.enea.it/social-practice-ontology_v0.4#social_purpose -->
+
+    <owl:Class rdf:about="https://www.enea.it/social-practice-ontology_v0.4#social_purpose">
+        <rdfs:subClassOf rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#purpose_meaning"/>
+        <rdfs:label xml:lang="en">social purpose</rdfs:label>
+        <skos:definition xml:lang="en">A purpose directed toward creating, maintaining, or transforming social relations.</skos:definition>
+        <skos:example xml:lang="en">Sharing a meal has the social purpose of spending time together.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://www.enea.it/social-practice-ontology_v0.4#source -->
+
+    <owl:Class rdf:about="https://www.enea.it/social-practice-ontology_v0.4#source">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
+        <rdfs:isDefinedBy>An informational resource, such as a document, dataset, interview transcript, or observation record, from which evidence supporting a social practice element assertion can be extracted.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">source</rdfs:label>
+        <skos:example xml:lang="en">A transcribed interview is the source of an excerpt used as evidence.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://www.enea.it/social-practice-ontology_v0.4#spatial_setting_role -->
+
+    <owl:Class rdf:about="https://www.enea.it/social-practice-ontology_v0.4#spatial_setting_role">
+        <rdfs:subClassOf rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#material_role"/>
+        <rdfs:label xml:lang="en">spatial-setting role</rdfs:label>
+        <skos:definition xml:lang="en">A role in which a material arrangement provides the spatial setting of a practice.</skos:definition>
+        <skos:example xml:lang="en">A kitchen has a spatial-setting role in cooking.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://www.enea.it/social-practice-ontology_v0.4#substance -->
+
+    <owl:Class rdf:about="https://www.enea.it/social-practice-ontology_v0.4#substance">
+        <rdfs:subClassOf rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#material"/>
+        <rdfs:label xml:lang="en">substance</rdfs:label>
+        <skos:definition xml:lang="en">A kind of matter characterized by physical or chemical composition.</skos:definition>
+        <skos:example xml:lang="en">Detergent is a substance used in cleaning.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://www.enea.it/social-practice-ontology_v0.4#symbolic_meaning -->
+
+    <owl:Class rdf:about="https://www.enea.it/social-practice-ontology_v0.4#symbolic_meaning">
+        <rdfs:subClassOf rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#interpretative_meaning"/>
+        <rdfs:label xml:lang="en">symbolic meaning</rdfs:label>
+        <skos:definition xml:lang="en">An interpretative meaning in which a practice or element stands for something beyond its immediate function.</skos:definition>
+        <skos:example xml:lang="en">A bicycle symbolizes independence.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://www.enea.it/social-practice-ontology_v0.4#technical_system -->
+
+    <owl:Class rdf:about="https://www.enea.it/social-practice-ontology_v0.4#technical_system">
+        <rdfs:subClassOf rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#material_system"/>
+        <rdfs:label xml:lang="en">technical system</rdfs:label>
+        <skos:definition xml:lang="en">A material system whose components are technically coordinated to perform a defined function.</skos:definition>
+        <skos:example xml:lang="en">A digital payment system is a technical system enabling purchases.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://www.enea.it/social-practice-ontology_v0.4#technological_context -->
+
+    <owl:Class rdf:about="https://www.enea.it/social-practice-ontology_v0.4#technological_context">
+        <rdfs:subClassOf rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#context"/>
+        <rdfs:label xml:lang="en">technological context</rdfs:label>
+        <skos:definition xml:lang="en">The available technological systems and configurations relevant to a practice.</skos:definition>
+        <skos:example xml:lang="en">A smartphone-based ticketing system is the technological context of travel.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://www.enea.it/social-practice-ontology_v0.4#temporal_entity -->
+
+    <owl:Class rdf:about="https://www.enea.it/social-practice-ontology_v0.4#temporal_entity">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000008"/>
+        <rdfs:isDefinedBy>A temporal region representing a time point or interval associated with an observation or evidence item.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">temporal entity</rdfs:label>
+        <skos:example xml:lang="en">15 March 2026 is the observation time of an interview.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://www.enea.it/social-practice-ontology_v0.4#time_interval -->
+
+    <owl:Class rdf:about="https://www.enea.it/social-practice-ontology_v0.4#time_interval">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000008"/>
+        <rdfs:isDefinedBy>A continuous temporal region during which a social practice element assertion is considered valid.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">time interval</rdfs:label>
+        <skos:example xml:lang="en">The period from 2020 to 2025 is the validity interval of a policy-related meaning.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://www.enea.it/social-practice-ontology_v0.4#tool -->
+
+    <owl:Class rdf:about="https://www.enea.it/social-practice-ontology_v0.4#tool">
+        <rdfs:subClassOf rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#artifact"/>
+        <rdfs:label xml:lang="en">tool</rdfs:label>
+        <skos:definition xml:lang="en">An artifact directly used to perform or facilitate an action.</skos:definition>
+        <skos:example xml:lang="en">A screwdriver is a tool in bicycle maintenance.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://www.enea.it/social-practice-ontology_v0.4#value_based_meaning -->
+
+    <owl:Class rdf:about="https://www.enea.it/social-practice-ontology_v0.4#value_based_meaning">
+        <rdfs:subClassOf rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#evaluative_meaning"/>
+        <rdfs:label xml:lang="en">value-based meaning</rdfs:label>
+        <skos:definition xml:lang="en">An evaluative meaning grounded in a value or orienting principle.</skos:definition>
+        <skos:example xml:lang="en">Equality is treated as a value guiding recruitment.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://www.enea.it/social-practice-ontology_v0.4#vehicle -->
+
+    <owl:Class rdf:about="https://www.enea.it/social-practice-ontology_v0.4#vehicle">
+        <rdfs:subClassOf rdf:resource="https://www.enea.it/social-practice-ontology_v0.4#artifact"/>
+        <rdfs:label xml:lang="en">vehicle</rdfs:label>
+        <skos:definition xml:lang="en">An artifact designed to transport people or goods.</skos:definition>
+        <skos:example xml:lang="en">A bicycle is a vehicle in commuting.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="https://www.enea.it/social-practice-ontology_v0.4#Meaning_hasMeaningContent_min1">
+        <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://www.enea.it/social-practice-ontology_v0.4#Meaning_hasMeaningType_min1">
+        <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+
