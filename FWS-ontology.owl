@@ -1,0 +1,3614 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.hcs2I.com/FWS-ontology#"
+     xml:base="http://www.hcs2I.com/FWS-ontology"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:SUMO="http://www.ontologyportal.org/SUMO.owl#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:SUMO1="http://www.adampease.org/OP/SUMO.owl#">
+    <owl:Ontology rdf:about="http://www.hcs2I.com/FWS-ontology"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ontologyportal.org/SUMO.owl#represents -->
+
+    <owl:AnnotationProperty rdf:about="http://www.ontologyportal.org/SUMO.owl#represents"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.hcs2I.com/FRAM-ontology#hasAspect -->
+
+    <owl:ObjectProperty rdf:about="http://www.hcs2I.com/FRAM-ontology#hasAspect">
+        <owl:inverseOf rdf:resource="http://www.hcs2I.com/FRAM-ontology#hasFunction"/>
+        <rdfs:domain rdf:resource="http://www.hcs2I.com/FRAM-ontology#Function"/>
+        <rdfs:range rdf:resource="http://www.hcs2I.com/FRAM-ontology#Aspect"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.hcs2I.com/FRAM-ontology#hasControl -->
+
+    <owl:ObjectProperty rdf:about="http://www.hcs2I.com/FRAM-ontology#hasControl">
+        <rdfs:subPropertyOf rdf:resource="http://www.hcs2I.com/FRAM-ontology#hasAspect"/>
+        <rdfs:domain rdf:resource="http://www.hcs2I.com/FRAM-ontology#Function"/>
+        <rdfs:range rdf:resource="http://www.hcs2I.com/FRAM-ontology#Control"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.hcs2I.com/FRAM-ontology#hasDirectionPhenotype -->
+
+    <owl:ObjectProperty rdf:about="http://www.hcs2I.com/FRAM-ontology#hasDirectionPhenotype">
+        <rdfs:subPropertyOf rdf:resource="http://www.hcs2I.com/FRAM-ontology#hasPhenotype"/>
+        <rdfs:domain rdf:resource="http://www.hcs2I.com/FRAM-ontology#Function"/>
+        <rdfs:range rdf:resource="http://www.hcs2I.com/FRAM-ontology#Direction"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.hcs2I.com/FRAM-ontology#hasDistancePhenotype -->
+
+    <owl:ObjectProperty rdf:about="http://www.hcs2I.com/FRAM-ontology#hasDistancePhenotype">
+        <rdfs:subPropertyOf rdf:resource="http://www.hcs2I.com/FRAM-ontology#hasPhenotype"/>
+        <rdfs:domain rdf:resource="http://www.hcs2I.com/FRAM-ontology#Function"/>
+        <rdfs:range rdf:resource="http://www.hcs2I.com/FRAM-ontology#Distance"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.hcs2I.com/FRAM-ontology#hasDownstreamAspect -->
+
+    <owl:ObjectProperty rdf:about="http://www.hcs2I.com/FRAM-ontology#hasDownstreamAspect">
+        <rdfs:subPropertyOf rdf:resource="http://www.hcs2I.com/FRAM-ontology#hasDownstreamElement"/>
+        <rdfs:domain rdf:resource="http://www.hcs2I.com/FRAM-ontology#Coupling"/>
+        <rdfs:range rdf:resource="http://www.hcs2I.com/FRAM-ontology#Aspect"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.hcs2I.com/FRAM-ontology#hasDownstreamElement -->
+
+    <owl:ObjectProperty rdf:about="http://www.hcs2I.com/FRAM-ontology#hasDownstreamElement">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.hcs2I.com/FRAM-ontology#Coupling"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.hcs2I.com/FRAM-ontology#hasDownstreamFunction -->
+
+    <owl:ObjectProperty rdf:about="http://www.hcs2I.com/FRAM-ontology#hasDownstreamFunction">
+        <rdfs:subPropertyOf rdf:resource="http://www.hcs2I.com/FRAM-ontology#hasDownstreamElement"/>
+        <rdfs:domain rdf:resource="http://www.hcs2I.com/FRAM-ontology#Coupling"/>
+        <rdfs:range rdf:resource="http://www.hcs2I.com/FRAM-ontology#Function"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.hcs2I.com/FRAM-ontology#hasDurationPhenotype -->
+
+    <owl:ObjectProperty rdf:about="http://www.hcs2I.com/FRAM-ontology#hasDurationPhenotype">
+        <rdfs:subPropertyOf rdf:resource="http://www.hcs2I.com/FRAM-ontology#hasPhenotype"/>
+        <rdfs:domain rdf:resource="http://www.hcs2I.com/FRAM-ontology#Function"/>
+        <rdfs:range rdf:resource="http://www.hcs2I.com/FRAM-ontology#Duration"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.hcs2I.com/FRAM-ontology#hasEffect -->
+
+    <owl:ObjectProperty rdf:about="http://www.hcs2I.com/FRAM-ontology#hasEffect">
+        <rdfs:domain rdf:resource="http://www.hcs2I.com/FRAM-ontology#Coupling"/>
+        <rdfs:range rdf:resource="http://www.hcs2I.com/FRAM-ontology#Coupling_effect"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.hcs2I.com/FRAM-ontology#hasForcePhenotype -->
+
+    <owl:ObjectProperty rdf:about="http://www.hcs2I.com/FRAM-ontology#hasForcePhenotype">
+        <rdfs:subPropertyOf rdf:resource="http://www.hcs2I.com/FRAM-ontology#hasPhenotype"/>
+        <rdfs:domain rdf:resource="http://www.hcs2I.com/FRAM-ontology#Function"/>
+        <rdfs:range rdf:resource="http://www.hcs2I.com/FRAM-ontology#Force"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.hcs2I.com/FRAM-ontology#hasFunction -->
+
+    <owl:ObjectProperty rdf:about="http://www.hcs2I.com/FRAM-ontology#hasFunction">
+        <rdfs:domain rdf:resource="http://www.hcs2I.com/FRAM-ontology#Aspect"/>
+        <rdfs:range rdf:resource="http://www.hcs2I.com/FRAM-ontology#Function"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.hcs2I.com/FRAM-ontology#hasFunctionRole -->
+
+    <owl:ObjectProperty rdf:about="http://www.hcs2I.com/FRAM-ontology#hasFunctionRole">
+        <rdfs:domain rdf:resource="http://www.hcs2I.com/FRAM-ontology#Function"/>
+        <rdfs:range rdf:resource="http://www.hcs2I.com/FRAM-ontology#Function_role"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.hcs2I.com/FRAM-ontology#hasFunctionType -->
+
+    <owl:ObjectProperty rdf:about="http://www.hcs2I.com/FRAM-ontology#hasFunctionType">
+        <rdfs:domain rdf:resource="http://www.hcs2I.com/FRAM-ontology#Function"/>
+        <rdfs:range rdf:resource="http://www.hcs2I.com/FRAM-ontology#Function_type"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.hcs2I.com/FRAM-ontology#hasInput -->
+
+    <owl:ObjectProperty rdf:about="http://www.hcs2I.com/FRAM-ontology#hasInput">
+        <rdfs:subPropertyOf rdf:resource="http://www.hcs2I.com/FRAM-ontology#hasAspect"/>
+        <rdfs:domain rdf:resource="http://www.hcs2I.com/FRAM-ontology#Function"/>
+        <rdfs:range rdf:resource="http://www.hcs2I.com/FRAM-ontology#Input"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.hcs2I.com/FRAM-ontology#hasObject -->
+
+    <owl:ObjectProperty rdf:about="http://www.hcs2I.com/FRAM-ontology#hasObject">
+        <rdfs:subPropertyOf rdf:resource="http://www.hcs2I.com/FRAM-ontology#hasPhenotype"/>
+        <rdfs:domain rdf:resource="http://www.hcs2I.com/FRAM-ontology#Function"/>
+        <rdfs:range rdf:resource="http://www.hcs2I.com/FRAM-ontology#Object"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.hcs2I.com/FRAM-ontology#hasOutput -->
+
+    <owl:ObjectProperty rdf:about="http://www.hcs2I.com/FRAM-ontology#hasOutput">
+        <rdfs:subPropertyOf rdf:resource="http://www.hcs2I.com/FRAM-ontology#hasAspect"/>
+        <rdfs:domain rdf:resource="http://www.hcs2I.com/FRAM-ontology#Function"/>
+        <rdfs:range rdf:resource="http://www.hcs2I.com/FRAM-ontology#Output"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.hcs2I.com/FRAM-ontology#hasPerformanceVariabilityManifestedAs -->
+
+    <owl:ObjectProperty rdf:about="http://www.hcs2I.com/FRAM-ontology#hasPerformanceVariabilityManifestedAs">
+        <rdfs:domain rdf:resource="http://www.hcs2I.com/FRAM-ontology#Output"/>
+        <rdfs:range rdf:resource="http://www.hcs2I.com/FRAM-ontology#Phenotype"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.hcs2I.com/FRAM-ontology#hasPhenotype -->
+
+    <owl:ObjectProperty rdf:about="http://www.hcs2I.com/FRAM-ontology#hasPhenotype">
+        <rdfs:domain rdf:resource="http://www.hcs2I.com/FRAM-ontology#Function"/>
+        <rdfs:range rdf:resource="http://www.hcs2I.com/FRAM-ontology#Phenotype"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.hcs2I.com/FRAM-ontology#hasPrecisionPhenotype -->
+
+    <owl:ObjectProperty rdf:about="http://www.hcs2I.com/FRAM-ontology#hasPrecisionPhenotype">
+        <rdfs:subPropertyOf rdf:resource="http://www.hcs2I.com/FRAM-ontology#hasPhenotype"/>
+        <rdfs:domain rdf:resource="http://www.hcs2I.com/FRAM-ontology#Function"/>
+        <rdfs:range rdf:resource="http://www.hcs2I.com/FRAM-ontology#Precision"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.hcs2I.com/FRAM-ontology#hasPrecondition -->
+
+    <owl:ObjectProperty rdf:about="http://www.hcs2I.com/FRAM-ontology#hasPrecondition">
+        <rdfs:subPropertyOf rdf:resource="http://www.hcs2I.com/FRAM-ontology#hasAspect"/>
+        <rdfs:domain rdf:resource="http://www.hcs2I.com/FRAM-ontology#Function"/>
+        <rdfs:range rdf:resource="http://www.hcs2I.com/FRAM-ontology#Precondition"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.hcs2I.com/FRAM-ontology#hasResource -->
+
+    <owl:ObjectProperty rdf:about="http://www.hcs2I.com/FRAM-ontology#hasResource">
+        <rdfs:subPropertyOf rdf:resource="http://www.hcs2I.com/FRAM-ontology#hasAspect"/>
+        <rdfs:domain rdf:resource="http://www.hcs2I.com/FRAM-ontology#Function"/>
+        <rdfs:range rdf:resource="http://www.hcs2I.com/FRAM-ontology#Resource"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.hcs2I.com/FRAM-ontology#hasSequencePhenotype -->
+
+    <owl:ObjectProperty rdf:about="http://www.hcs2I.com/FRAM-ontology#hasSequencePhenotype">
+        <rdfs:subPropertyOf rdf:resource="http://www.hcs2I.com/FRAM-ontology#hasPhenotype"/>
+        <rdfs:domain rdf:resource="http://www.hcs2I.com/FRAM-ontology#Function"/>
+        <rdfs:range rdf:resource="http://www.hcs2I.com/FRAM-ontology#Sequence"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.hcs2I.com/FRAM-ontology#hasSpeedPhenotype -->
+
+    <owl:ObjectProperty rdf:about="http://www.hcs2I.com/FRAM-ontology#hasSpeedPhenotype">
+        <rdfs:subPropertyOf rdf:resource="http://www.hcs2I.com/FRAM-ontology#hasPhenotype"/>
+        <rdfs:domain rdf:resource="http://www.hcs2I.com/FRAM-ontology#Function"/>
+        <rdfs:range rdf:resource="http://www.hcs2I.com/FRAM-ontology#Speed"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.hcs2I.com/FRAM-ontology#hasTime -->
+
+    <owl:ObjectProperty rdf:about="http://www.hcs2I.com/FRAM-ontology#hasTime">
+        <rdfs:subPropertyOf rdf:resource="http://www.hcs2I.com/FRAM-ontology#hasAspect"/>
+        <rdfs:domain rdf:resource="http://www.hcs2I.com/FRAM-ontology#Function"/>
+        <rdfs:range rdf:resource="http://www.hcs2I.com/FRAM-ontology#Time"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.hcs2I.com/FRAM-ontology#hasTimingPhenotype -->
+
+    <owl:ObjectProperty rdf:about="http://www.hcs2I.com/FRAM-ontology#hasTimingPhenotype">
+        <rdfs:subPropertyOf rdf:resource="http://www.hcs2I.com/FRAM-ontology#hasPhenotype"/>
+        <rdfs:domain rdf:resource="http://www.hcs2I.com/FRAM-ontology#Function"/>
+        <rdfs:range rdf:resource="http://www.hcs2I.com/FRAM-ontology#Timing"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.hcs2I.com/FRAM-ontology#hasUpstreamAspect -->
+
+    <owl:ObjectProperty rdf:about="http://www.hcs2I.com/FRAM-ontology#hasUpstreamAspect">
+        <rdfs:subPropertyOf rdf:resource="http://www.hcs2I.com/FRAM-ontology#hasUpstreamElement"/>
+        <rdfs:domain rdf:resource="http://www.hcs2I.com/FRAM-ontology#Coupling"/>
+        <rdfs:range rdf:resource="http://www.hcs2I.com/FRAM-ontology#Output"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.hcs2I.com/FRAM-ontology#hasUpstreamElement -->
+
+    <owl:ObjectProperty rdf:about="http://www.hcs2I.com/FRAM-ontology#hasUpstreamElement">
+        <rdfs:domain rdf:resource="http://www.hcs2I.com/FRAM-ontology#Coupling"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.hcs2I.com/FRAM-ontology#hasUpstreamFunction -->
+
+    <owl:ObjectProperty rdf:about="http://www.hcs2I.com/FRAM-ontology#hasUpstreamFunction">
+        <rdfs:subPropertyOf rdf:resource="http://www.hcs2I.com/FRAM-ontology#hasUpstreamElement"/>
+        <rdfs:domain rdf:resource="http://www.hcs2I.com/FRAM-ontology#Coupling"/>
+        <rdfs:range rdf:resource="http://www.hcs2I.com/FRAM-ontology#Function"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.hcs2I.com/FWS-ontology#affects -->
+
+    <owl:ObjectProperty rdf:about="http://www.hcs2I.com/FWS-ontology#affects">
+        <rdfs:domain rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Foundational_knowledge_conversion_activity"/>
+        <rdfs:range rdf:resource="http://www.hcs2I.com/FRAM-ontology#Function"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.hcs2I.com/FWS-ontology#hasPart -->
+
+    <owl:ObjectProperty rdf:about="http://www.hcs2I.com/FWS-ontology#hasPart">
+        <owl:inverseOf rdf:resource="http://www.hcs2I.com/FWS-ontology#isPartOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.hcs2I.com/FWS-ontology#isFunctionConversionOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.hcs2I.com/FWS-ontology#isFunctionConversionOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.hcs2I.com/FRAM-ontology#Function"/>
+        <rdfs:range rdf:resource="http://www.hcs2I.com/FRAM-ontology#Function"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.hcs2I.com/FWS-ontology#isPartOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.hcs2I.com/FWS-ontology#isPartOf"/>
+    
+
+
+    <!-- http://www.hcs2I.com/FWS-ontology#isRelatedToAgent -->
+
+    <owl:ObjectProperty rdf:about="http://www.hcs2I.com/FWS-ontology#isRelatedToAgent">
+        <rdfs:domain rdf:resource="http://www.hcs2I.com/FRAM-ontology#Function_type"/>
+        <rdfs:range rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Agent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.hcs2I.com/FWS-ontology#represents -->
+
+    <owl:ObjectProperty rdf:about="http://www.hcs2I.com/FWS-ontology#represents">
+        <rdfs:domain rdf:resource="http://www.hcs2I.com/FRAM-ontology#FRAM_Model"/>
+        <rdfs:range rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Knowledge_entity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.hcs2I.com/WAx-framework-ontology#hasAggregationLevel -->
+
+    <owl:ObjectProperty rdf:about="http://www.hcs2I.com/WAx-framework-ontology#hasAggregationLevel">
+        <rdfs:domain rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Agent"/>
+        <rdfs:range rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Agent_aggregation_level"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.hcs2I.com/WAx-framework-ontology#hasDriver -->
+
+    <owl:ObjectProperty rdf:about="http://www.hcs2I.com/WAx-framework-ontology#hasDriver">
+        <rdfs:domain rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Foundational_knowledge_conversion_activity"/>
+        <rdfs:range rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Knowledge_conversion_driver"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.hcs2I.com/WAx-framework-ontology#hasForm -->
+
+    <owl:ObjectProperty rdf:about="http://www.hcs2I.com/WAx-framework-ontology#hasForm">
+        <rdfs:domain rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Knowledge_entity"/>
+        <rdfs:range rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Knowledge_form"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.hcs2I.com/WAx-framework-ontology#hasLevel -->
+
+    <owl:ObjectProperty rdf:about="http://www.hcs2I.com/WAx-framework-ontology#hasLevel">
+        <rdfs:domain rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Knowledge_entity"/>
+        <rdfs:range rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Level"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.hcs2I.com/WAx-framework-ontology#hasRole -->
+
+    <owl:ObjectProperty rdf:about="http://www.hcs2I.com/WAx-framework-ontology#hasRole">
+        <rdfs:domain rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Agent"/>
+        <rdfs:range rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Agent_role"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.hcs2I.com/WAx-framework-ontology#hasSource -->
+
+    <owl:ObjectProperty rdf:about="http://www.hcs2I.com/WAx-framework-ontology#hasSource">
+        <rdfs:domain rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Foundational_knowledge_conversion_activity"/>
+        <rdfs:range rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Knowledge_entity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.hcs2I.com/WAx-framework-ontology#hasTarget -->
+
+    <owl:ObjectProperty rdf:about="http://www.hcs2I.com/WAx-framework-ontology#hasTarget">
+        <rdfs:domain rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Foundational_knowledge_conversion_activity"/>
+        <rdfs:range rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Knowledge_entity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.hcs2I.com/WAx-framework-ontology#isFeatureOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.hcs2I.com/WAx-framework-ontology#isFeatureOf">
+        <rdfs:domain rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Lack_of_information_quality"/>
+        <rdfs:range rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Knowledge_entity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.hcs2I.com/WAx-framework-ontology#isInfluencedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.hcs2I.com/WAx-framework-ontology#isInfluencedBy">
+        <rdfs:domain rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Foundational_knowledge_conversion_activity"/>
+        <rdfs:range rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Knowledge_entity"/>
+        <rdfs:isDefinedBy xml:lang="en">Influence is a meta-activity that is relevant for the purpose of the knowledge analysis. This latter represents the effect played by an agent when eliciting knowledge, due to his/her own pre-existing tacit knowledge. This activity does not relate directly to the knowledge entities, it rather affects the conversion process of a knowledge conversion activity between two entities. Influence takes account of the afore-mentioned preconceptions and communication effects.</rdfs:isDefinedBy>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.hcs2I.com/WAx-framework-ontology#isMotivatedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.hcs2I.com/WAx-framework-ontology#isMotivatedBy">
+        <owl:inverseOf rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#motivates"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.hcs2I.com/WAx-framework-ontology#isProcessOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.hcs2I.com/WAx-framework-ontology#isProcessOf">
+        <rdfs:domain rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Process"/>
+        <rdfs:range rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#System"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.hcs2I.com/WAx-framework-ontology#isViewedAs -->
+
+    <owl:ObjectProperty rdf:about="http://www.hcs2I.com/WAx-framework-ontology#isViewedAs">
+        <rdfs:domain rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#System"/>
+        <rdfs:range rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#System"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.hcs2I.com/WAx-framework-ontology#motivates -->
+
+    <owl:ObjectProperty rdf:about="http://www.hcs2I.com/WAx-framework-ontology#motivates">
+        <rdfs:domain rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Lack_of_information_quality"/>
+        <rdfs:range rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Knowledge_conversion_driver"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.hcs2I.com/WAx-framework-ontology#pertainsTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.hcs2I.com/WAx-framework-ontology#pertainsTo">
+        <rdfs:domain rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Knowledge_entity"/>
+        <rdfs:range rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Subsystem"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.hcs2I.com/WAx-framework-ontology#refersTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.hcs2I.com/WAx-framework-ontology#refersTo">
+        <rdfs:range rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Process"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.hcs2I.com/WAx-framework-ontology#relatesTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.hcs2I.com/WAx-framework-ontology#relatesTo">
+        <rdfs:domain rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Subsystem"/>
+        <rdfs:range rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Process"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.hcs2I.com/FRAM-ontology#ControlIDName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.hcs2I.com/FRAM-ontology#ControlIDName">
+        <rdfs:subPropertyOf rdf:resource="http://www.hcs2I.com/FRAM-ontology#IDName"/>
+        <rdfs:domain rdf:resource="http://www.hcs2I.com/FRAM-ontology#Control"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.hcs2I.com/FRAM-ontology#ControlIDNr -->
+
+    <owl:DatatypeProperty rdf:about="http://www.hcs2I.com/FRAM-ontology#ControlIDNr">
+        <rdfs:subPropertyOf rdf:resource="http://www.hcs2I.com/FRAM-ontology#IDNr"/>
+        <rdfs:domain rdf:resource="http://www.hcs2I.com/FRAM-ontology#Control"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.hcs2I.com/FRAM-ontology#Description -->
+
+    <owl:DatatypeProperty rdf:about="http://www.hcs2I.com/FRAM-ontology#Description">
+        <rdfs:domain rdf:resource="http://www.hcs2I.com/FRAM-ontology#Function"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.hcs2I.com/FRAM-ontology#FunctionIDName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.hcs2I.com/FRAM-ontology#FunctionIDName">
+        <rdfs:subPropertyOf rdf:resource="http://www.hcs2I.com/FRAM-ontology#IDName"/>
+        <rdfs:domain rdf:resource="http://www.hcs2I.com/FRAM-ontology#Function"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.hcs2I.com/FRAM-ontology#FunctionIDNr -->
+
+    <owl:DatatypeProperty rdf:about="http://www.hcs2I.com/FRAM-ontology#FunctionIDNr">
+        <rdfs:subPropertyOf rdf:resource="http://www.hcs2I.com/FRAM-ontology#IDNr"/>
+        <rdfs:domain rdf:resource="http://www.hcs2I.com/FRAM-ontology#Function"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.hcs2I.com/FRAM-ontology#FunctionType -->
+
+    <owl:DatatypeProperty rdf:about="http://www.hcs2I.com/FRAM-ontology#FunctionType">
+        <rdfs:domain rdf:resource="http://www.hcs2I.com/FRAM-ontology#Function"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:isDefinedBy>The type of function, i.e. technological, human, or organizational.</rdfs:isDefinedBy>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.hcs2I.com/FRAM-ontology#IDName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.hcs2I.com/FRAM-ontology#IDName">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.hcs2I.com/FRAM-ontology#FRAM_Element"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.hcs2I.com/FRAM-ontology#IDNr -->
+
+    <owl:DatatypeProperty rdf:about="http://www.hcs2I.com/FRAM-ontology#IDNr">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.hcs2I.com/FRAM-ontology#FRAM_Element"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.hcs2I.com/FRAM-ontology#InputIDName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.hcs2I.com/FRAM-ontology#InputIDName">
+        <rdfs:subPropertyOf rdf:resource="http://www.hcs2I.com/FRAM-ontology#IDName"/>
+        <rdfs:domain rdf:resource="http://www.hcs2I.com/FRAM-ontology#Input"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.hcs2I.com/FRAM-ontology#InputIDNr -->
+
+    <owl:DatatypeProperty rdf:about="http://www.hcs2I.com/FRAM-ontology#InputIDNr">
+        <rdfs:subPropertyOf rdf:resource="http://www.hcs2I.com/FRAM-ontology#IDNr"/>
+        <rdfs:domain rdf:resource="http://www.hcs2I.com/FRAM-ontology#Input"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.hcs2I.com/FRAM-ontology#OutputIDName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.hcs2I.com/FRAM-ontology#OutputIDName">
+        <rdfs:subPropertyOf rdf:resource="http://www.hcs2I.com/FRAM-ontology#IDName"/>
+        <rdfs:domain rdf:resource="http://www.hcs2I.com/FRAM-ontology#Output"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.hcs2I.com/FRAM-ontology#OutputIDNr -->
+
+    <owl:DatatypeProperty rdf:about="http://www.hcs2I.com/FRAM-ontology#OutputIDNr">
+        <rdfs:subPropertyOf rdf:resource="http://www.hcs2I.com/FRAM-ontology#IDNr"/>
+        <rdfs:domain rdf:resource="http://www.hcs2I.com/FRAM-ontology#Output"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.hcs2I.com/FRAM-ontology#PreconditionIDName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.hcs2I.com/FRAM-ontology#PreconditionIDName">
+        <rdfs:subPropertyOf rdf:resource="http://www.hcs2I.com/FRAM-ontology#IDName"/>
+        <rdfs:domain rdf:resource="http://www.hcs2I.com/FRAM-ontology#Precondition"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.hcs2I.com/FRAM-ontology#PreconditionIDNr -->
+
+    <owl:DatatypeProperty rdf:about="http://www.hcs2I.com/FRAM-ontology#PreconditionIDNr">
+        <rdfs:subPropertyOf rdf:resource="http://www.hcs2I.com/FRAM-ontology#IDNr"/>
+        <rdfs:domain rdf:resource="http://www.hcs2I.com/FRAM-ontology#Precondition"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.hcs2I.com/FRAM-ontology#ResourceIDName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.hcs2I.com/FRAM-ontology#ResourceIDName">
+        <rdfs:subPropertyOf rdf:resource="http://www.hcs2I.com/FRAM-ontology#IDName"/>
+        <rdfs:domain rdf:resource="http://www.hcs2I.com/FRAM-ontology#Resource"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.hcs2I.com/FRAM-ontology#ResourceIDNr -->
+
+    <owl:DatatypeProperty rdf:about="http://www.hcs2I.com/FRAM-ontology#ResourceIDNr">
+        <rdfs:subPropertyOf rdf:resource="http://www.hcs2I.com/FRAM-ontology#IDNr"/>
+        <rdfs:domain rdf:resource="http://www.hcs2I.com/FRAM-ontology#Resource"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.hcs2I.com/FRAM-ontology#TimeIDName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.hcs2I.com/FRAM-ontology#TimeIDName">
+        <rdfs:subPropertyOf rdf:resource="http://www.hcs2I.com/FRAM-ontology#IDName"/>
+        <rdfs:domain rdf:resource="http://www.hcs2I.com/FRAM-ontology#Time"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.hcs2I.com/FRAM-ontology#TimeIDNr -->
+
+    <owl:DatatypeProperty rdf:about="http://www.hcs2I.com/FRAM-ontology#TimeIDNr">
+        <rdfs:subPropertyOf rdf:resource="http://www.hcs2I.com/FRAM-ontology#IDNr"/>
+        <rdfs:domain rdf:resource="http://www.hcs2I.com/FRAM-ontology#Time"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- file:/Users/antoniodenicola/Library/CloudStorage/GoogleDrive-antonio.denicola@gmail.com/Il%20mio%20Drive/MGM/CONFERENZE-Workshops-Chapters/2026-EMMSAD/Ontology/SUMO.owl#Abstract -->
+
+    <owl:Class rdf:about="file:/Users/antoniodenicola/Library/CloudStorage/GoogleDrive-antonio.denicola@gmail.com/Il%20mio%20Drive/MGM/CONFERENZE-Workshops-Chapters/2026-EMMSAD/Ontology/SUMO.owl#Abstract"/>
+    
+
+
+    <!-- file:/Users/antoniodenicola/Library/CloudStorage/GoogleDrive-antonio.denicola@gmail.com/Il%20mio%20Drive/MGM/CONFERENZE-Workshops-Chapters/2026-EMMSAD/Ontology/SUMO.owl#Agent -->
+
+    <owl:Class rdf:about="file:/Users/antoniodenicola/Library/CloudStorage/GoogleDrive-antonio.denicola@gmail.com/Il%20mio%20Drive/MGM/CONFERENZE-Workshops-Chapters/2026-EMMSAD/Ontology/SUMO.owl#Agent"/>
+    
+
+
+    <!-- file:/Users/antoniodenicola/Library/CloudStorage/GoogleDrive-antonio.denicola@gmail.com/Il%20mio%20Drive/MGM/CONFERENZE-Workshops-Chapters/2026-EMMSAD/Ontology/SUMO.owl#InternalAttribute -->
+
+    <owl:Class rdf:about="file:/Users/antoniodenicola/Library/CloudStorage/GoogleDrive-antonio.denicola@gmail.com/Il%20mio%20Drive/MGM/CONFERENZE-Workshops-Chapters/2026-EMMSAD/Ontology/SUMO.owl#InternalAttribute"/>
+    
+
+
+    <!-- file:/Users/antoniodenicola/Library/CloudStorage/GoogleDrive-antonio.denicola@gmail.com/Il%20mio%20Drive/MGM/CONFERENZE-Workshops-Chapters/2026-EMMSAD/Ontology/SUMO.owl#Model -->
+
+    <owl:Class rdf:about="file:/Users/antoniodenicola/Library/CloudStorage/GoogleDrive-antonio.denicola@gmail.com/Il%20mio%20Drive/MGM/CONFERENZE-Workshops-Chapters/2026-EMMSAD/Ontology/SUMO.owl#Model"/>
+    
+
+
+    <!-- file:/Users/antoniodenicola/Library/CloudStorage/GoogleDrive-antonio.denicola@gmail.com/Il%20mio%20Drive/MGM/CONFERENZE-Workshops-Chapters/2026-EMMSAD/Ontology/SUMO.owl#Physical -->
+
+    <owl:Class rdf:about="file:/Users/antoniodenicola/Library/CloudStorage/GoogleDrive-antonio.denicola@gmail.com/Il%20mio%20Drive/MGM/CONFERENZE-Workshops-Chapters/2026-EMMSAD/Ontology/SUMO.owl#Physical"/>
+    
+
+
+    <!-- file:/Users/antoniodenicola/Library/CloudStorage/GoogleDrive-antonio.denicola@gmail.com/Il%20mio%20Drive/MGM/CONFERENZE-Workshops-Chapters/2026-EMMSAD/Ontology/SUMO.owl#Procedure -->
+
+    <owl:Class rdf:about="file:/Users/antoniodenicola/Library/CloudStorage/GoogleDrive-antonio.denicola@gmail.com/Il%20mio%20Drive/MGM/CONFERENZE-Workshops-Chapters/2026-EMMSAD/Ontology/SUMO.owl#Procedure"/>
+    
+
+
+    <!-- file:/Users/antoniodenicola/Library/CloudStorage/GoogleDrive-antonio.denicola@gmail.com/Il%20mio%20Drive/MGM/CONFERENZE-Workshops-Chapters/2026-EMMSAD/Ontology/SUMO.owl#Process -->
+
+    <owl:Class rdf:about="file:/Users/antoniodenicola/Library/CloudStorage/GoogleDrive-antonio.denicola@gmail.com/Il%20mio%20Drive/MGM/CONFERENZE-Workshops-Chapters/2026-EMMSAD/Ontology/SUMO.owl#Process"/>
+    
+
+
+    <!-- file:/Users/antoniodenicola/Library/CloudStorage/GoogleDrive-antonio.denicola@gmail.com/Il%20mio%20Drive/MGM/CONFERENZE-Workshops-Chapters/2026-EMMSAD/Ontology/SUMO.owl#ProcessTask -->
+
+    <owl:Class rdf:about="file:/Users/antoniodenicola/Library/CloudStorage/GoogleDrive-antonio.denicola@gmail.com/Il%20mio%20Drive/MGM/CONFERENZE-Workshops-Chapters/2026-EMMSAD/Ontology/SUMO.owl#ProcessTask"/>
+    
+
+
+    <!-- file:/Users/antoniodenicola/Library/CloudStorage/GoogleDrive-antonio.denicola@gmail.com/Il%20mio%20Drive/MGM/CONFERENZE-Workshops-Chapters/2026-EMMSAD/Ontology/SUMO.owl#Proposition -->
+
+    <owl:Class rdf:about="file:/Users/antoniodenicola/Library/CloudStorage/GoogleDrive-antonio.denicola@gmail.com/Il%20mio%20Drive/MGM/CONFERENZE-Workshops-Chapters/2026-EMMSAD/Ontology/SUMO.owl#Proposition"/>
+    
+
+
+    <!-- file:/Users/antoniodenicola/Library/CloudStorage/GoogleDrive-antonio.denicola@gmail.com/Il%20mio%20Drive/MGM/CONFERENZE-Workshops-Chapters/2026-EMMSAD/Ontology/SUMO.owl#QuintaryRelation -->
+
+    <owl:Class rdf:about="file:/Users/antoniodenicola/Library/CloudStorage/GoogleDrive-antonio.denicola@gmail.com/Il%20mio%20Drive/MGM/CONFERENZE-Workshops-Chapters/2026-EMMSAD/Ontology/SUMO.owl#QuintaryRelation"/>
+    
+
+
+    <!-- file:/Users/antoniodenicola/Library/CloudStorage/GoogleDrive-antonio.denicola@gmail.com/Il%20mio%20Drive/MGM/CONFERENZE-Workshops-Chapters/2026-EMMSAD/Ontology/SUMO.owl#RelationalAttribute -->
+
+    <owl:Class rdf:about="file:/Users/antoniodenicola/Library/CloudStorage/GoogleDrive-antonio.denicola@gmail.com/Il%20mio%20Drive/MGM/CONFERENZE-Workshops-Chapters/2026-EMMSAD/Ontology/SUMO.owl#RelationalAttribute"/>
+    
+
+
+    <!-- file:/Users/antoniodenicola/Library/CloudStorage/GoogleDrive-antonio.denicola@gmail.com/Il%20mio%20Drive/MGM/CONFERENZE-Workshops-Chapters/2026-EMMSAD/Ontology/SUMO.owl#SocialRole -->
+
+    <owl:Class rdf:about="file:/Users/antoniodenicola/Library/CloudStorage/GoogleDrive-antonio.denicola@gmail.com/Il%20mio%20Drive/MGM/CONFERENZE-Workshops-Chapters/2026-EMMSAD/Ontology/SUMO.owl#SocialRole"/>
+    
+
+
+    <!-- http://www.adampease.org/OP/SUMO.owl#Artifact -->
+
+    <owl:Class rdf:about="http://www.adampease.org/OP/SUMO.owl#Artifact">
+        <owl:equivalentClass rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Physical_object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.adampease.org/OP/SUMO.owl#PhysicalSystem -->
+
+    <owl:Class rdf:about="http://www.adampease.org/OP/SUMO.owl#PhysicalSystem">
+        <owl:equivalentClass rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Physical_system"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hcs2I.com/FRAM-ontology#Aspect -->
+
+    <owl:Class rdf:about="http://www.hcs2I.com/FRAM-ontology#Aspect">
+        <rdfs:subClassOf rdf:resource="file:/Users/antoniodenicola/Library/CloudStorage/GoogleDrive-antonio.denicola@gmail.com/Il%20mio%20Drive/MGM/CONFERENZE-Workshops-Chapters/2026-EMMSAD/Ontology/SUMO.owl#Proposition"/>
+        <rdfs:subClassOf rdf:resource="http://www.hcs2I.com/FRAM-ontology#FRAM_Element"/>
+        <rdfs:isDefinedBy xml:lang="en">That which characterises a function.
+
+REFERENCE:
+Hollnagel, E. (2012). FRAM, the functional resonance analysis method: modelling complex socio-technical systems. Ashgate Publishing, Ltd..</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hcs2I.com/FRAM-ontology#Control -->
+
+    <owl:Class rdf:about="http://www.hcs2I.com/FRAM-ontology#Control">
+        <rdfs:subClassOf rdf:resource="http://www.hcs2I.com/FRAM-ontology#Aspect"/>
+        <rdfs:isDefinedBy>That which supervises or regulates the function, e.g. plans, procedures, guidelines or other functions.
+
+REFERENCE:
+Hollnagel, E. (2012). FRAM, the functional resonance analysis method: modelling complex socio-technical systems. Ashgate Publishing, Ltd..</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hcs2I.com/FRAM-ontology#Coupling -->
+
+    <owl:Class rdf:about="http://www.hcs2I.com/FRAM-ontology#Coupling">
+        <rdfs:subClassOf rdf:resource="file:/Users/antoniodenicola/Library/CloudStorage/GoogleDrive-antonio.denicola@gmail.com/Il%20mio%20Drive/MGM/CONFERENZE-Workshops-Chapters/2026-EMMSAD/Ontology/SUMO.owl#QuintaryRelation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/FRAM-ontology#hasDownstreamAspect"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/FRAM-ontology#Control"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/FRAM-ontology#hasDownstreamAspect"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/FRAM-ontology#Input"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/FRAM-ontology#hasDownstreamAspect"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/FRAM-ontology#Precondition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/FRAM-ontology#hasDownstreamAspect"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/FRAM-ontology#Resource"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/FRAM-ontology#hasDownstreamAspect"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/FRAM-ontology#Time"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/FRAM-ontology#hasDownstreamFunction"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/FRAM-ontology#Function"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/FRAM-ontology#hasEffect"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/FRAM-ontology#Coupling_effect"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/FRAM-ontology#hasUpstreamAspect"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/FRAM-ontology#Output"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/FRAM-ontology#hasUpstreamFunction"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/FRAM-ontology#Function"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy xml:lang="en">A link between functions.
+
+REFERENCE:
+Hollnagel, E. (2012). FRAM, the functional resonance analysis method: modelling complex socio-technical systems. Ashgate Publishing, Ltd..</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hcs2I.com/FRAM-ontology#Coupling_effect -->
+
+    <owl:Class rdf:about="http://www.hcs2I.com/FRAM-ontology#Coupling_effect">
+        <rdfs:subClassOf rdf:resource="file:/Users/antoniodenicola/Library/CloudStorage/GoogleDrive-antonio.denicola@gmail.com/Il%20mio%20Drive/MGM/CONFERENZE-Workshops-Chapters/2026-EMMSAD/Ontology/SUMO.owl#InternalAttribute"/>
+        <rdfs:isDefinedBy xml:lang="en">Possible effect of coupling on downstream function.
+
+REFERENCE:
+Hollnagel, E. (2012). FRAM, the functional resonance analysis method: modelling complex socio-technical systems. Ashgate Publishing, Ltd..</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hcs2I.com/FRAM-ontology#Direction -->
+
+    <owl:Class rdf:about="http://www.hcs2I.com/FRAM-ontology#Direction">
+        <rdfs:subClassOf rdf:resource="http://www.hcs2I.com/FRAM-ontology#Phenotype"/>
+        <rdfs:isDefinedBy xml:lang="en">Reference:
+Hollnagel, E. (2012). FRAM, the functional resonance analysis method: modelling complex socio-technical systems. Ashgate Publishing, Ltd..</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hcs2I.com/FRAM-ontology#Distance -->
+
+    <owl:Class rdf:about="http://www.hcs2I.com/FRAM-ontology#Distance">
+        <rdfs:subClassOf rdf:resource="http://www.hcs2I.com/FRAM-ontology#Phenotype"/>
+        <rdfs:isDefinedBy xml:lang="en">Reference:
+Hollnagel, E. (2012). FRAM, the functional resonance analysis method: modelling complex socio-technical systems. Ashgate Publishing, Ltd..</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hcs2I.com/FRAM-ontology#Duration -->
+
+    <owl:Class rdf:about="http://www.hcs2I.com/FRAM-ontology#Duration">
+        <rdfs:subClassOf rdf:resource="http://www.hcs2I.com/FRAM-ontology#Phenotype"/>
+        <rdfs:isDefinedBy xml:lang="en">Reference:
+Hollnagel, E. (2012). FRAM, the functional resonance analysis method: modelling complex socio-technical systems. Ashgate Publishing, Ltd..</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hcs2I.com/FRAM-ontology#FRAM_Element -->
+
+    <owl:Class rdf:about="http://www.hcs2I.com/FRAM-ontology#FRAM_Element">
+        <rdfs:subClassOf rdf:resource="file:/Users/antoniodenicola/Library/CloudStorage/GoogleDrive-antonio.denicola@gmail.com/Il%20mio%20Drive/MGM/CONFERENZE-Workshops-Chapters/2026-EMMSAD/Ontology/SUMO.owl#Abstract"/>
+        <rdfs:isDefinedBy xml:lang="en">Entity used in the Functional Resonance Analysis Method.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hcs2I.com/FRAM-ontology#FRAM_Model -->
+
+    <owl:Class rdf:about="http://www.hcs2I.com/FRAM-ontology#FRAM_Model">
+        <rdfs:subClassOf rdf:resource="file:/Users/antoniodenicola/Library/CloudStorage/GoogleDrive-antonio.denicola@gmail.com/Il%20mio%20Drive/MGM/CONFERENZE-Workshops-Chapters/2026-EMMSAD/Ontology/SUMO.owl#Procedure"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/FWS-ontology#hasPart"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/FRAM-ontology#Function"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/FWS-ontology#represents"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Knowledge_entity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy xml:lang="en">A description of functions.
+
+REFERENCE:
+Hollnagel, E. (2012). FRAM, the functional resonance analysis method: modelling complex socio-technical systems. Ashgate Publishing, Ltd..</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hcs2I.com/FRAM-ontology#Force -->
+
+    <owl:Class rdf:about="http://www.hcs2I.com/FRAM-ontology#Force">
+        <rdfs:subClassOf rdf:resource="http://www.hcs2I.com/FRAM-ontology#Phenotype"/>
+        <rdfs:isDefinedBy xml:lang="en">Reference:
+Hollnagel, E. (2012). FRAM, the functional resonance analysis method: modelling complex socio-technical systems. Ashgate Publishing, Ltd..</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hcs2I.com/FRAM-ontology#Function -->
+
+    <owl:Class rdf:about="http://www.hcs2I.com/FRAM-ontology#Function">
+        <rdfs:subClassOf rdf:resource="file:/Users/antoniodenicola/Library/CloudStorage/GoogleDrive-antonio.denicola@gmail.com/Il%20mio%20Drive/MGM/CONFERENZE-Workshops-Chapters/2026-EMMSAD/Ontology/SUMO.owl#ProcessTask"/>
+        <rdfs:subClassOf rdf:resource="http://www.hcs2I.com/FRAM-ontology#FRAM_Element"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/FRAM-ontology#hasFunction"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/FRAM-ontology#Aspect"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy>A function represents the means that are necessary to achieve a goal. More generally, a function represents the acts or activities - simple or complex - that are needed to produce a certain result. 
+A function typically describes what people - individually or collectively - have to do to perform a specific task and thus achieve a specific goal, for example, triage a patient or carry out medication reconciliation.
+A function can also refers to something that an organisation does: for example it is the function of an emergency department to treat incoming patients.
+A function can refer to what a technical system does either by itself (an automated function, such as dialysis machine) or together with one or more people (an interactive or socio-technical function, like an electronic health record).
+
+
+REFERENCE:
+Hollnagel, E. (2012). FRAM, the functional resonance analysis method: modelling complex socio-technical systems. Ashgate Publishing, Ltd..</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hcs2I.com/FRAM-ontology#Function_role -->
+
+    <owl:Class rdf:about="http://www.hcs2I.com/FRAM-ontology#Function_role">
+        <rdfs:subClassOf rdf:resource="file:/Users/antoniodenicola/Library/CloudStorage/GoogleDrive-antonio.denicola@gmail.com/Il%20mio%20Drive/MGM/CONFERENZE-Workshops-Chapters/2026-EMMSAD/Ontology/SUMO.owl#RelationalAttribute"/>
+        <rdfs:isDefinedBy xml:lang="en">Relative importance of a function in the model. 
+For instamce, the functions that provide the Resources may, on the other hand, be either foreground functions or background functions, depending on how essential the Resources are or how much they are assumed to vary.
+In the FRAM, designated foreground functions must have defined Inputs, while designated background functions need not have.
+
+REFERENCE:
+Hollnagel, E. (2012). FRAM, the functional resonance analysis method: modelling complex socio-technical systems. Ashgate Publishing, Ltd..</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hcs2I.com/FRAM-ontology#Function_type -->
+
+    <owl:Class rdf:about="http://www.hcs2I.com/FRAM-ontology#Function_type">
+        <rdfs:subClassOf rdf:resource="file:/Users/antoniodenicola/Library/CloudStorage/GoogleDrive-antonio.denicola@gmail.com/Il%20mio%20Drive/MGM/CONFERENZE-Workshops-Chapters/2026-EMMSAD/Ontology/SUMO.owl#InternalAttribute"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/FWS-ontology#isRelatedToAgent"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Agent"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy xml:lang="en">The type of function, i.e. technological, human, or organizational.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hcs2I.com/FRAM-ontology#Input -->
+
+    <owl:Class rdf:about="http://www.hcs2I.com/FRAM-ontology#Input">
+        <rdfs:subClassOf rdf:resource="http://www.hcs2I.com/FRAM-ontology#Aspect"/>
+        <rdfs:isDefinedBy>That which activates the function and/or is used or transformed to produce the output. Constitutes the link to upstream functions. 
+
+REFERENCE:
+Hollnagel, E. (2012). FRAM, the functional resonance analysis method: modelling complex socio-technical systems. Ashgate Publishing, Ltd..</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hcs2I.com/FRAM-ontology#Object -->
+
+    <owl:Class rdf:about="http://www.hcs2I.com/FRAM-ontology#Object">
+        <rdfs:subClassOf rdf:resource="http://www.hcs2I.com/FRAM-ontology#Phenotype"/>
+        <rdfs:isDefinedBy xml:lang="en">Reference:
+Hollnagel, E. (2012). FRAM, the functional resonance analysis method: modelling complex socio-technical systems. Ashgate Publishing, Ltd..</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hcs2I.com/FRAM-ontology#Output -->
+
+    <owl:Class rdf:about="http://www.hcs2I.com/FRAM-ontology#Output">
+        <rdfs:subClassOf rdf:resource="http://www.hcs2I.com/FRAM-ontology#Aspect"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/FRAM-ontology#hasPerformanceVariabilityManifestedAs"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/FRAM-ontology#Phenotype"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy>That which is the result of the function. Constitutes the links to downstream functions.
+
+REFERENCE:
+Hollnagel, E. (2012). FRAM, the functional resonance analysis method: modelling complex socio-technical systems. Ashgate Publishing, Ltd..</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hcs2I.com/FRAM-ontology#Phenotype -->
+
+    <owl:Class rdf:about="http://www.hcs2I.com/FRAM-ontology#Phenotype">
+        <rdfs:subClassOf rdf:resource="file:/Users/antoniodenicola/Library/CloudStorage/GoogleDrive-antonio.denicola@gmail.com/Il%20mio%20Drive/MGM/CONFERENZE-Workshops-Chapters/2026-EMMSAD/Ontology/SUMO.owl#RelationalAttribute"/>
+        <rdfs:subClassOf rdf:resource="http://www.hcs2I.com/FRAM-ontology#FRAM_Element"/>
+        <rdfs:isDefinedBy>An observable form of erroneous action.
+
+REFERENCE:
+Hollnagel, E. (2012). FRAM, the functional resonance analysis method: modelling complex socio-technical systems. Ashgate Publishing, Ltd..</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hcs2I.com/FRAM-ontology#Precision -->
+
+    <owl:Class rdf:about="http://www.hcs2I.com/FRAM-ontology#Precision">
+        <rdfs:subClassOf rdf:resource="http://www.hcs2I.com/FRAM-ontology#Phenotype"/>
+        <rdfs:isDefinedBy xml:lang="en">The potential output variability with respect to precision.
+
+Reference:
+Hollnagel, E. (2012). FRAM, the functional resonance analysis method: modelling complex socio-technical systems. Ashgate Publishing, Ltd..</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hcs2I.com/FRAM-ontology#Precondition -->
+
+    <owl:Class rdf:about="http://www.hcs2I.com/FRAM-ontology#Precondition">
+        <rdfs:subClassOf rdf:resource="http://www.hcs2I.com/FRAM-ontology#Aspect"/>
+        <rdfs:isDefinedBy>System conditions that must be fulfilled before a function can be carried out.
+
+REFERENCE:
+Hollnagel, E. (2012). FRAM, the functional resonance analysis method: modelling complex socio-technical systems. Ashgate Publishing, Ltd..</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hcs2I.com/FRAM-ontology#Resource -->
+
+    <owl:Class rdf:about="http://www.hcs2I.com/FRAM-ontology#Resource">
+        <rdfs:subClassOf rdf:resource="http://www.hcs2I.com/FRAM-ontology#Aspect"/>
+        <rdfs:isDefinedBy>(Execution condition) That which is needed or consumed by the function when it is active (matter, energy, competence, software, manpower).
+
+REFERENCE:
+Hollnagel, E. (2012). FRAM, the functional resonance analysis method: modelling complex socio-technical systems. Ashgate Publishing, Ltd..</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hcs2I.com/FRAM-ontology#Sequence -->
+
+    <owl:Class rdf:about="http://www.hcs2I.com/FRAM-ontology#Sequence">
+        <rdfs:subClassOf rdf:resource="http://www.hcs2I.com/FRAM-ontology#Phenotype"/>
+        <rdfs:isDefinedBy xml:lang="en">Reference:
+Hollnagel, E. (2012). FRAM, the functional resonance analysis method: modelling complex socio-technical systems. Ashgate Publishing, Ltd..</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hcs2I.com/FRAM-ontology#Speed -->
+
+    <owl:Class rdf:about="http://www.hcs2I.com/FRAM-ontology#Speed">
+        <rdfs:subClassOf rdf:resource="http://www.hcs2I.com/FRAM-ontology#Phenotype"/>
+        <rdfs:isDefinedBy xml:lang="en">Reference:
+Hollnagel, E. (2012). FRAM, the functional resonance analysis method: modelling complex socio-technical systems. Ashgate Publishing, Ltd..</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hcs2I.com/FRAM-ontology#Time -->
+
+    <owl:Class rdf:about="http://www.hcs2I.com/FRAM-ontology#Time">
+        <rdfs:subClassOf rdf:resource="http://www.hcs2I.com/FRAM-ontology#Aspect"/>
+        <rdfs:isDefinedBy>Temporal aspects that affect how the function is carried out.
+
+REFERENCE:
+Hollnagel, E. (2012). FRAM, the functional resonance analysis method: modelling complex socio-technical systems. Ashgate Publishing, Ltd..</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hcs2I.com/FRAM-ontology#Timing -->
+
+    <owl:Class rdf:about="http://www.hcs2I.com/FRAM-ontology#Timing">
+        <rdfs:subClassOf rdf:resource="http://www.hcs2I.com/FRAM-ontology#Phenotype"/>
+        <rdfs:isDefinedBy xml:lang="en">The potential output variability with respect to time.
+
+Reference:
+Hollnagel, E. (2012). FRAM, the functional resonance analysis method: modelling complex socio-technical systems. Ashgate Publishing, Ltd..</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hcs2I.com/WAx-framework-ontology#Accidental_knowledge_conversion_driver -->
+
+    <owl:Class rdf:about="http://www.hcs2I.com/WAx-framework-ontology#Accidental_knowledge_conversion_driver">
+        <rdfs:subClassOf rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Knowledge_conversion_driver"/>
+        <rdfs:isDefinedBy>An accidental driver is a knowledge conversion originated by an interpretation activity subject to information losses, misunderstandings, and subjective interpretations. Using a thermodynamic metaphor, accidental drivers refer to inescapable thermodynamic energy dispersion (in this case knowledge dispersion) present in every process. As such, every knowledge transformation has a higher or lower accidental conversion, which leads to lost information.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hcs2I.com/WAx-framework-ontology#Action -->
+
+    <owl:Class rdf:about="http://www.hcs2I.com/WAx-framework-ontology#Action">
+        <rdfs:subClassOf rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Knowledge_entity"/>
+        <rdfs:isDefinedBy xml:lang="en">Actual operating tasks.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hcs2I.com/WAx-framework-ontology#Agent -->
+
+    <owl:Class rdf:about="http://www.hcs2I.com/WAx-framework-ontology#Agent">
+        <rdfs:subClassOf rdf:resource="file:/Users/antoniodenicola/Library/CloudStorage/GoogleDrive-antonio.denicola@gmail.com/Il%20mio%20Drive/MGM/CONFERENZE-Workshops-Chapters/2026-EMMSAD/Ontology/SUMO.owl#Agent"/>
+        <rdfs:subClassOf rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Subsystem"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#hasAggregationLevel"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Agent_aggregation_level"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#hasRole"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Agent_role"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy xml:lang="en">One that acts.
+
+Reference:
+https://www.merriam-webster.com/dictionary/agent</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hcs2I.com/WAx-framework-ontology#Agent_aggregation_level -->
+
+    <owl:Class rdf:about="http://www.hcs2I.com/WAx-framework-ontology#Agent_aggregation_level">
+        <rdfs:subClassOf rdf:resource="file:/Users/antoniodenicola/Library/CloudStorage/GoogleDrive-antonio.denicola@gmail.com/Il%20mio%20Drive/MGM/CONFERENZE-Workshops-Chapters/2026-EMMSAD/Ontology/SUMO.owl#InternalAttribute"/>
+        <rdfs:isDefinedBy xml:lang="en">The level of aggregation of the agent(s) involved in a process.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hcs2I.com/WAx-framework-ontology#Agent_role -->
+
+    <owl:Class rdf:about="http://www.hcs2I.com/WAx-framework-ontology#Agent_role">
+        <rdfs:subClassOf rdf:resource="file:/Users/antoniodenicola/Library/CloudStorage/GoogleDrive-antonio.denicola@gmail.com/Il%20mio%20Drive/MGM/CONFERENZE-Workshops-Chapters/2026-EMMSAD/Ontology/SUMO.owl#SocialRole"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/FWS-ontology#isPartOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Knowledge_structure"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy>The role played by an agent in a process.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hcs2I.com/WAx-framework-ontology#Analyst -->
+
+    <owl:Class rdf:about="http://www.hcs2I.com/WAx-framework-ontology#Analyst">
+        <rdfs:subClassOf rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Agent_role"/>
+        <rdfs:isDefinedBy>The analyst role concerns the agent who analyses the system according to some properties (e.g. safety, efficiency).</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hcs2I.com/WAx-framework-ontology#Analyst_Conceptualization -->
+
+    <owl:Class rdf:about="http://www.hcs2I.com/WAx-framework-ontology#Analyst_Conceptualization">
+        <rdfs:subClassOf rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Conceptualization"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#hasTarget"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#WAO_Analyst"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#isInfluencedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#WAI_Analyst-of-WAI"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy xml:lang="en">The conceptualization activity performed by analyst.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hcs2I.com/WAx-framework-ontology#Analyst_combination -->
+
+    <owl:Class rdf:about="http://www.hcs2I.com/WAx-framework-ontology#Analyst_combination">
+        <rdfs:subClassOf rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Combination"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#hasDriver"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#ETTO_communication_driver"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#hasSource"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#WADI_Analyst-of-WAI"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#hasSource"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#WADI_SO"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#hasTarget"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Analyst_combination_outcome"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy xml:lang="en">The combination activity performed by analyst.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hcs2I.com/WAx-framework-ontology#Analyst_combination_outcome -->
+
+    <owl:Class rdf:about="http://www.hcs2I.com/WAx-framework-ontology#Analyst_combination_outcome">
+        <rdfs:subClassOf rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#WADI"/>
+        <rdfs:isDefinedBy xml:lang="en">The result of the analyst activity to combine the WADI_SO and the WADI_analyst_of_WAI.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hcs2I.com/WAx-framework-ontology#Analyst_externalisation -->
+
+    <owl:Class rdf:about="http://www.hcs2I.com/WAx-framework-ontology#Analyst_externalisation">
+        <rdfs:subClassOf rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Externalisation"/>
+        <rdfs:isDefinedBy xml:lang="en">The externalsation activity performed by analyst.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hcs2I.com/WAx-framework-ontology#Analyst_externalisation_of_WAD -->
+
+    <owl:Class rdf:about="http://www.hcs2I.com/WAx-framework-ontology#Analyst_externalisation_of_WAD">
+        <rdfs:subClassOf rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Analyst_externalisation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#hasDriver"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#ETTO_modelling_driver"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#hasSource"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#WAI_Analyst-of-WAD"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#hasTarget"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#WADI_Analyst-of-WAD"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy xml:lang="en">The externalisation activity of WAI_analyst_of_WAD performed by analyst to disclose the WADI_analyst_of_WAD.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hcs2I.com/WAx-framework-ontology#Analyst_externalisation_of_WAI -->
+
+    <owl:Class rdf:about="http://www.hcs2I.com/WAx-framework-ontology#Analyst_externalisation_of_WAI">
+        <rdfs:subClassOf rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Analyst_externalisation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#hasDriver"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#ETTO_modelling_driver"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#hasSource"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#WAI_Analyst-of-WAI"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#hasTarget"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#WADI_Analyst-of-WAI"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy xml:lang="en">The externalisation activity of WAI_analyst_of_WAI performed by analyst to disclose the WADI_analyst_of_WAI.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hcs2I.com/WAx-framework-ontology#Analyst_internalisation -->
+
+    <owl:Class rdf:about="http://www.hcs2I.com/WAx-framework-ontology#Analyst_internalisation">
+        <rdfs:subClassOf rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Internalisation"/>
+        <rdfs:isDefinedBy xml:lang="en">The internalisation activity performed analyst.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hcs2I.com/WAx-framework-ontology#Analyst_internalisation_for_WAI_of_WAD_creation -->
+
+    <owl:Class rdf:about="http://www.hcs2I.com/WAx-framework-ontology#Analyst_internalisation_for_WAI_of_WAD_creation">
+        <rdfs:subClassOf rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Analyst_internalisation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#hasSource"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Analyst_combination_outcome"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#hasTarget"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#WAI_Analyst-of-WAD"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy xml:lang="en">The internalisation activity performed by analyst to create the WAI_Analyst_of_WAD from the Analyst_combination_outcome.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hcs2I.com/WAx-framework-ontology#Analyst_internalisation_for_WAI_of_WAI_creation -->
+
+    <owl:Class rdf:about="http://www.hcs2I.com/WAx-framework-ontology#Analyst_internalisation_for_WAI_of_WAI_creation">
+        <rdfs:subClassOf rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Analyst_internalisation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#hasDriver"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#ETTO_communication_driver"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#hasSource"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#WADI_BO"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#hasSource"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#WAN"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#hasSource"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#WAP_BO"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#hasTarget"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#WAI_Analyst-of-WAI"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy xml:lang="en">The internalisation activity performed by analyst to create the WAI_Analyst_of_WAI from WADI_BO, WAN, and WAP_BO.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hcs2I.com/WAx-framework-ontology#Analyst_introspection -->
+
+    <owl:Class rdf:about="http://www.hcs2I.com/WAx-framework-ontology#Analyst_introspection">
+        <rdfs:subClassOf rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Introspection"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#hasDriver"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#ETTO_communication_driver"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#hasSource"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#WAO_Analyst"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#hasTarget"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#WAI_Analyst-of-WAD"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy xml:lang="en">The introspection activity performed by analyst.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hcs2I.com/WAx-framework-ontology#Animal -->
+
+    <owl:Class rdf:about="http://www.hcs2I.com/WAx-framework-ontology#Animal">
+        <rdfs:subClassOf rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Living_entity"/>
+        <rdfs:isDefinedBy xml:lang="en">One of the lower animals (i.e. less advanced in the scale of evolutionary development) as distinguished from human beings.
+
+Reference:
+Merriam-Webster (https://www.merriam-webster.com/dictionary/animal)</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hcs2I.com/WAx-framework-ontology#Artificial_intelligence_agent -->
+
+    <owl:Class rdf:about="http://www.hcs2I.com/WAx-framework-ontology#Artificial_intelligence_agent">
+        <rdfs:subClassOf rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Computational_agent"/>
+        <rdfs:isDefinedBy xml:lang="en">A computational agent with the ability to accomplish virtually any goal, including learning.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hcs2I.com/WAx-framework-ontology#Artificial_intelligence_system -->
+
+    <owl:Class rdf:about="http://www.hcs2I.com/WAx-framework-ontology#Artificial_intelligence_system">
+        <rdfs:subClassOf rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Cyber_system"/>
+        <rdfs:subClassOf rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Social_system"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/FWS-ontology#hasPart"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Artificial_intelligence_agent"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy>A type of system that consists of artificial intelligence agents.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hcs2I.com/WAx-framework-ontology#Blunt-end_Conceptualization -->
+
+    <owl:Class rdf:about="http://www.hcs2I.com/WAx-framework-ontology#Blunt-end_Conceptualization">
+        <rdfs:subClassOf rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Conceptualization"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#hasTarget"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#WAO_BO"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#isInfluencedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#WAI_BO"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy xml:lang="en">The conceptualization activity performed by blunt-end operator.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hcs2I.com/WAx-framework-ontology#Blunt-end_externalisation -->
+
+    <owl:Class rdf:about="http://www.hcs2I.com/WAx-framework-ontology#Blunt-end_externalisation">
+        <rdfs:subClassOf rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Externalisation"/>
+        <rdfs:isDefinedBy xml:lang="en">The externalisation activity performed by blunt-end operator.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hcs2I.com/WAx-framework-ontology#Blunt-end_externalisation_from_WAI_BO_to_WADI_BO -->
+
+    <owl:Class rdf:about="http://www.hcs2I.com/WAx-framework-ontology#Blunt-end_externalisation_from_WAI_BO_to_WADI_BO">
+        <rdfs:subClassOf rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Blunt-end_externalisation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#hasDriver"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#ETTO_communication_driver"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#hasSource"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#WAI_BO"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#hasTarget"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#WADI_BO"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#isInfluencedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#WAI_Analyst-of-WAI"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#isInfluencedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#WAI_SO"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy xml:lang="en">The externalisation activity of WAI_BO performed by blunt-end operator to disclose the WADI_BO.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hcs2I.com/WAx-framework-ontology#Blunt-end_externalisation_from_WAI_BO_to_WAP_BO -->
+
+    <owl:Class rdf:about="http://www.hcs2I.com/WAx-framework-ontology#Blunt-end_externalisation_from_WAI_BO_to_WAP_BO">
+        <rdfs:subClassOf rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Blunt-end_externalisation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#hasDriver"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#ETTO_communication_driver"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#hasSource"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#WAI_BO"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#hasTarget"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#WAP_BO"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy xml:lang="en">The externalsation activity of WAI_BO performed by blunt-end operator to disclose the WAP_BO.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hcs2I.com/WAx-framework-ontology#Blunt-end_internalisation -->
+
+    <owl:Class rdf:about="http://www.hcs2I.com/WAx-framework-ontology#Blunt-end_internalisation">
+        <rdfs:subClassOf rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Internalisation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#hasTarget"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#WAI_BO"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy xml:lang="en">The internalisation activity performed by blunt-end operator.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hcs2I.com/WAx-framework-ontology#Blunt-end_internalisation_from_analyst_knowledge -->
+
+    <owl:Class rdf:about="http://www.hcs2I.com/WAx-framework-ontology#Blunt-end_internalisation_from_analyst_knowledge">
+        <rdfs:subClassOf rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Blunt-end_internalisation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#hasDriver"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#ETTO_communication_driver"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#hasSource"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#WADI_Analyst-of-WAD"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#hasSource"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#WADI_Analyst-of-WAI"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy xml:lang="en">The internalisation activity performed by the blunt-end operator  to create the WAI_BO from WADI_Analyst_of_WAI and WADI_Analyst_of_WAD.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hcs2I.com/WAx-framework-ontology#Blunt-end_internalisation_from_blunt-end_knowledge -->
+
+    <owl:Class rdf:about="http://www.hcs2I.com/WAx-framework-ontology#Blunt-end_internalisation_from_blunt-end_knowledge">
+        <rdfs:subClassOf rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Blunt-end_internalisation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#hasDriver"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#ETTO_modelling_driver"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#hasSource"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#WAN"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#hasSource"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#WAP_BO"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy xml:lang="en">The internalisation activity performed by the blunt-end operator to create the WAI_BO from WAN and WAP_BO.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hcs2I.com/WAx-framework-ontology#Blunt-end_internalisation_from_sharp-end_operator -->
+
+    <owl:Class rdf:about="http://www.hcs2I.com/WAx-framework-ontology#Blunt-end_internalisation_from_sharp-end_operator">
+        <rdfs:subClassOf rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Blunt-end_internalisation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#hasDriver"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#ETTO_communication_driver"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#hasSource"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#WADI_SO"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy xml:lang="en">The internalisation activity performed by the blunt-end operator to create the WAI_BO from WADI_SO.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hcs2I.com/WAx-framework-ontology#Blunt-end_introspection -->
+
+    <owl:Class rdf:about="http://www.hcs2I.com/WAx-framework-ontology#Blunt-end_introspection">
+        <rdfs:subClassOf rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Introspection"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#hasDriver"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#ETTO_communication_driver"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#hasSource"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#WAO_BO"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#hasTarget"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#WAI_BO"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy xml:lang="en">The introspection activity performed by blunt-end operator.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hcs2I.com/WAx-framework-ontology#Blunt-end_operator -->
+
+    <owl:Class rdf:about="http://www.hcs2I.com/WAx-framework-ontology#Blunt-end_operator">
+        <rdfs:subClassOf rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Agent_role"/>
+        <rdfs:isDefinedBy>The blunt-end role concerns the agent who has a stake in the system but does not operate directly on it (e.g., the production manager responsible for the production process).</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hcs2I.com/WAx-framework-ontology#CSTS_analysis_knowledge -->
+
+    <owl:Class rdf:about="http://www.hcs2I.com/WAx-framework-ontology#CSTS_analysis_knowledge">
+        <rdfs:subClassOf rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Level"/>
+        <rdfs:isDefinedBy>CSTS analysis knowledge is where knowledge of the CSTS is acquired, integrated, elaborated and used by an analyst to pursue an analysis of the system (e.g., safety-oriented, efficiency-oriented, or a combined one in line with Safety-II concepts (Hollnagel, 2012)).
+
+REFERENCE
+Hollnagel, E., 2012. FRAM: The Functional Resonance Analysis Method - Modelling Complex Socio-technical Systems. Ashgate.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hcs2I.com/WAx-framework-ontology#CSTS_primary_knowledge -->
+
+    <owl:Class rdf:about="http://www.hcs2I.com/WAx-framework-ontology#CSTS_primary_knowledge">
+        <rdfs:subClassOf rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Level"/>
+        <rdfs:isDefinedBy>CSTS primary knowledge is where knowledge of the CST system is explicitly or tacitly created, shared, integrated and applied by blunt-end or sharp-end agents. Such knowledge includes organizational goals, rules, procedures, norms, beliefs, mental models, constraints, etc.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hcs2I.com/WAx-framework-ontology#CST_world -->
+
+    <owl:Class rdf:about="http://www.hcs2I.com/WAx-framework-ontology#CST_world">
+        <rdfs:subClassOf rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Level"/>
+        <rdfs:isDefinedBy>CST world is where knowledge is actually used to achieve the CST functional purpose. It is the real world that can be considered as a space where system operations, performed by humans, organizations, technical and cyber artifacts take place. These operations are ultimately unobservable in their entirety, but reasonable estimation can be reached via direct observation by humans or indirect ones by technology (i.e., sensors or software).</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hcs2I.com/WAx-framework-ontology#Combination -->
+
+    <owl:Class rdf:about="http://www.hcs2I.com/WAx-framework-ontology#Combination">
+        <rdfs:subClassOf rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Foundational_knowledge_conversion_activity"/>
+        <rdfs:isDefinedBy>Combination (Explicit-to-Explicit): the activity referred to the conversion of explicit knowledge into other variants of explicit knowledge.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hcs2I.com/WAx-framework-ontology#Computational_agent -->
+
+    <owl:Class rdf:about="http://www.hcs2I.com/WAx-framework-ontology#Computational_agent">
+        <rdfs:subClassOf rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Agent"/>
+        <rdfs:isDefinedBy xml:lang="en">An agent that is the result of the act or action of computing.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hcs2I.com/WAx-framework-ontology#Conceptualization -->
+
+    <owl:Class rdf:about="http://www.hcs2I.com/WAx-framework-ontology#Conceptualization">
+        <rdfs:subClassOf rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Foundational_knowledge_conversion_activity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#hasDriver"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#ETTO_modelling_driver"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#hasSource"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#WAD"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy>Conceptualization (Action-to-Tacit): the activity related to the creation of tacit knowledge from aspects related to real work actions in the CST world.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hcs2I.com/WAx-framework-ontology#Cyber-human_system -->
+
+    <owl:Class rdf:about="http://www.hcs2I.com/WAx-framework-ontology#Cyber-human_system">
+        <rdfs:subClassOf rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#System"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/FWS-ontology#hasPart"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Cyber_system"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/FWS-ontology#hasPart"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Human_system"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy xml:lang="en">A cyber-human system is a system that is viewed as consisting of only cyber artefacts and human agents (CH).</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hcs2I.com/WAx-framework-ontology#Cyber-physical-human_system -->
+
+    <owl:Class rdf:about="http://www.hcs2I.com/WAx-framework-ontology#Cyber-physical-human_system">
+        <rdfs:subClassOf rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Cyber-socio-technical_system"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/FWS-ontology#hasPart"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Cyber_system"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/FWS-ontology#hasPart"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Human_system"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/FWS-ontology#hasPart"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Physical_system"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy xml:lang="en">A cyber-physical human system is a cyber-socio-technical system that is viewed as consisting of cyber artefacts, physical devices, and human agents (CPH).</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hcs2I.com/WAx-framework-ontology#Cyber-physical_system -->
+
+    <owl:Class rdf:about="http://www.hcs2I.com/WAx-framework-ontology#Cyber-physical_system">
+        <rdfs:subClassOf rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#System"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/FWS-ontology#hasPart"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Cyber_system"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/FWS-ontology#hasPart"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Physical_system"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy xml:lang="en">A cyber-physical system is a system that is viewed as consisting of only cyber artefacts and physical devices (CP). Modern technical systems are defined by both a cyber and a physical part. The former encompasses software systems, which nowadays are characterized by increasing autonomy and intelligence, while the latter includes traditional technical systems, hardware infrastructures, and other modern physical devices, such as sensors and actuators, that are conceived to interoperate with their cyber counter-part. Examples of cyber-physical systems are robots where both the cyber and physical aspects work jointly to achieve a functional goal.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hcs2I.com/WAx-framework-ontology#Cyber-socio-technical_system -->
+
+    <owl:Class rdf:about="http://www.hcs2I.com/WAx-framework-ontology#Cyber-socio-technical_system">
+        <rdfs:subClassOf rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Socio-technical_system"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/FWS-ontology#hasPart"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Cyber_system"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/FWS-ontology#hasPart"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Social_system"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/FWS-ontology#hasPart"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Technical_system"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy>A cyber-socio-technical system is a system that is viewed as consisting of cyber artefacts, physical devices, and human agents (CPH). Furthermore, the notion of cyber-socio-technical system allows to go even further. Differently from the traditional notion of socio-technical systems, in light of the cyber artefacts’ increased autonomy and intelligence, the analysis of cyber-socio-technical system extends towards the “social” relationships between humans and cyber artefacts, as well as multiple cyber artefacts that act jointly.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hcs2I.com/WAx-framework-ontology#Cyber_system -->
+
+    <owl:Class rdf:about="http://www.hcs2I.com/WAx-framework-ontology#Cyber_system">
+        <rdfs:subClassOf rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Technical_system"/>
+        <rdfs:isDefinedBy xml:lang="en">A cyber system is a system consisting of cyber artefacts (C).</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hcs2I.com/WAx-framework-ontology#Deliberative_knowledge_conversion_driver -->
+
+    <owl:Class rdf:about="http://www.hcs2I.com/WAx-framework-ontology#Deliberative_knowledge_conversion_driver">
+        <rdfs:subClassOf rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Knowledge_conversion_driver"/>
+        <rdfs:isDefinedBy>Deliberative drivers can be classified via a set of ETTO drivers representing the motivating factor connected to a deliberative knowledge conversion due to ETTO (Efficiency-Thoroughness Trade-Off) principle (Hollnagel, 2009). An ETTO-driven conversion is always originated by the willingness of a subjective contribution in knowledge conversion.
+
+REFERENCE
+Hollnagel, E., 2009. The ETTO principle: Efficiency-thoroughness trade-off: Why things that go right sometimes go wrong, Ashgate Publishing Ltd.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hcs2I.com/WAx-framework-ontology#ETTO_communication_driver -->
+
+    <owl:Class rdf:about="http://www.hcs2I.com/WAx-framework-ontology#ETTO_communication_driver">
+        <rdfs:subClassOf rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Deliberative_knowledge_conversion_driver"/>
+        <rdfs:isDefinedBy>The ETTO communication driver represents the motivating factor connected to a ETTO deliberative knowledge conversion driven by specific communication goals, or affected by the expectation on the knowledge conversion (e.g. hiding parts of the process not compliant with the existing laws and regulations, deliberatively provide more or less details on some aspects).</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hcs2I.com/WAx-framework-ontology#ETTO_modelling_driver -->
+
+    <owl:Class rdf:about="http://www.hcs2I.com/WAx-framework-ontology#ETTO_modelling_driver">
+        <rdfs:subClassOf rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Deliberative_knowledge_conversion_driver"/>
+        <rdfs:isDefinedBy>The ETTO modelling driver represents the ETTO motivating factor caused by specific modelling choices (e.g., decision of a modelling perspective and/or formalism, selection of a modelling formalism, use of modelling best practices, selection of a model abstraction level). One example could be the adoption of the Functional Resonance Analysis Method (FRAM) (Patriarca et al., 2020) instead of the Business Process Model and Notation (BPMN). This is a deliberative modelling choice specifically helpful when dealing with safety-related issues in socio-technical systems. Similarly, an ETTO modelling driver could refer to the usage of tally counts for the occurrence of certain pre-identified behaviours during a naturalistic observation.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hcs2I.com/WAx-framework-ontology#ETTO_process_driver -->
+
+    <owl:Class rdf:about="http://www.hcs2I.com/WAx-framework-ontology#ETTO_process_driver">
+        <rdfs:subClassOf rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Deliberative_knowledge_conversion_driver"/>
+        <rdfs:isDefinedBy>The ETTO process driver represents the ETTO motivating factor necessary to achieve a well-defined objective in specific contextual conditions. This is dependent on the process being analysed (e.g. skipping a delayed formal authorization for process activation in a machine to ensure process execution).</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hcs2I.com/WAx-framework-ontology#Explicit_knowledge -->
+
+    <owl:Class rdf:about="http://www.hcs2I.com/WAx-framework-ontology#Explicit_knowledge">
+        <rdfs:subClassOf rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Knowledge_form"/>
+        <rdfs:isDefinedBy xml:lang="en">Explicit or codified knowledge refers to knowledge that is transmittable in formal, systematic language.
+
+References:
+- Nonaka, I. (1994). A dynamic theory of organizational knowledge creation. Organization science, 5(1), 14-37.
+- Polanyi, M. (1966), The Tacit Dimension, London: Routledge &amp; Kegan Paul.
+
+Explicit knowledge (knowing-that): knowledge codified and digitized in books, documents, reports, memos, etc. Documented information that can facilitate action. Knowledge what is easily identified, articulated, shared and employed.
+
+Reference:
+https://www.tlu.ee/~sirvir/Information%20and%20Knowledge%20Management/Key_Concepts_of_IKM/tacit_and_explicit_knowledge.html</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hcs2I.com/WAx-framework-ontology#Externalisation -->
+
+    <owl:Class rdf:about="http://www.hcs2I.com/WAx-framework-ontology#Externalisation">
+        <rdfs:subClassOf rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Foundational_knowledge_conversion_activity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#hasSource"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Tacit_knowledge"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#hasTarget"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Explicit_knowledge"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy>Externalisation (Tacit-to-Explicit): this activity requires the expression of tacit knowledge and its translation into comprehensible forms interpretable by external agents.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hcs2I.com/WAx-framework-ontology#Foundational_knowledge_conversion_activity -->
+
+    <owl:Class rdf:about="http://www.hcs2I.com/WAx-framework-ontology#Foundational_knowledge_conversion_activity">
+        <rdfs:subClassOf rdf:resource="file:/Users/antoniodenicola/Library/CloudStorage/GoogleDrive-antonio.denicola@gmail.com/Il%20mio%20Drive/MGM/CONFERENZE-Workshops-Chapters/2026-EMMSAD/Ontology/SUMO.owl#ProcessTask"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#hasDriver"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Knowledge_conversion_driver"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#hasSource"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Knowledge_entity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#hasTarget"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Knowledge_entity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#isInfluencedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Knowledge_entity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy>Foundational knowledge conversion activities allow knowledge conversion between two knowledge entities, as largely inspired by (Nonaka et al., 2000).
+
+REFERENCE
+Nonaka, I., Toyama, R., Konno, N., 2000. SECI, Ba and Leadership: A Unified Model of Dynamic Knowledge Creation. Long Range Plann. 33, 5–34.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hcs2I.com/WAx-framework-ontology#Human -->
+
+    <owl:Class rdf:about="http://www.hcs2I.com/WAx-framework-ontology#Human">
+        <rdfs:subClassOf rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Living_entity"/>
+        <rdfs:isDefinedBy>A bipedal primate mammal (Homo sapiens): a person.
+
+Reference:
+Merriam-Webster (https://www.merriam-webster.com/dictionary/human)</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hcs2I.com/WAx-framework-ontology#Human_system -->
+
+    <owl:Class rdf:about="http://www.hcs2I.com/WAx-framework-ontology#Human_system">
+        <rdfs:subClassOf rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Social_system"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/FWS-ontology#hasPart"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Human"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy xml:lang="en">A human system is a type of system that deals with human agents (H).</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hcs2I.com/WAx-framework-ontology#Internalisation -->
+
+    <owl:Class rdf:about="http://www.hcs2I.com/WAx-framework-ontology#Internalisation">
+        <rdfs:subClassOf rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Foundational_knowledge_conversion_activity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#hasSource"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Explicit_knowledge"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#hasTarget"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Tacit_knowledge"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy>Internalisation (Explicit-to-Tacit): the activity related to the conversion of explicit knowledge into tacit knowledge.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hcs2I.com/WAx-framework-ontology#Introspection -->
+
+    <owl:Class rdf:about="http://www.hcs2I.com/WAx-framework-ontology#Introspection">
+        <rdfs:subClassOf rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Foundational_knowledge_conversion_activity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#hasSource"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Tacit_knowledge"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#hasTarget"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Tacit_knowledge"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy>Introspection (Tacit-to-Tacit, same agent): the conscious or unconscious examination of one&apos;s own tacit knowledge, as taken at an individual level.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hcs2I.com/WAx-framework-ontology#Knowledge_conversion_driver -->
+
+    <owl:Class rdf:about="http://www.hcs2I.com/WAx-framework-ontology#Knowledge_conversion_driver">
+        <rdfs:subClassOf rdf:resource="file:/Users/antoniodenicola/Library/CloudStorage/GoogleDrive-antonio.denicola@gmail.com/Il%20mio%20Drive/MGM/CONFERENZE-Workshops-Chapters/2026-EMMSAD/Ontology/SUMO.owl#Proposition"/>
+        <rdfs:isDefinedBy xml:lang="en">The explanatory factor connected to knowledge development, i.e. explain how it is converted.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hcs2I.com/WAx-framework-ontology#Knowledge_entity -->
+
+    <owl:Class rdf:about="http://www.hcs2I.com/WAx-framework-ontology#Knowledge_entity">
+        <rdfs:subClassOf rdf:resource="file:/Users/antoniodenicola/Library/CloudStorage/GoogleDrive-antonio.denicola@gmail.com/Il%20mio%20Drive/MGM/CONFERENZE-Workshops-Chapters/2026-EMMSAD/Ontology/SUMO.owl#Procedure"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#hasForm"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Knowledge_form"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#hasLevel"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Level"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#pertainsTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Agent"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#refersTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Process"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy>The knowledge entities represent different knowledge dimensions, i.e. what knowledge is referred to.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hcs2I.com/WAx-framework-ontology#Knowledge_form -->
+
+    <owl:Class rdf:about="http://www.hcs2I.com/WAx-framework-ontology#Knowledge_form">
+        <owl:equivalentClass rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Knowledge_type"/>
+        <rdfs:subClassOf rdf:resource="file:/Users/antoniodenicola/Library/CloudStorage/GoogleDrive-antonio.denicola@gmail.com/Il%20mio%20Drive/MGM/CONFERENZE-Workshops-Chapters/2026-EMMSAD/Ontology/SUMO.owl#InternalAttribute"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/FWS-ontology#isPartOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Knowledge_structure"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy xml:lang="en">A characterization of knowledge.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hcs2I.com/WAx-framework-ontology#Knowledge_structure -->
+
+    <owl:Class rdf:about="http://www.hcs2I.com/WAx-framework-ontology#Knowledge_structure">
+        <rdfs:subClassOf rdf:resource="file:/Users/antoniodenicola/Library/CloudStorage/GoogleDrive-antonio.denicola@gmail.com/Il%20mio%20Drive/MGM/CONFERENZE-Workshops-Chapters/2026-EMMSAD/Ontology/SUMO.owl#Model"/>
+        <rdfs:isDefinedBy>A conceptual artefact that is made of three constituent elements: (i) levels, representing where knowledge is located, (ii) knowledge types, i.e. in which form (how) knowledge is preserved and (iii) agency, i.e. the agent who is responsible for the knowledge.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hcs2I.com/WAx-framework-ontology#Knowledge_type -->
+
+    <owl:Class rdf:about="http://www.hcs2I.com/WAx-framework-ontology#Knowledge_type">
+        <rdfs:subClassOf rdf:resource="file:/Users/antoniodenicola/Library/CloudStorage/GoogleDrive-antonio.denicola@gmail.com/Il%20mio%20Drive/MGM/CONFERENZE-Workshops-Chapters/2026-EMMSAD/Ontology/SUMO.owl#InternalAttribute"/>
+        <rdfs:isDefinedBy xml:lang="en">A characterization of knowledge.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hcs2I.com/WAx-framework-ontology#Lack_of_accessibility -->
+
+    <owl:Class rdf:about="http://www.hcs2I.com/WAx-framework-ontology#Lack_of_accessibility">
+        <rdfs:subClassOf rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Lack_of_information_quality"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#motivates"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#ETTO_process_driver"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy xml:lang="en">The extent to which information is not available, or easily and quickly retrievable.
+
+Reference:
+L. L. Pipino, Y. W. Lee, R. Y. Wang, Data quality assessment, Communications of the ACM 45 (4) (2002) 211–218.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hcs2I.com/WAx-framework-ontology#Lack_of_appropriate_amount_of_data -->
+
+    <owl:Class rdf:about="http://www.hcs2I.com/WAx-framework-ontology#Lack_of_appropriate_amount_of_data">
+        <rdfs:subClassOf rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Lack_of_information_quality"/>
+        <rdfs:isDefinedBy xml:lang="en">The extent to which the volume of information is not appropriate for the task at hand
+
+Reference:
+L. L. Pipino, Y. W. Lee, R. Y. Wang, Data quality assessment, Communications of the ACM 45 (4) (2002) 211–218.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hcs2I.com/WAx-framework-ontology#Lack_of_believability -->
+
+    <owl:Class rdf:about="http://www.hcs2I.com/WAx-framework-ontology#Lack_of_believability">
+        <rdfs:subClassOf rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Lack_of_information_quality"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#motivates"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#ETTO_process_driver"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy xml:lang="en">The extent to which information is not regarded as true and credible.
+
+Reference:
+L. L. Pipino, Y. W. Lee, R. Y. Wang, Data quality assessment, Communications of the ACM 45 (4) (2002) 211–218.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hcs2I.com/WAx-framework-ontology#Lack_of_completeness -->
+
+    <owl:Class rdf:about="http://www.hcs2I.com/WAx-framework-ontology#Lack_of_completeness">
+        <rdfs:subClassOf rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Lack_of_information_quality"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#motivates"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#ETTO_process_driver"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <SUMO:represents xml:lang="en">The extent to which information is missing and is not of sufficient breadth and depth for the task at hand.
+
+Reference:
+L. L. Pipino, Y. W. Lee, R. Y. Wang, Data quality assessment, Communications of the ACM 45 (4) (2002) 211–218.</SUMO:represents>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hcs2I.com/WAx-framework-ontology#Lack_of_concise_representation -->
+
+    <owl:Class rdf:about="http://www.hcs2I.com/WAx-framework-ontology#Lack_of_concise_representation">
+        <rdfs:subClassOf rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Lack_of_information_quality"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#motivates"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#ETTO_communication_driver"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#motivates"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#ETTO_modelling_driver"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy xml:lang="en">The extent to which information is not compactly represented.
+
+Reference:
+L. L. Pipino, Y. W. Lee, R. Y. Wang, Data quality assessment, Communications of the ACM 45 (4) (2002) 211–218.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hcs2I.com/WAx-framework-ontology#Lack_of_consistent_representation -->
+
+    <owl:Class rdf:about="http://www.hcs2I.com/WAx-framework-ontology#Lack_of_consistent_representation">
+        <rdfs:subClassOf rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Lack_of_information_quality"/>
+        <rdfs:isDefinedBy xml:lang="en">The extent to which information is not presented in the same format.
+
+Reference:
+L. L. Pipino, Y. W. Lee, R. Y. Wang, Data quality assessment, Communications of the ACM 45 (4) (2002) 211–218.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hcs2I.com/WAx-framework-ontology#Lack_of_ease_of_manipulation -->
+
+    <owl:Class rdf:about="http://www.hcs2I.com/WAx-framework-ontology#Lack_of_ease_of_manipulation">
+        <rdfs:subClassOf rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Lack_of_information_quality"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#motivates"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#ETTO_process_driver"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy xml:lang="en">The extent to which information is not easy to manipulate and apply to different tasks.
+
+Reference:
+L. L. Pipino, Y. W. Lee, R. Y. Wang, Data quality assessment, Communications of the ACM 45 (4) (2002) 211–218.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hcs2I.com/WAx-framework-ontology#Lack_of_information_quality -->
+
+    <owl:Class rdf:about="http://www.hcs2I.com/WAx-framework-ontology#Lack_of_information_quality">
+        <rdfs:subClassOf rdf:resource="file:/Users/antoniodenicola/Library/CloudStorage/GoogleDrive-antonio.denicola@gmail.com/Il%20mio%20Drive/MGM/CONFERENZE-Workshops-Chapters/2026-EMMSAD/Ontology/SUMO.owl#InternalAttribute"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#isFeatureOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Knowledge_entity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#motivates"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#ETTO_process_driver"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy>A feature of a knowledge entity that describes the result of objective or subjective assessments on the lack of quality of its information content.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hcs2I.com/WAx-framework-ontology#Lack_of_interpretability -->
+
+    <owl:Class rdf:about="http://www.hcs2I.com/WAx-framework-ontology#Lack_of_interpretability">
+        <rdfs:subClassOf rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Lack_of_information_quality"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#motivates"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#ETTO_communication_driver"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#motivates"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#ETTO_modelling_driver"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy xml:lang="en">The extent to which information is not in appropriate languages, symbols, and units, and the definitions are clear.
+
+Reference:
+L. L. Pipino, Y. W. Lee, R. Y. Wang, Data quality assessment, Communications of the ACM 45 (4) (2002) 211–218.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hcs2I.com/WAx-framework-ontology#Lack_of_objectivity -->
+
+    <owl:Class rdf:about="http://www.hcs2I.com/WAx-framework-ontology#Lack_of_objectivity">
+        <rdfs:subClassOf rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Lack_of_information_quality"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#motivates"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#ETTO_communication_driver"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy xml:lang="en">The extent to which information is not unbiased, unprejudiced, and impartial.
+
+Reference:
+L. L. Pipino, Y. W. Lee, R. Y. Wang, Data quality assessment, Communications of the ACM 45 (4) (2002) 211–218.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hcs2I.com/WAx-framework-ontology#Lack_of_relevancy -->
+
+    <owl:Class rdf:about="http://www.hcs2I.com/WAx-framework-ontology#Lack_of_relevancy">
+        <rdfs:subClassOf rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Lack_of_information_quality"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#motivates"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#ETTO_process_driver"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy xml:lang="en">The extent to which information is not applicable and helpful for the task at hand.
+
+Reference:
+L. L. Pipino, Y. W. Lee, R. Y. Wang, Data quality assessment, Communications of the ACM 45 (4) (2002) 211–218.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hcs2I.com/WAx-framework-ontology#Lack_of_reputation -->
+
+    <owl:Class rdf:about="http://www.hcs2I.com/WAx-framework-ontology#Lack_of_reputation">
+        <rdfs:subClassOf rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Lack_of_information_quality"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#motivates"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#ETTO_process_driver"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy xml:lang="en">The extent to which information is not highly regarded in terms of its source or content.
+
+Reference:
+L. L. Pipino, Y. W. Lee, R. Y. Wang, Data quality assessment, Communications of the ACM 45 (4) (2002) 211–218.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hcs2I.com/WAx-framework-ontology#Lack_of_security -->
+
+    <owl:Class rdf:about="http://www.hcs2I.com/WAx-framework-ontology#Lack_of_security">
+        <rdfs:subClassOf rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Lack_of_information_quality"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#motivates"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#ETTO_communication_driver"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy xml:lang="en">The extent to which access to information is not restricted appropriately to maintain its security.
+
+Reference:
+L. L. Pipino, Y. W. Lee, R. Y. Wang, Data quality assessment, Communications of the ACM 45 (4) (2002) 211–218.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hcs2I.com/WAx-framework-ontology#Lack_of_timeliness -->
+
+    <owl:Class rdf:about="http://www.hcs2I.com/WAx-framework-ontology#Lack_of_timeliness">
+        <rdfs:subClassOf rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Lack_of_information_quality"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#motivates"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#ETTO_process_driver"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy xml:lang="en">The extent to which information is not sufficiently up-to-date for the task at hand.
+
+Reference:
+L. L. Pipino, Y. W. Lee, R. Y. Wang, Data quality assessment, Communications of the ACM 45 (4) (2002) 211–218.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hcs2I.com/WAx-framework-ontology#Lack_of_understandability -->
+
+    <owl:Class rdf:about="http://www.hcs2I.com/WAx-framework-ontology#Lack_of_understandability">
+        <rdfs:subClassOf rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Lack_of_information_quality"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#motivates"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#ETTO_communication_driver"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#motivates"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#ETTO_modelling_driver"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#motivates"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#ETTO_process_driver"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy xml:lang="en">The extent to which information is not easily comprehended.
+
+Reference:
+L. L. Pipino, Y. W. Lee, R. Y. Wang, Data quality assessment, Communications of the ACM 45 (4) (2002) 211–218.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hcs2I.com/WAx-framework-ontology#Lack_of_value-added -->
+
+    <owl:Class rdf:about="http://www.hcs2I.com/WAx-framework-ontology#Lack_of_value-added">
+        <rdfs:subClassOf rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Lack_of_information_quality"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#motivates"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#ETTO_communication_driver"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#motivates"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#ETTO_process_driver"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy xml:lang="en">The extent to which information is not beneficial and does not provide advantages from its use.
+
+Reference:
+L. L. Pipino, Y. W. Lee, R. Y. Wang, Data quality assessment, Communications of the ACM 45 (4) (2002) 211–218.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hcs2I.com/WAx-framework-ontology#Level -->
+
+    <owl:Class rdf:about="http://www.hcs2I.com/WAx-framework-ontology#Level">
+        <rdfs:subClassOf rdf:resource="file:/Users/antoniodenicola/Library/CloudStorage/GoogleDrive-antonio.denicola@gmail.com/Il%20mio%20Drive/MGM/CONFERENZE-Workshops-Chapters/2026-EMMSAD/Ontology/SUMO.owl#InternalAttribute"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/FWS-ontology#isPartOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Knowledge_structure"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy>The levels are part of the knowledge structure and represent where knowledge is located.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hcs2I.com/WAx-framework-ontology#Living_entity -->
+
+    <owl:Class rdf:about="http://www.hcs2I.com/WAx-framework-ontology#Living_entity">
+        <rdfs:subClassOf rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Agent"/>
+        <rdfs:isDefinedBy xml:lang="en">An agent that is an individual life form considered as an entity (e.g. an animal or a person).</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hcs2I.com/WAx-framework-ontology#Not_free-of-error -->
+
+    <owl:Class rdf:about="http://www.hcs2I.com/WAx-framework-ontology#Not_free-of-error">
+        <rdfs:subClassOf rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Lack_of_information_quality"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#motivates"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#ETTO_process_driver"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy xml:lang="en">The extent to which information is not correct and reliable.
+
+Reference:
+L. L. Pipino, Y. W. Lee, R. Y. Wang, Data quality assessment, Communications of the ACM 45 (4) (2002) 211–218.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hcs2I.com/WAx-framework-ontology#Physical-human_system -->
+
+    <owl:Class rdf:about="http://www.hcs2I.com/WAx-framework-ontology#Physical-human_system">
+        <rdfs:subClassOf rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Socio-technical_system"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/FWS-ontology#hasPart"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Human_system"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/FWS-ontology#hasPart"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Physical_system"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy xml:lang="en">A physical-human system is a system that is viewed as consisting of only physical devices and human agents (PH).</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hcs2I.com/WAx-framework-ontology#Physical_object -->
+
+    <owl:Class rdf:about="http://www.hcs2I.com/WAx-framework-ontology#Physical_object">
+        <rdfs:subClassOf rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Subsystem"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hcs2I.com/WAx-framework-ontology#Physical_system -->
+
+    <owl:Class rdf:about="http://www.hcs2I.com/WAx-framework-ontology#Physical_system">
+        <rdfs:subClassOf rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Technical_system"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/FWS-ontology#hasPart"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Physical_object"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy xml:lang="en">A physical system is a system that deals with physical devices (P). Traditional technical systems include physical devices, infrastructures, and machines (e.g. lathes, milling machines), which are used to support human activities.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hcs2I.com/WAx-framework-ontology#Process -->
+
+    <owl:Class rdf:about="http://www.hcs2I.com/WAx-framework-ontology#Process">
+        <rdfs:subClassOf rdf:resource="file:/Users/antoniodenicola/Library/CloudStorage/GoogleDrive-antonio.denicola@gmail.com/Il%20mio%20Drive/MGM/CONFERENZE-Workshops-Chapters/2026-EMMSAD/Ontology/SUMO.owl#Process"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#isProcessOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#System"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy xml:lang="en">A series of actions or operations conducing to an end.
+
+References
+https://www.merriam-webster.com/dictionary/process</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hcs2I.com/WAx-framework-ontology#Reification -->
+
+    <owl:Class rdf:about="http://www.hcs2I.com/WAx-framework-ontology#Reification">
+        <rdfs:subClassOf rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Foundational_knowledge_conversion_activity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#hasDriver"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#ETTO_process_driver"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#hasSource"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#WAI_SO"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#hasTarget"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#WAD"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy>Reification (Tacit-to-Action): is the activity of bringing tacit knowledge into action (e.g. translating a mental model of a process activity into the actual operating tasks).</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hcs2I.com/WAx-framework-ontology#Robot -->
+
+    <owl:Class rdf:about="http://www.hcs2I.com/WAx-framework-ontology#Robot">
+        <rdfs:subClassOf rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Agent"/>
+        <rdfs:isDefinedBy xml:lang="en">A machine that resembles a living creature in being capable of moving independently (as by walking or rolling on wheels) and performing complex actions (such as grasping and moving objects).
+
+A device that automatically performs complicated, often repetitive tasks (as in an industrial assembly line)
+
+Reference:
+Merriam-Webster (https://www.merriam-webster.com/dictionary/robot)</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hcs2I.com/WAx-framework-ontology#Robot_system -->
+
+    <owl:Class rdf:about="http://www.hcs2I.com/WAx-framework-ontology#Robot_system">
+        <rdfs:subClassOf rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Cyber_system"/>
+        <rdfs:subClassOf rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Social_system"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/FWS-ontology#hasPart"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Robot"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy>A type of system that consists of robots.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hcs2I.com/WAx-framework-ontology#Sharp-end_Conceptualization -->
+
+    <owl:Class rdf:about="http://www.hcs2I.com/WAx-framework-ontology#Sharp-end_Conceptualization">
+        <rdfs:subClassOf rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Conceptualization"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#hasTarget"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#WAI_SO"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy xml:lang="en">The conceptualization activity performed by sharp-end operator.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hcs2I.com/WAx-framework-ontology#Sharp-end_externalisation -->
+
+    <owl:Class rdf:about="http://www.hcs2I.com/WAx-framework-ontology#Sharp-end_externalisation">
+        <rdfs:subClassOf rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Externalisation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#hasDriver"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#ETTO_communication_driver"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#hasSource"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#WAI_SO"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#hasTarget"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#WADI_SO"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#isInfluencedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#WAI_Analyst-of-WAI"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#isInfluencedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#WAI_BO"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy xml:lang="en">The externalsation activity performed by sharp-end operator.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hcs2I.com/WAx-framework-ontology#Sharp-end_internalisation -->
+
+    <owl:Class rdf:about="http://www.hcs2I.com/WAx-framework-ontology#Sharp-end_internalisation">
+        <rdfs:subClassOf rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Internalisation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#hasTarget"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#WAI_SO"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy xml:lang="en">The internalisation activity performed by sharp-end operator.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hcs2I.com/WAx-framework-ontology#Sharp-end_internalisation_driven_by_ETTO_communication_principle -->
+
+    <owl:Class rdf:about="http://www.hcs2I.com/WAx-framework-ontology#Sharp-end_internalisation_driven_by_ETTO_communication_principle">
+        <rdfs:subClassOf rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Sharp-end_internalisation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#hasDriver"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#ETTO_communication_driver"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#hasSource"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#WADI_BO"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy xml:lang="en">The internalisation activity performed by sharp-end operator to create WAI_SO from WADI_BO driven by the ETTO_communication_driver.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hcs2I.com/WAx-framework-ontology#Sharp-end_internalisation_driven_by_ETTO_modelling_principle -->
+
+    <owl:Class rdf:about="http://www.hcs2I.com/WAx-framework-ontology#Sharp-end_internalisation_driven_by_ETTO_modelling_principle">
+        <rdfs:subClassOf rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Sharp-end_internalisation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#hasDriver"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#ETTO_modelling_driver"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#hasSource"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#WAN"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#hasSource"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#WAP"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy xml:lang="en">The internalisation activity performed by sharp-end operator to create WAI_SO from WADI_BO driven by the ETTO_modelling_driver.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hcs2I.com/WAx-framework-ontology#Sharp-end_operator -->
+
+    <owl:Class rdf:about="http://www.hcs2I.com/WAx-framework-ontology#Sharp-end_operator">
+        <rdfs:subClassOf rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Agent_role"/>
+        <rdfs:isDefinedBy>The sharp-end role concerns the agent that is proximal to the process.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hcs2I.com/WAx-framework-ontology#Social_system -->
+
+    <owl:Class rdf:about="http://www.hcs2I.com/WAx-framework-ontology#Social_system">
+        <rdfs:subClassOf rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#System"/>
+        <rdfs:isDefinedBy>The patterned series of interrelationships existing between individuals, groups, and institutions and forming a coherent whole social structure.
+
+REFERENCE
+Merriam-Webster</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hcs2I.com/WAx-framework-ontology#Socialization -->
+
+    <owl:Class rdf:about="http://www.hcs2I.com/WAx-framework-ontology#Socialization">
+        <rdfs:subClassOf rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Foundational_knowledge_conversion_activity"/>
+        <rdfs:isDefinedBy>Socialization (Tacit-to-Tacit, different agents): the activity that involves the sharing of tacit knowledge between individuals.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hcs2I.com/WAx-framework-ontology#Socio-technical_system -->
+
+    <owl:Class rdf:about="http://www.hcs2I.com/WAx-framework-ontology#Socio-technical_system">
+        <rdfs:subClassOf rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#System"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/FWS-ontology#hasPart"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Social_system"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/FWS-ontology#hasPart"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Technical_system"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy>A socio-technical system deals with the symbiotic interactions between physical systems and human agents, possibly prioritizing the scope of the analysis to the role of human agents under certain assumptions.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hcs2I.com/WAx-framework-ontology#Software_agent -->
+
+    <owl:Class rdf:about="http://www.hcs2I.com/WAx-framework-ontology#Software_agent">
+        <rdfs:subClassOf rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Computational_agent"/>
+        <rdfs:isDefinedBy xml:lang="en">A computational agent that is explicitly programmed to make a task and achieve a goal.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hcs2I.com/WAx-framework-ontology#Software_system -->
+
+    <owl:Class rdf:about="http://www.hcs2I.com/WAx-framework-ontology#Software_system">
+        <rdfs:subClassOf rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Cyber_system"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/FWS-ontology#hasPart"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Software_agent"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy>A type of system that consists of software agents.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hcs2I.com/WAx-framework-ontology#Subsystem -->
+
+    <owl:Class rdf:about="http://www.hcs2I.com/WAx-framework-ontology#Subsystem">
+        <rdfs:subClassOf rdf:resource="http://www.adampease.org/OP/SUMO.owl#PhysicalSystem"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/FWS-ontology#isPartOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#System"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#relatesTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Process"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy xml:lang="en">A system that is part of a larger system.
+
+Reference:
+https://www.merriam-webster.com/dictionary/subsystem</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hcs2I.com/WAx-framework-ontology#System -->
+
+    <owl:Class rdf:about="http://www.hcs2I.com/WAx-framework-ontology#System">
+        <rdfs:subClassOf rdf:resource="file:/Users/antoniodenicola/Library/CloudStorage/GoogleDrive-antonio.denicola@gmail.com/Il%20mio%20Drive/MGM/CONFERENZE-Workshops-Chapters/2026-EMMSAD/Ontology/SUMO.owl#Physical"/>
+        <rdfs:isDefinedBy xml:lang="en">A regularly interacting or interdependent group of items forming a unified whole, such as a group of devices or artificial objects or an organization forming a network especially for distributing something or serving a common purpose.
+
+Reference:
+https://www.merriam-webster.com/dictionary/system</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hcs2I.com/WAx-framework-ontology#Tacit_knowledge -->
+
+    <owl:Class rdf:about="http://www.hcs2I.com/WAx-framework-ontology#Tacit_knowledge">
+        <rdfs:subClassOf rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Knowledge_form"/>
+        <rdfs:isDefinedBy xml:lang="en">Tacit knowledge involves both cognitive and technical elements. The cognitive elements center on &quot;mental models&quot; in which human beings form working models of the world by creating and manipulating analogies in thei minds. These working models include schemata, paradigms, beliefs, and viewpoints that provide &quot;perspectives&quot; that help individuals to perceive and define their world. By contrast, the technical element of tacit knowledge covers concrete know-how, crafts, and skills that apply to specific contexts. The cognitive element of tacit knowledge refers to an individual&apos;s image of reality and visions for the future, that is to say, what is and what ought to be.
+
+Reference:
+- Nonaka, I. (1994). A dynamic theory of organizational knowledge creation. Organization science, 5(1), 14-37.
+
+Tacit knowledge (knowing-how): knowledge embedded in the human mind through experience and jobs. Know-how and learning embedded within the minds of people. Personal wisdom and experience, context-specific, more difficult to extract and codify. Tacit knowledge Includes insights, intuitions.
+
+The terms ‘tacit knowledge’ and ‘implicit knowledge’ are sometimes used as synonyms. “Implicit” means that which is implied in a statement, but is not explicitly said. The term could refer to things that are contextual to a statement - that is, further statements that are connected with it in socially understandable manners.
+
+
+Reference:
+https://www.tlu.ee/~sirvir/Information%20and%20Knowledge%20Management/Key_Concepts_of_IKM/tacit_and_explicit_knowledge.html</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hcs2I.com/WAx-framework-ontology#Technical_system -->
+
+    <owl:Class rdf:about="http://www.hcs2I.com/WAx-framework-ontology#Technical_system">
+        <rdfs:subClassOf rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#System"/>
+        <rdfs:isDefinedBy xml:lang="en">A system consisting of technical components.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hcs2I.com/WAx-framework-ontology#WAD -->
+
+    <owl:Class rdf:about="http://www.hcs2I.com/WAx-framework-ontology#WAD">
+        <owl:equivalentClass rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#WAD_SO"/>
+        <rdfs:subClassOf rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Knowledge_entity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hcs2I.com/WAx-framework-ontology#WADI -->
+
+    <owl:Class rdf:about="http://www.hcs2I.com/WAx-framework-ontology#WADI">
+        <rdfs:subClassOf rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Knowledge_entity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#hasForm"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Explicit_knowledge"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy>Work As Disclosed (WADI) represents what system agents convey, explain or espouse about work, consciously or unconsciously. The disclosure of work is for the most tailored to the purpose of the message and to what the audience is – or it is assumed it is – expecting. More or less deliberatively, it is affected by the interaction with the audience. However, a portion of the communication is independent of the agent&apos;s will, i.e. both redundant and conflicting signs disclosed during the processes convey information richer than that one intended in principle by the agent. In a CSTS, this variety of work also encompasses the role of cyber artifacts that disclose data on process activities they are executing.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hcs2I.com/WAx-framework-ontology#WADI_Analyst-of-WAD -->
+
+    <owl:Class rdf:about="http://www.hcs2I.com/WAx-framework-ontology#WADI_Analyst-of-WAD">
+        <rdfs:subClassOf rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#WADI"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#hasLevel"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#CSTS_analysis_knowledge"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#pertainsTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Analyst"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy>Explicit knowledge (WADI) on the WAD as disclosed by the Analyst.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hcs2I.com/WAx-framework-ontology#WADI_Analyst-of-WAI -->
+
+    <owl:Class rdf:about="http://www.hcs2I.com/WAx-framework-ontology#WADI_Analyst-of-WAI">
+        <rdfs:subClassOf rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#WADI"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#hasLevel"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#CSTS_analysis_knowledge"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#pertainsTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Analyst"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy>Explicit knowledge on the WAI as disclosed by the Analyst (WADI_Analyst -of-WAI)</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hcs2I.com/WAx-framework-ontology#WADI_BO -->
+
+    <owl:Class rdf:about="http://www.hcs2I.com/WAx-framework-ontology#WADI_BO">
+        <rdfs:subClassOf rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#WADI"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#hasLevel"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#CSTS_primary_knowledge"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#pertainsTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Blunt-end_operator"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy>Work As DIsclosed by the Blunt-end Operator (WADI_BO)</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hcs2I.com/WAx-framework-ontology#WADI_SO -->
+
+    <owl:Class rdf:about="http://www.hcs2I.com/WAx-framework-ontology#WADI_SO">
+        <rdfs:subClassOf rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#WADI"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#hasLevel"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#CSTS_primary_knowledge"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#pertainsTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Sharp-end_operator"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy>Work As DIsclosed by the Sharp-end Operator (WADI_SO)</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hcs2I.com/WAx-framework-ontology#WAD_SO -->
+
+    <owl:Class rdf:about="http://www.hcs2I.com/WAx-framework-ontology#WAD_SO">
+        <rdfs:subClassOf rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Knowledge_entity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#hasLevel"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#CST_world"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#pertainsTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Sharp-end_operator"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy>Work As Done by the Sharp-end Operator (WAD_SO).
+Work As Done (WAD) is the actual activity only partially accessible, as carried out in the working environment. Since the environment is usually dynamic, unstable and unpredictable, this variety is usually different from what has been imagined or even prescribed. In the WAX ontology, WAD is also referred to WAD_SO (SO: Blunt-end Operator).</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hcs2I.com/WAx-framework-ontology#WAI -->
+
+    <owl:Class rdf:about="http://www.hcs2I.com/WAx-framework-ontology#WAI">
+        <rdfs:subClassOf rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Knowledge_entity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#hasForm"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Tacit_knowledge"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy>Work As Imagined (WAI) expresses the mental models conceiving work related activities, where work is then a possibility (i.e. as imagined can be done either in the past, present or future) or a belief (i.e. how we imagine others execute their activities, but also how we think we execute ours).</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hcs2I.com/WAx-framework-ontology#WAI_Analyst-of-WAD -->
+
+    <owl:Class rdf:about="http://www.hcs2I.com/WAx-framework-ontology#WAI_Analyst-of-WAD">
+        <rdfs:subClassOf rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#WAI"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#hasLevel"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#CSTS_analysis_knowledge"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#pertainsTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Analyst"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy>Tacit knowledge (WAI) on the WAD created by the Analyst.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hcs2I.com/WAx-framework-ontology#WAI_Analyst-of-WAI -->
+
+    <owl:Class rdf:about="http://www.hcs2I.com/WAx-framework-ontology#WAI_Analyst-of-WAI">
+        <rdfs:subClassOf rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#WAI"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#hasLevel"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#CSTS_analysis_knowledge"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#pertainsTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Analyst"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy>Tacit knowledge on the WAI created by the Analyst (WAI_Analyst-of-WAI)</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hcs2I.com/WAx-framework-ontology#WAI_BO -->
+
+    <owl:Class rdf:about="http://www.hcs2I.com/WAx-framework-ontology#WAI_BO">
+        <rdfs:subClassOf rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#WAI"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#hasLevel"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#CSTS_primary_knowledge"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#pertainsTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Blunt-end_operator"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy>Work As Imagined by the Blunt-end Operator (WAI_BO)</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hcs2I.com/WAx-framework-ontology#WAI_SO -->
+
+    <owl:Class rdf:about="http://www.hcs2I.com/WAx-framework-ontology#WAI_SO">
+        <rdfs:subClassOf rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#WAI"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#hasLevel"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#CSTS_primary_knowledge"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#pertainsTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Sharp-end_operator"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy>Work As Imagined by the Sharp-end Operator (WAI_SO)</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hcs2I.com/WAx-framework-ontology#WAN -->
+
+    <owl:Class rdf:about="http://www.hcs2I.com/WAx-framework-ontology#WAN">
+        <rdfs:subClassOf rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Knowledge_entity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#hasForm"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Explicit_knowledge"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#hasLevel"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#CSTS_primary_knowledge"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#pertainsTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Blunt-end_operator"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy>Work As Normative (WAN) encompasses external normative and prescriptive regulations external to the CSTS– varying in degrees of formalization – such as laws, rules, international standards, governmental safety procedures.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hcs2I.com/WAx-framework-ontology#WAO -->
+
+    <owl:Class rdf:about="http://www.hcs2I.com/WAx-framework-ontology#WAO">
+        <rdfs:subClassOf rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Knowledge_entity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#hasForm"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Tacit_knowledge"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy>Work As Observed (WAO) is referred to the mental model of an observation of the work. Even if assuming naturalistic observations, when referring to human components, the WAO is expected to be biased both by the mental model of the observer and by the Hawthorne effect (i.e. a modification of worker’s behaviours who are conscious of being observed) (Sedgwick and Greenwood, 2015)
+
+REFERENCE
+Sedgwick, P., Greenwood, N., 2015. Understanding the hawthorne effect. BMJ 351. https://doi.org/10.1136/bmj.h4672</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hcs2I.com/WAx-framework-ontology#WAO_Analyst -->
+
+    <owl:Class rdf:about="http://www.hcs2I.com/WAx-framework-ontology#WAO_Analyst">
+        <rdfs:subClassOf rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#WAO"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#hasLevel"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#CSTS_analysis_knowledge"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#isInfluencedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#WAI_Analyst-of-WAI"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#pertainsTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Analyst"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy>Work As Observed by the Analyst (WAO_Analyst)</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hcs2I.com/WAx-framework-ontology#WAO_BO -->
+
+    <owl:Class rdf:about="http://www.hcs2I.com/WAx-framework-ontology#WAO_BO">
+        <rdfs:subClassOf rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#WAO"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#hasLevel"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#CSTS_primary_knowledge"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#isInfluencedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#WAI_BO"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#pertainsTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Blunt-end_operator"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy>Work As Observed by the Blunt-end Operator (WAO_BO)</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hcs2I.com/WAx-framework-ontology#WAP -->
+
+    <owl:Class rdf:about="http://www.hcs2I.com/WAx-framework-ontology#WAP">
+        <owl:equivalentClass rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#WAP_BO"/>
+        <rdfs:subClassOf rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Knowledge_entity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#hasForm"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Explicit_knowledge"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hcs2I.com/WAx-framework-ontology#WAP_BO -->
+
+    <owl:Class rdf:about="http://www.hcs2I.com/WAx-framework-ontology#WAP_BO">
+        <rdfs:subClassOf rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Knowledge_entity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#hasForm"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Explicit_knowledge"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#hasLevel"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#CSTS_primary_knowledge"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#pertainsTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Blunt-end_operator"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy>Work As Prescribed by the Blunt-end Operator (WAPBO).
+Work As Prescribed (WAP) encompasses the available prescriptive aspects of work within the organization responsible for the process being investigated, usually following different degrees of formalization at task or job level (e.g.) procedures, checklists, standards, or job descriptions, prescriptive training. In the WAX ontology, WAP is also referred to WAP_BO (BO: Blunt-end Operator)</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.hcs2I.com/FRAM-ontology#Acceptable -->
+
+    <owl:NamedIndividual rdf:about="http://www.hcs2I.com/FRAM-ontology#Acceptable">
+        <rdf:type rdf:resource="http://www.hcs2I.com/FRAM-ontology#Precision"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.hcs2I.com/FRAM-ontology#Amplifying -->
+
+    <owl:NamedIndividual rdf:about="http://www.hcs2I.com/FRAM-ontology#Amplifying">
+        <rdf:type rdf:resource="http://www.hcs2I.com/FRAM-ontology#Coupling_effect"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.hcs2I.com/FRAM-ontology#Background -->
+
+    <owl:NamedIndividual rdf:about="http://www.hcs2I.com/FRAM-ontology#Background">
+        <rdf:type rdf:resource="http://www.hcs2I.com/FRAM-ontology#Function_role"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.hcs2I.com/FRAM-ontology#Damping -->
+
+    <owl:NamedIndividual rdf:about="http://www.hcs2I.com/FRAM-ontology#Damping">
+        <rdf:type rdf:resource="http://www.hcs2I.com/FRAM-ontology#Coupling_effect"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.hcs2I.com/FRAM-ontology#Excessive_for_the_desired_effect -->
+
+    <owl:NamedIndividual rdf:about="http://www.hcs2I.com/FRAM-ontology#Excessive_for_the_desired_effect">
+        <rdf:type rdf:resource="http://www.hcs2I.com/FRAM-ontology#Distance"/>
+        <rdf:type rdf:resource="http://www.hcs2I.com/FRAM-ontology#Force"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.hcs2I.com/FRAM-ontology#Foreground -->
+
+    <owl:NamedIndividual rdf:about="http://www.hcs2I.com/FRAM-ontology#Foreground">
+        <rdf:type rdf:resource="http://www.hcs2I.com/FRAM-ontology#Function_role"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.hcs2I.com/FRAM-ontology#Foreground_variable -->
+
+    <owl:NamedIndividual rdf:about="http://www.hcs2I.com/FRAM-ontology#Foreground_variable">
+        <rdf:type rdf:resource="http://www.hcs2I.com/FRAM-ontology#Function_role"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.hcs2I.com/FRAM-ontology#Human_function_type -->
+
+    <owl:NamedIndividual rdf:about="http://www.hcs2I.com/FRAM-ontology#Human_function_type">
+        <rdf:type rdf:resource="http://www.hcs2I.com/FRAM-ontology#Function_type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.hcs2I.com/FRAM-ontology#Imprecise -->
+
+    <owl:NamedIndividual rdf:about="http://www.hcs2I.com/FRAM-ontology#Imprecise">
+        <rdf:type rdf:resource="http://www.hcs2I.com/FRAM-ontology#Precision"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.hcs2I.com/FRAM-ontology#Insufficient_to_accomplish_desired_effect. -->
+
+    <owl:NamedIndividual rdf:about="http://www.hcs2I.com/FRAM-ontology#Insufficient_to_accomplish_desired_effect.">
+        <rdf:type rdf:resource="http://www.hcs2I.com/FRAM-ontology#Distance"/>
+        <rdf:type rdf:resource="http://www.hcs2I.com/FRAM-ontology#Force"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.hcs2I.com/FRAM-ontology#Jumping -->
+
+    <owl:NamedIndividual rdf:about="http://www.hcs2I.com/FRAM-ontology#Jumping">
+        <rdf:type rdf:resource="http://www.hcs2I.com/FRAM-ontology#Sequence"/>
+        <rdfs:isDefinedBy>A part of the sequence is skipped (either direction).
+
+REFERENCE:
+Hollnagel, E. (2012). FRAM, the functional resonance analysis method: modelling complex socio-technical systems. Ashgate Publishing, Ltd..</rdfs:isDefinedBy>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.hcs2I.com/FRAM-ontology#Movement_in_the_wrong_direction -->
+
+    <owl:NamedIndividual rdf:about="http://www.hcs2I.com/FRAM-ontology#Movement_in_the_wrong_direction">
+        <rdf:type rdf:resource="http://www.hcs2I.com/FRAM-ontology#Direction"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.hcs2I.com/FRAM-ontology#Movement_of_the_wrong_type -->
+
+    <owl:NamedIndividual rdf:about="http://www.hcs2I.com/FRAM-ontology#Movement_of_the_wrong_type">
+        <rdf:type rdf:resource="http://www.hcs2I.com/FRAM-ontology#Direction"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.hcs2I.com/FRAM-ontology#Movement_that_does_not_go_far_enough -->
+
+    <owl:NamedIndividual rdf:about="http://www.hcs2I.com/FRAM-ontology#Movement_that_does_not_go_far_enough">
+        <rdf:type rdf:resource="http://www.hcs2I.com/FRAM-ontology#Distance"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.hcs2I.com/FRAM-ontology#Movement_that_goes_too_far -->
+
+    <owl:NamedIndividual rdf:about="http://www.hcs2I.com/FRAM-ontology#Movement_that_goes_too_far">
+        <rdf:type rdf:resource="http://www.hcs2I.com/FRAM-ontology#Distance"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.hcs2I.com/FRAM-ontology#No_effect -->
+
+    <owl:NamedIndividual rdf:about="http://www.hcs2I.com/FRAM-ontology#No_effect">
+        <rdf:type rdf:resource="http://www.hcs2I.com/FRAM-ontology#Coupling_effect"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.hcs2I.com/FRAM-ontology#Not_at_all -->
+
+    <owl:NamedIndividual rdf:about="http://www.hcs2I.com/FRAM-ontology#Not_at_all">
+        <rdf:type rdf:resource="http://www.hcs2I.com/FRAM-ontology#Timing"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.hcs2I.com/FRAM-ontology#Omission -->
+
+    <owl:NamedIndividual rdf:about="http://www.hcs2I.com/FRAM-ontology#Omission">
+        <rdf:type rdf:resource="http://www.hcs2I.com/FRAM-ontology#Duration"/>
+        <rdf:type rdf:resource="http://www.hcs2I.com/FRAM-ontology#Timing"/>
+        <rdfs:isDefinedBy>A function does not complete at all (within the time interval allowed).
+
+REFERENCE:
+Hollnagel, E. (2012). FRAM, the functional resonance analysis method: modelling complex socio-technical systems. Ashgate Publishing, Ltd..</rdfs:isDefinedBy>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.hcs2I.com/FRAM-ontology#On_time -->
+
+    <owl:NamedIndividual rdf:about="http://www.hcs2I.com/FRAM-ontology#On_time">
+        <rdf:type rdf:resource="http://www.hcs2I.com/FRAM-ontology#Timing"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.hcs2I.com/FRAM-ontology#Organisational_function_type -->
+
+    <owl:NamedIndividual rdf:about="http://www.hcs2I.com/FRAM-ontology#Organisational_function_type">
+        <rdf:type rdf:resource="http://www.hcs2I.com/FRAM-ontology#Function_type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.hcs2I.com/FRAM-ontology#Organizational -->
+
+    <owl:NamedIndividual rdf:about="http://www.hcs2I.com/FRAM-ontology#Organizational"/>
+    
+
+
+    <!-- http://www.hcs2I.com/FRAM-ontology#Output_pointing_the_wrong_object -->
+
+    <owl:NamedIndividual rdf:about="http://www.hcs2I.com/FRAM-ontology#Output_pointing_the_wrong_object">
+        <rdf:type rdf:resource="http://www.hcs2I.com/FRAM-ontology#Object"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.hcs2I.com/FRAM-ontology#Precise -->
+
+    <owl:NamedIndividual rdf:about="http://www.hcs2I.com/FRAM-ontology#Precise">
+        <rdf:type rdf:resource="http://www.hcs2I.com/FRAM-ontology#Precision"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.hcs2I.com/FRAM-ontology#Repetition -->
+
+    <owl:NamedIndividual rdf:about="http://www.hcs2I.com/FRAM-ontology#Repetition">
+        <rdf:type rdf:resource="http://www.hcs2I.com/FRAM-ontology#Sequence"/>
+        <rdfs:isDefinedBy>A part of the sequence is repeated when it should not have been.
+
+REFERENCE:
+Hollnagel, E. (2012). FRAM, the functional resonance analysis method: modelling complex socio-technical systems. Ashgate Publishing, Ltd..</rdfs:isDefinedBy>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.hcs2I.com/FRAM-ontology#Reversal -->
+
+    <owl:NamedIndividual rdf:about="http://www.hcs2I.com/FRAM-ontology#Reversal">
+        <rdf:type rdf:resource="http://www.hcs2I.com/FRAM-ontology#Sequence"/>
+        <rdfs:isDefinedBy>Two adjacent parts of the sequence change place.
+
+REFERENCE:
+Hollnagel, E. (2012). FRAM, the functional resonance analysis method: modelling complex socio-technical systems. Ashgate Publishing, Ltd..</rdfs:isDefinedBy>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.hcs2I.com/FRAM-ontology#Sequence_omission -->
+
+    <owl:NamedIndividual rdf:about="http://www.hcs2I.com/FRAM-ontology#Sequence_omission">
+        <rdf:type rdf:resource="http://www.hcs2I.com/FRAM-ontology#Sequence"/>
+        <rdfs:isDefinedBy>A part of the sequence is missing.
+
+REFERENCE:
+Hollnagel, E. (2012). FRAM, the functional resonance analysis method: modelling complex socio-technical systems. Ashgate Publishing, Ltd..</rdfs:isDefinedBy>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.hcs2I.com/FRAM-ontology#Technological_function_type -->
+
+    <owl:NamedIndividual rdf:about="http://www.hcs2I.com/FRAM-ontology#Technological_function_type">
+        <rdf:type rdf:resource="http://www.hcs2I.com/FRAM-ontology#Function_type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.hcs2I.com/FRAM-ontology#Too_early -->
+
+    <owl:NamedIndividual rdf:about="http://www.hcs2I.com/FRAM-ontology#Too_early">
+        <rdf:type rdf:resource="http://www.hcs2I.com/FRAM-ontology#Duration"/>
+        <rdf:type rdf:resource="http://www.hcs2I.com/FRAM-ontology#Timing"/>
+        <rdfs:isDefinedBy>A function is completed too early, executed faster than required or stopped before it should have been (premature output).
+
+REFERENCE:
+Hollnagel, E. (2012). FRAM, the functional resonance analysis method: modelling complex socio-technical systems. Ashgate Publishing, Ltd..</rdfs:isDefinedBy>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.hcs2I.com/FRAM-ontology#Too_fast -->
+
+    <owl:NamedIndividual rdf:about="http://www.hcs2I.com/FRAM-ontology#Too_fast">
+        <rdf:type rdf:resource="http://www.hcs2I.com/FRAM-ontology#Speed"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.hcs2I.com/FRAM-ontology#Too_late -->
+
+    <owl:NamedIndividual rdf:about="http://www.hcs2I.com/FRAM-ontology#Too_late">
+        <rdf:type rdf:resource="http://www.hcs2I.com/FRAM-ontology#Duration"/>
+        <rdf:type rdf:resource="http://www.hcs2I.com/FRAM-ontology#Timing"/>
+        <rdfs:isDefinedBy>A function is completed too late, executed with insufficient speed or continued beyond the point when it should have stopped (delayed output).
+
+REFERENCE:
+Hollnagel, E. (2012). FRAM, the functional resonance analysis method: modelling complex socio-technical systems. Ashgate Publishing, Ltd..</rdfs:isDefinedBy>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.hcs2I.com/FRAM-ontology#Too_long_movement -->
+
+    <owl:NamedIndividual rdf:about="http://www.hcs2I.com/FRAM-ontology#Too_long_movement">
+        <rdf:type rdf:resource="http://www.hcs2I.com/FRAM-ontology#Distance"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.hcs2I.com/FRAM-ontology#Too_short_movement -->
+
+    <owl:NamedIndividual rdf:about="http://www.hcs2I.com/FRAM-ontology#Too_short_movement">
+        <rdf:type rdf:resource="http://www.hcs2I.com/FRAM-ontology#Distance"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.hcs2I.com/FRAM-ontology#Too_slow -->
+
+    <owl:NamedIndividual rdf:about="http://www.hcs2I.com/FRAM-ontology#Too_slow">
+        <rdf:type rdf:resource="http://www.hcs2I.com/FRAM-ontology#Speed"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.hcs2I.com/FRAM-ontology#Too_strong -->
+
+    <owl:NamedIndividual rdf:about="http://www.hcs2I.com/FRAM-ontology#Too_strong">
+        <rdf:type rdf:resource="http://www.hcs2I.com/FRAM-ontology#Force"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.hcs2I.com/FRAM-ontology#Too_weak -->
+
+    <owl:NamedIndividual rdf:about="http://www.hcs2I.com/FRAM-ontology#Too_weak">
+        <rdf:type rdf:resource="http://www.hcs2I.com/FRAM-ontology#Force"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.hcs2I.com/FRAM-ontology#Undefined_function_type -->
+
+    <owl:NamedIndividual rdf:about="http://www.hcs2I.com/FRAM-ontology#Undefined_function_type">
+        <rdf:type rdf:resource="http://www.hcs2I.com/FRAM-ontology#Function_type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.hcs2I.com/FRAM-ontology#Wrong_object -->
+
+    <owl:NamedIndividual rdf:about="http://www.hcs2I.com/FRAM-ontology#Wrong_object">
+        <rdf:type rdf:resource="http://www.hcs2I.com/FRAM-ontology#Object"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.hcs2I.com/FRAM-ontology#Wrong_part -->
+
+    <owl:NamedIndividual rdf:about="http://www.hcs2I.com/FRAM-ontology#Wrong_part">
+        <rdf:type rdf:resource="http://www.hcs2I.com/FRAM-ontology#Sequence"/>
+        <rdfs:isDefinedBy>An extraneous or irrelevant part occurs in the sequence.
+
+REFERENCE:
+Hollnagel, E. (2012). FRAM, the functional resonance analysis method: modelling complex socio-technical systems. Ashgate Publishing, Ltd..</rdfs:isDefinedBy>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.hcs2I.com/WAx-framework-ontology#Singular -->
+
+    <owl:NamedIndividual rdf:about="http://www.hcs2I.com/WAx-framework-ontology#Singular">
+        <rdf:type rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Agent_aggregation_level"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.hcs2I.com/WAx-framework-ontology#Team -->
+
+    <owl:NamedIndividual rdf:about="http://www.hcs2I.com/WAx-framework-ontology#Team">
+        <rdf:type rdf:resource="http://www.hcs2I.com/WAx-framework-ontology#Agent_aggregation_level"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+
